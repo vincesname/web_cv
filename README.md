@@ -19,6 +19,6 @@ npm run build
 
 La commande vérifie les types avant de produire le site.
 
-OVH déploie le dépôt dans le dossier racine web `./www`. Le site compilé est versionné dans `site/` ; le `.htaccess` à la racine du dépôt sert `site/index.html` et réécrit les chemins des ressources vers ce dossier. Ainsi, `./www` est la racine du site sur l’hébergement, et non un sous-dossier à ajouter au dépôt. L’hébergement n’a pas besoin d’installer Node.js.
+OVH sert le dossier `./www` comme racine du site. Le build y écrit directement le site compilé et ce dossier est versionné avec le code source pour que Git Deploy le publie tel quel. Le fichier `public/.htaccess` est copié à la racine de `www/`. L’hébergement n’a pas besoin d’installer Node.js.
 
-Après une modification, régénérer `site/` avec `npm run build` avant le push sur `main`. Le build statique est volontairement léger pour rester très en dessous de la limite d’hébergement de 100 Mo.
+Après une modification, régénérer `www/` avec `npm run build` avant le push sur `main`. Le build statique est volontairement léger pour rester très en dessous de la limite d’hébergement de 100 Mo.
