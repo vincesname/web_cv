@@ -1,6 +1,6 @@
 # Vincent Mangel — CV Web
 
-Site vitrine de CV, en React et Vite. Le projet est entièrement statique : aucune API, base de données ni service externe requis à l’exécution. Le PDF source du CV est servi depuis `public/CV_Vincent_Mangel.pdf`.
+Site vitrine de CV, en React, TypeScript et Vite. Le projet est entièrement statique : aucune API, base de données ni service externe requis à l’exécution. Le PDF source du CV est servi depuis `public/CV_Vincent_Mangel.pdf`.
 
 ## Développement
 
@@ -9,11 +9,15 @@ npm ci
 npm run dev
 ```
 
+Les composants sont écrits en TSX ; `npm run typecheck` lance la vérification TypeScript seule.
+
 ## Production
 
 ```bash
 npm run build
 ```
+
+La commande vérifie les types avant de produire le site.
 
 Le dossier `site/` contient le site statique compilé et est versionné avec le code source afin que le webhook OVH puisse le publier sans installer Node.js sur l’hébergement. Le fichier `.htaccess` sert `site/index.html` à la racine et redirige les ressources vers ce dossier. Le build ne nécessite aucun backend ni base de données.
 

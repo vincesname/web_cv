@@ -1,4 +1,37 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, type KeyboardEvent, type ReactNode } from 'react';
+
+type ExpertiseId = 'architecture' | 'leadership' | 'delivery';
+type FilterId = 'all' | ExpertiseId;
+
+type ExpertiseArea = {
+  id: ExpertiseId;
+  label: string;
+  title: string;
+  text: string;
+  proof: string;
+  skills: string[];
+};
+
+type ExperienceItem = {
+  title: string;
+  period: string;
+  summary: string;
+  details: string;
+  stack: string[];
+  categories: ExpertiseId[];
+};
+
+type ExperienceGroup = {
+  company: string;
+  period: string;
+  context: string;
+  items: ExperienceItem[];
+};
+
+type Filter = {
+  id: FilterId;
+  label: string;
+};
 
 const links = {
   email: 'vincent.mangel.pro@gmail.com',
@@ -9,7 +42,7 @@ const links = {
   cv: '/CV_Vincent_Mangel.pdf',
 };
 
-const areas = [
+const areas: ExpertiseArea[] = [
   {
     id: 'architecture',
     label: 'Architecture',
@@ -36,14 +69,14 @@ const areas = [
   },
 ];
 
-const filters = [
+const filters: Filter[] = [
   { id: 'all', label: 'Tout le parcours' },
   { id: 'architecture', label: 'Architecture' },
   { id: 'leadership', label: 'Leadership' },
   { id: 'delivery', label: 'Développement' },
 ];
 
-const experienceGroups = [
+const experienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
     period: 'Oct. 2023 — aujourd’hui',
@@ -147,8 +180,10 @@ const experienceGroups = [
   },
 ];
 
-function Icon({ name, className = '' }) {
-  const paths = {
+type IconName = 'arrow' | 'external' | 'download' | 'check' | 'mail' | 'phone' | 'calendar' | 'chevron';
+
+function Icon({ name, className = '' }: { name: IconName; className?: string }) {
+  const paths: Record<IconName, ReactNode> = {
     arrow: <><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></>,
     external: <><path d="M14 4h6v6" /><path d="M20 4 10 14" /><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" /></>,
     download: <><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></>,
@@ -190,7 +225,7 @@ function ApproachMap() {
   );
 }
 
-function DomainPanel({ area }) {
+function DomainPanel({ area }: { area: ExpertiseArea }) {
   return (
     <div className="domain-panel" role="tabpanel" id="domain-panel" aria-labelledby={`domain-tab-${area.id}`}>
       <div className="domain-copy">
@@ -207,12 +242,12 @@ function DomainPanel({ area }) {
 }
 
 function App() {
-  const [activeArea, setActiveArea] = useState(areas[0].id);
-  const [activeFilter, setActiveFilter] = useState('all');
-  const tabRefs = useRef([]);
-  const selectedArea = areas.find((area) => area.id === activeArea);
+  const [activeArea, setActiveArea] = useState<ExpertiseId>(areas[0].id);
+  const [activeFilter, setActiveFilter] = useState<FilterId>('all');
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const selectedArea = areas.find((area) => area.id === activeArea) ?? areas[0];
 
-  function moveTab(event, index) {
+  function moveTab(event: KeyboardEvent<HTMLButtonElement>, index: number) {
     const nextKey = event.key;
     if (!['ArrowRight', 'ArrowLeft', 'Home', 'End'].includes(nextKey)) return;
     event.preventDefault();
