@@ -8,6 +8,6 @@ export default defineConfig({
     target: 'es2020',
     sourcemap: false,
     assetsInlineLimit: 4096,
-    outDir: 'site',
+    outDir: 'www',
   },
 });

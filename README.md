@@ -19,6 +19,6 @@ npm run build
 
 La commande vérifie les types avant de produire le site.
 
-Le dossier `site/` contient le site statique compilé et est versionné avec le code source afin que le webhook OVH puisse le publier sans installer Node.js sur l’hébergement. Le fichier `.htaccess` sert `site/index.html` à la racine et redirige les ressources vers ce dossier. Le build ne nécessite aucun backend ni base de données.
+Le dossier `www/` contient le site compilé prêt à publier et est versionné avec le code source. Configure le webhook OVH pour prendre `./www` comme dossier source et publier son contenu à la racine web du domaine. Le fichier `public/.htaccess` est copié à la racine de `www/`, avec `index.html` et les ressources. L’hébergement n’a pas besoin d’installer Node.js.
 
-Après une modification, régénérer `site/` avec `npm run build` avant le push ou la fusion sur `main`. Le build statique est volontairement léger pour rester très en dessous de la limite d’hébergement de 100 Mo.
+Après une modification, régénérer `www/` avec `npm run build` avant le push sur `main`. Le build statique est volontairement léger pour rester très en dessous de la limite d’hébergement de 100 Mo.
