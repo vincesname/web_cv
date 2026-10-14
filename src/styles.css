@@ -380,7 +380,7 @@ h1, h2, h3, h4, p, figure, dl { margin-top: 0; }
 
 .proof-grid {
   display: grid;
-  grid-template-columns: 1.05fr repeat(4, 1fr);
+  grid-template-columns: 0.8fr repeat(5, 1fr);
   align-items: center;
   min-height: 190px;
   padding-block: 32px;
@@ -590,7 +590,7 @@ h1, h2, h3, h4, p, figure, dl { margin-top: 0; }
 @media (max-width: 980px) {
   .hero { grid-template-columns: minmax(0, 1.1fr) minmax(325px, 0.9fr); gap: 38px; }
   .hero h1 { font-size: clamp(2.8rem, 6.3vw, 4.3rem); }
-  .proof-grid { grid-template-columns: 0.9fr repeat(4, 1fr); }
+  .proof-grid { grid-template-columns: 0.8fr repeat(5, 1fr); }
   .proof-item { padding-inline: 15px; }
   .domain-panel { gap: 24px; padding-inline: 30px; }
   .credentials-section { gap: 55px; }

@@ -199,10 +199,6 @@ function Icon({ name, className = '' }: { name: IconName; className?: string }) 
   );
 }
 
-const technologyCount = new Set(
-  experienceGroups.flatMap((group) => group.items.flatMap((item) => item.stack)),
-).size;
-
 function CareerSnapshot() {
   return (
     <figure className="career-snapshot" aria-labelledby="career-snapshot-title">
@@ -319,13 +315,14 @@ function App() {
           <div className="hero-visual"><CareerSnapshot /></div>
         </section>
 
-        <section className="proof-band" aria-label="Repères du parcours">
+        <section className="proof-band" aria-label="Indicateurs clés du parcours">
           <div className="page-wrap proof-grid">
-            <div className="proof-intro"><p>Repères du parcours</p><h2>Des faits<br />concrets.</h2></div>
-            <dl className="proof-item"><dt>années d’expérience<br />depuis 2015</dt><dd>10<span>+</span></dd></dl>
-            <dl className="proof-item"><dt>organisations clientes<br />nommées dans le parcours</dt><dd>8</dd></dl>
-            <dl className="proof-item"><dt>technologies et outils<br />cités dans les missions</dt><dd>{technologyCount}</dd></dl>
+            <div className="proof-intro"><p>Indicateurs clés</p><h2>Du parcours<br />à l’impact.</h2></div>
+            <dl className="proof-item"><dt>clients accompagnés</dt><dd>8</dd></dl>
+            <dl className="proof-item"><dt>années d’expérience<br />depuis 2015</dt><dd>11</dd></dl>
             <dl className="proof-item"><dt>projets coordonnés<br />en parallèle chez Ayming</dt><dd>3</dd></dl>
+            <dl className="proof-item"><dt>plateforme Private GPT<br />agentique · refonte front-end</dt><dd>1</dd></dl>
+            <dl className="proof-item"><dt>certifications<br />Azure · GitHub Copilot · IA</dt><dd>3</dd></dl>
           </div>
         </section>
 
