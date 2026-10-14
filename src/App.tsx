@@ -376,9 +376,15 @@ function App() {
             <div className="credentials-meta">
               <div><h3>Certifications</h3><ul><li>AZ-900 · Azure</li><li>GH-300 · GitHub Copilot</li><li>IA-901 · Intelligence artificielle</li></ul></div>
               <div><h3>Langues</h3><ul><li>Français · langue maternelle</li><li>Anglais · professionnel</li><li>Allemand · notions</li></ul></div>
-              <p className="personal-note">Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024. Intérêt personnel pour l’art, les expositions et les ateliers créatifs.</p>
             </div>
           </div>
+          <aside className="personal-note" aria-label="Transmission et centres d’intérêt">
+            <p className="personal-note-label">Transmission & curiosité</p>
+            <div>
+              <p className="personal-note-statement"><strong>Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.</strong></p>
+              <p className="personal-note-interest">Intérêt personnel pour l’art, les expositions et les ateliers créatifs.</p>
+            </div>
+          </aside>
         </section>
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">

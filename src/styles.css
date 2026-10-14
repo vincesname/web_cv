@@ -142,7 +142,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .credentials-meta h3 { margin: 0 0 9px; color: var(--forest); font-size: 13px; font-weight: 650; }
 .credentials-meta ul { margin: 0; padding: 0; color: var(--muted); font-size: 12px; list-style: none; }
 .credentials-meta li + li { margin-top: 4px; }
-.personal-note { grid-column: 1 / -1; margin: 0; padding-top: 15px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.personal-note { display: grid; grid-template-columns: minmax(165px, .42fr) minmax(0, 1.58fr); gap: clamp(24px, 5vw, 60px); align-items: start; margin-top: 43px; padding-top: 22px; border-top: 1px solid var(--line); }
+.personal-note-label { margin: 4px 0 0; color: var(--forest); font-size: 11px; font-weight: 650; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
+.personal-note-statement { margin: 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(1.3rem, 2vw, 1.8rem); font-weight: 500; line-height: 1.35; }
+.personal-note-statement strong { font-weight: 500; }
+.personal-note-interest { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
 
 .contact-section { background: var(--forest-deep); color: var(--paper); }
 .contact-wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(350px, 1.1fr); gap: clamp(48px, 9vw, 124px); padding-block: 88px 94px; }
@@ -227,6 +231,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .credentials-body { grid-template-columns: 1fr; gap: 28px; }
   .credentials-meta { gap: 22px 18px; }
   .education-list article { grid-template-columns: 95px minmax(0, 1fr); gap: 12px; }
+  .personal-note { grid-template-columns: 1fr; gap: 8px; margin-top: 30px; padding-top: 18px; }
+  .personal-note-label { margin-top: 0; }
+  .personal-note-statement { font-size: clamp(1.3rem, 6vw, 1.6rem); }
+  .personal-note-interest { font-size: 13px; }
 
   .contact-wrap { grid-template-columns: 1fr; gap: 34px; padding-block: 70px; }
   .contact-copy h2 { margin-top: 13px; font-size: clamp(2.8rem, 10vw, 3.7rem); }

@@ -181,6 +181,11 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Type and spacing:** The title uses the existing Georgia section-heading style; supporting context sits directly beneath it.
 - **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact area keeps its short index alongside its separate call-to-action heading.
 
+### Personal Note
+- **Character:** A full-width editorial callout highlights professional transmission and personal interests beneath education and credentials.
+- **Type and spacing:** A small forest label sits beside a larger Georgia statement, followed by quieter supporting copy; a fine top rule anchors the row without a card surface.
+- **Responsive behavior:** The label moves above the statement on narrow screens.
+
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
 - **Shape:** Square corners (0px radius); the primary action has a 46px minimum height.

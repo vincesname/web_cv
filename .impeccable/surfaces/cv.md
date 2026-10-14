@@ -18,7 +18,7 @@ The header identifies Vincent and offers section navigation and the PDF CV. The 
 
 ## FORM
 
-Use one numbered title per section to avoid repeating the same subject in a separate index and headline. Keep the project transitions as simple typographic rows, not cards. Use one flat forest-green measure band with six verified indicators in three columns by two rows on wide screens; use two columns on smaller screens. Define front-end and back-end technology counts from the mission stacks; count databases such as Cosmos DB as back-end and exclude cloud platforms, tooling, and business tools. Show all expertise areas as open content. List companies and missions newest first; each mission uses native disclosure for its detail and environment. Use no entrance animation; hover and disclosure feedback stay brief and subtle, with reduced motion respected.
+Use one numbered title per section to avoid repeating the same subject in a separate index and headline. Present the jury role and personal interests as a full-width editorial callout under education and credentials. Keep the project transitions as simple typographic rows, not cards. Use one flat forest-green measure band with six verified indicators in three columns by two rows on wide screens; use two columns on smaller screens. Define front-end and back-end technology counts from the mission stacks; count databases such as Cosmos DB as back-end and exclude cloud platforms, tooling, and business tools. Show all expertise areas as open content. List companies and missions newest first; each mission uses native disclosure for its detail and environment. Use no entrance animation; hover and disclosure feedback stay brief and subtle, with reduced motion respected.
 
 ## QUALITY BAR
 
