@@ -22,30 +22,6 @@ const links = {
   cv: '/CV_Vincent_Mangel.pdf',
 };
 
-const recentTransitions = [
-  {
-    client: 'Legrand',
-    period: 'Nov. 2025 — févr. 2026',
-    from: 'Données métier',
-    to: 'PLM',
-    note: 'Scripts de traitement et de conversion de données pour un outil PLM',
-  },
-  {
-    client: 'CNR',
-    period: 'Juil. 2025 — févr. 2026',
-    from: 'WPF',
-    to: 'Application web',
-    note: 'Ateliers utilisateurs et définition de l’architecture cible',
-  },
-  {
-    client: 'Private GPT',
-    period: 'Juil. 2025 — oct. 2025',
-    from: 'Blazor',
-    to: 'React',
-    note: 'Architecture front-end et accompagnement de l’équipe de développement',
-  },
-];
-
 const expertise = [
   {
     number: '01',
@@ -288,17 +264,13 @@ function App() {
             </div>
           </div>
 
-          <div className="recent-work" aria-labelledby="recent-work-title">
-            <h2 id="recent-work-title">Refontes & migrations</h2>
-            <ol>
-              {recentTransitions.map((mission) => (
-                <li key={mission.client}>
-                  <div className="mission-meta"><strong>{mission.client}</strong><span>{mission.period}</span></div>
-                  <p className="transition"><span>{mission.from}</span><span className="transition-arrow" aria-hidden="true">→</span><span>{mission.to}</span></p>
-                  <p className="mission-note">{mission.note}</p>
-                </li>
-              ))}
-            </ol>
+          <div className="approach-summary" aria-labelledby="approach-title">
+            <h2 id="approach-title">Ma façon d’intervenir</h2>
+            <ul className="approach-list">
+              <li><h3>Cadrer</h3><p>Je pars du besoin métier et de l’existant pour définir l’architecture cible.</p></li>
+              <li><h3>Faire évoluer</h3><p>Je modernise les applications et les données en tenant compte des contraintes du projet.</p></li>
+              <li><h3>Travailler avec l’équipe</h3><p>Je participe aux choix techniques, accompagne les développeurs et reste proche du code.</p></li>
+            </ul>
           </div>
         </section>
 

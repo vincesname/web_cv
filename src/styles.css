@@ -69,17 +69,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .button-text { color: var(--forest-deep); font-size: 14px; font-weight: 600; text-decoration: underline; text-decoration-color: #8e9e8f; text-underline-offset: 5px; }
 .button-text:hover { color: var(--rust); text-decoration-color: currentColor; }
 
-.recent-work { min-width: 0; padding-left: clamp(25px, 4vw, 48px); border-left: 1px solid #a7b7a6; }
-.recent-work h2 { margin: 0 0 9px; color: var(--forest); font-size: 12px; font-weight: 650; letter-spacing: .11em; text-transform: uppercase; }
-.recent-work ol { margin: 0; padding: 0; list-style: none; }
-.recent-work li { padding: 18px 0 17px; border-bottom: 1px solid var(--line); }
-.recent-work li:last-child { border-bottom: 0; }
-.mission-meta { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
-.mission-meta strong { color: var(--forest-deep); font-size: 15px; font-weight: 650; }
-.mission-meta span { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; text-align: right; }
-.transition { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 5px 0 0; color: var(--ink); font-family: var(--serif); font-size: clamp(19px, 2vw, 25px); line-height: 1.25; letter-spacing: -.025em; }
-.transition-arrow { color: var(--rust); font-family: "IBM Plex Sans Variable", sans-serif; font-size: 18px; }
-.mission-note { margin: 5px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.approach-summary { min-width: 0; padding-left: clamp(25px, 4vw, 48px); border-left: 1px solid #a7b7a6; }
+.approach-summary h2 { margin: 0 0 9px; color: var(--forest); font-size: 12px; font-weight: 650; letter-spacing: .11em; text-transform: uppercase; }
+.approach-list { margin: 0; padding: 0; list-style: none; }
+.approach-list li { padding: 15px 0; border-top: 1px solid var(--line); }
+.approach-list h3 { margin: 0; color: var(--forest-deep); font-size: 15px; font-weight: 650; line-height: 1.4; }
+.approach-list p { max-width: 45ch; margin: 4px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
 
 .proof-band { background: var(--forest-deep); color: var(--paper); }
 .proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: 16px; }
@@ -171,9 +166,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .page-wrap, .header-inner { width: min(var(--page), calc(100% - 48px)); }
   .hero { grid-template-columns: minmax(0, 1fr) minmax(290px, .83fr); gap: 42px; }
   .hero h1 { font-size: clamp(3.1rem, 7vw, 4.5rem); }
-  .recent-work { padding-left: 25px; }
-  .mission-meta { align-items: flex-start; flex-direction: column; gap: 0; }
-  .mission-meta span { text-align: left; }
+  .approach-summary { padding-left: 25px; }
   .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .proof-item { padding-inline: 23px; }
   .proof-item:nth-child(3n) { border-right: 1px solid #567264; }
@@ -195,8 +188,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .hero { grid-template-columns: 1fr; gap: 46px; padding-block: 60px 58px; }
   .hero h1 { max-width: 12ch; font-size: clamp(3.1rem, 11vw, 4.5rem); }
   .hero-intro { margin-top: 20px; font-size: 16px; }
-  .recent-work { max-width: 560px; padding-left: 20px; }
-  .mission-meta { align-items: baseline; flex-direction: row; }
+  .approach-summary { max-width: 560px; padding-left: 20px; }
 
   .proof-grid { padding-block: 8px; }
   .proof-item { min-height: 136px; padding: 16px 13px; border-right: 1px solid #567264; border-bottom: 1px solid #567264; }
@@ -252,7 +244,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .hero h1 { font-size: 2.9rem; }
   .hero-actions { gap: 10px 17px; }
   .button-primary, .button-text { font-size: 12px; }
-  .mission-meta { align-items: flex-start; flex-direction: column; }
   .proof-item { min-height: 130px; padding-inline: 8px; }
   .proof-item dd { gap: 6px; }
   .proof-item dd strong { font-size: 35px; }

@@ -6,19 +6,19 @@ Recruiters and technical managers can identify Vincent’s role fit, inspect evi
 
 ## OWN-WORLD
 
-An editorial technical portfolio in forest green and warm paper. IBM Plex Sans carries the reading; a restrained serif display face gives project transitions and section headings a distinct voice. Hairline rules and whitespace carry the structure.
+An editorial technical portfolio in forest green and warm paper. IBM Plex Sans carries the reading; a restrained serif display face gives headings a distinct voice. Hairline rules and whitespace carry the structure.
 
 ## STORY
 
-Read the role and scope, see three concrete refactors or migrations, scan six career indicators, then review the reverse-chronological work history and contact links.
+Read my role and scope, get a broad view of how I work, scan six career indicators, then review my reverse-chronological work history and contact links.
 
 ## FIRST VIEWPORT
 
-The header identifies Vincent and offers section navigation and the PDF CV. The left column gives the role, an evidence-led introduction, location and contact/download actions. The right column names CNR, Legrand and the internal Private GPT project beside their actual transitions and scopes. The first screen should not require scrolling to understand the profile or its strongest technical proof.
+The header identifies Vincent and offers section navigation and the PDF CV. The left column gives the role, an evidence-led introduction, location and contact/download actions. The right column summarizes his general approach through three concise points: framing the need, evolving applications, and working with the team. The first screen should make his profile and way of working clear; concrete client missions appear in the experience timeline.
 
 ## FORM
 
-Use one numbered title per section to avoid repeating the same subject in a separate index and headline. Present the jury role and personal interests as a full-width editorial callout under education and credentials. Keep the project transitions as simple typographic rows, not cards. Use one flat forest-green measure band with six verified indicators in three columns by two rows on wide screens; use two columns on smaller screens. Define front-end and back-end technology counts from the mission stacks; count databases such as Cosmos DB as back-end and exclude cloud platforms, tooling, and business tools. Show all expertise areas as open content. List companies and missions newest first; each mission uses native disclosure for its detail and environment. Use no entrance animation; hover and disclosure feedback stay brief and subtle, with reduced motion respected.
+Use one numbered title per section to avoid repeating the same subject in a separate index and headline. Present the jury role and personal interests as a full-width editorial callout under education and credentials. Keep the general approach summary as three open, typographic rows, not cards; leave specific client examples in the experience timeline. Use one flat forest-green measure band with six verified indicators in three columns by two rows on wide screens; use two columns on smaller screens. Define front-end and back-end technology counts from the mission stacks; count databases such as Cosmos DB as back-end and exclude cloud platforms, tooling, and business tools. Show all expertise areas as open content. List companies and missions newest first; each mission uses native disclosure for its detail and environment. Use no entrance animation; hover and disclosure feedback stay brief and subtle, with reduced motion respected.
 
 ## QUALITY BAR
 

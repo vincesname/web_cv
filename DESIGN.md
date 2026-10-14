@@ -48,12 +48,6 @@ typography:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
     fontWeight: 600
-  transition:
-    fontFamily: "Georgia, 'Times New Roman', serif"
-    fontSize: "clamp(19px, 2vw, 25px)"
-    fontWeight: 400
-    lineHeight: 1.25
-    letterSpacing: "-0.025em"
   summary:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
@@ -83,10 +77,11 @@ components:
     backgroundColor: "{colors.forest-deep}"
     textColor: "{colors.paper}"
     padding: "16px 0"
-  transition-row:
+  approach-summary:
     textColor: "{colors.ink}"
-    typography: "{typography.transition}"
-    padding: "18px 0 17px"
+    padding: "15px 0"
+    borderLeft: "1px solid #a7b7a6"
+    rowBorderTop: "1px solid {colors.line}"
   expertise-column:
     textColor: "{colors.ink}"
     padding: "16px 0 0"
@@ -110,7 +105,7 @@ components:
 
 The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers.
 
-Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings and project transitions. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.
+Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.
 
 **Key Characteristics:**
 - Forest green carries primary emphasis; rust is a restrained pointer.
@@ -145,7 +140,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 **Body Font:** IBM Plex Sans Variable (with IBM Plex Sans and sans-serif fallbacks)  
 **Label/Mono Font:** IBM Plex Sans; tabular numerals are used for dates and figures.
 
-**Character:** IBM Plex Sans keeps reading and controls practical and clear. Georgia gives large headings and transition lines a quieter editorial voice.
+**Character:** IBM Plex Sans keeps reading and controls practical and clear. Georgia gives display headings a quieter editorial voice.
 
 ### Hierarchy
 - **Display** (500, responsive 3.4rem–5.25rem, 1.01 line-height): The hero heading; it tightens at narrower breakpoints.
@@ -155,7 +150,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 - **Label** (650, 11–13px, tracked): Eyebrows, indexes, and small metadata; uppercase is used where the content calls for it.
 
 ### Named Rules
-**The Two-Voice Rule.** Use IBM Plex Sans for reading and controls; reserve Georgia for display headings, subheadings, and transition lines.
+**The Two-Voice Rule.** Use IBM Plex Sans for reading and controls; reserve Georgia for display headings and subheadings.
 
 ## Layout
 
@@ -172,7 +167,7 @@ The system is flat. It uses no box shadows; changes between warm paper and alter
 
 ## Shapes
 
-Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules create edges around sections and rows; the recent-work rail adds a single vertical rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
+Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules create edges around sections and rows; the approach summary uses a single vertical rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
 
 ## Components
 
@@ -205,11 +200,11 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Type and color:** Large Georgia numerals share a line with short evidence notes; paper tones provide contrast against deep forest.
 - **Responsive behavior:** Two columns remain at tablet and phone widths; a small footnote says that databases such as Cosmos DB count as back-end, while cloud platforms and tools are excluded.
 
-### Transition Rows
-- **Character:** Typographic before-and-after lines, grouped in a simple ordered list.
-- **Shape and spacing:** Open rows with bottom rules and 18px vertical padding; no card background.
-- **Type and color:** Client and date metadata sit above a Georgia transition line; a rust arrow marks the change.
-- **Behavior:** Long labels can wrap while remaining aligned to the baseline.
+### Approach Summary
+- **Character:** A short, general summary of how I work: framing, evolving applications, and working with the team. Specific client missions stay in the experience timeline.
+- **Shape and spacing:** Three open rows use fine top rules and 15px vertical padding, beside a single forest-tinted vertical rule; there is no card background.
+- **Type and color:** A small uppercase forest heading introduces sans-serif verbs and concise first-person descriptions.
+- **Responsive behavior:** The summary follows the hero copy on narrow screens and keeps its left rule and readable measure.
 
 ### Expertise Columns
 - **Character:** Three open columns with one short rule across each top edge.

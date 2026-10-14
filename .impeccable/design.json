@@ -23,7 +23,6 @@
       "nav": { "displayName": "Navigation", "purpose": "Header links in IBM Plex Sans." },
       "label": { "displayName": "Label", "purpose": "Eyebrows and section indexes in IBM Plex Sans." },
       "action": { "displayName": "Action", "purpose": "Primary and contact actions in IBM Plex Sans." },
-      "transition": { "displayName": "Transition", "purpose": "Project transformation lines in Georgia." },
       "summary": { "displayName": "Summary", "purpose": "Experience disclosure titles in IBM Plex Sans." }
     },
     "shadows": [],
@@ -71,12 +70,12 @@
       "css": ".ds-proof-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); padding:16px 0; background:var(--forest-deep); color:var(--paper); } .ds-proof-grid dl { display:flex; min-width:0; min-height:132px; flex-direction:column; justify-content:center; margin:0; padding:18px 32px; border-right:1px solid #567264; border-bottom:1px solid #567264; } .ds-proof-grid dl:nth-child(3n) { border-right:0; } .ds-proof-grid dl:nth-last-child(-n+3) { border-bottom:0; } .ds-proof-grid dd { display:grid; grid-template-columns:auto minmax(0,1fr); align-items:baseline; gap:14px; order:-1; margin:0; } .ds-proof-grid dd strong { color:#e4eadc; font:500 50px/1.1 Georgia,'Times New Roman',serif; font-variant-numeric:tabular-nums; letter-spacing:-.04em; } .ds-proof-grid dd span,.ds-proof-grid dt,.ds-proof-note { color:#d1dace; font:11px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-proof-grid dt { margin-top:3px; font-size:12px; font-weight:560; } .ds-proof-note { margin:0 auto; padding:0 0 15px; font-size:10px; } @media (max-width:900px) { .ds-proof-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .ds-proof-grid dl:nth-child(3n) { border-right:1px solid #567264; } .ds-proof-grid dl:nth-child(2n) { border-right:0; } .ds-proof-grid dl:nth-last-child(-n+3) { border-bottom:1px solid #567264; } .ds-proof-grid dl:nth-last-child(-n+2) { border-bottom:0; } } @media (max-width:700px) { .ds-proof-grid { padding:8px 0; } .ds-proof-grid dl { min-height:136px; padding:16px 13px; } .ds-proof-grid dd { gap:9px; } .ds-proof-grid dd strong { font-size:41px; } .ds-proof-grid dd span { font-size:10.5px; } .ds-proof-grid dt { font-size:11px; } } @media (max-width:400px) { .ds-proof-grid dl { min-height:130px; padding-inline:8px; } .ds-proof-grid dd { gap:6px; } .ds-proof-grid dd strong { font-size:35px; } .ds-proof-grid dd span { font-size:9.5px; } .ds-proof-grid dt { font-size:10px; } }"
     },
     {
-      "name": "Transition Rows",
+      "name": "Approach Summary",
       "kind": "custom",
-      "refersTo": "transition-row",
-      "description": "Open before-and-after project rows with client metadata and a rust arrow.",
-      "html": "<ol class=\"ds-transitions\"><li><strong>Legrand</strong><small>Nov. 2025 — févr. 2026</small><p>Données métier <span aria-hidden=\"true\">→</span> PLM</p><small>Traitement et migration de données</small></li><li><strong>CNR</strong><small>Juil. 2025 — févr. 2026</small><p>WPF <span aria-hidden=\"true\">→</span> Application web</p><small>Cadrage technique et architecture cible</small></li><li><strong>Private GPT</strong><small>Juil. 2025 — oct. 2025</small><p>Blazor <span aria-hidden=\"true\">→</span> React</p><small>Tech Lead front-end · plateforme agentique</small></li></ol>",
-      "css": ".ds-transitions { margin:0; padding:0; list-style:none; } .ds-transitions li { display:grid; grid-template-columns:1fr auto; gap:5px 14px; padding:18px 0 17px; border-bottom:1px solid var(--line); } .ds-transitions li strong { color:var(--forest-deep); font:650 15px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-transitions li small { color:var(--muted); font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-align:right; } .ds-transitions li p { grid-column:1/-1; display:flex; flex-wrap:wrap; gap:8px; margin:0; color:var(--ink); font:clamp(19px,2vw,25px)/1.25 Georgia,'Times New Roman',serif; letter-spacing:-.025em; } .ds-transitions li p span { color:var(--rust); font:18px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-transitions li small:last-child { grid-column:1/-1; text-align:left; font-size:12px; }"
+      "refersTo": "approach-summary",
+      "description": "A general first-person summary of how I frame work, evolve applications, and work with teams; specific missions remain in the experience timeline.",
+      "html": "<div class=\"ds-approach\" aria-labelledby=\"ds-approach-title\"><h2 id=\"ds-approach-title\">Ma façon d’intervenir</h2><ul><li><h3>Cadrer</h3><p>Je pars du besoin métier et de l’existant pour définir l’architecture cible.</p></li><li><h3>Faire évoluer</h3><p>Je modernise les applications et les données en tenant compte des contraintes du projet.</p></li><li><h3>Travailler avec l’équipe</h3><p>Je participe aux choix techniques, accompagne les développeurs et reste proche du code.</p></li></ul></div>",
+      "css": ".ds-approach { min-width:0; padding-left:clamp(25px,4vw,48px); border-left:1px solid #a7b7a6; } .ds-approach h2 { margin:0 0 9px; color:var(--forest); font:650 12px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; letter-spacing:.11em; text-transform:uppercase; } .ds-approach ul { margin:0; padding:0; list-style:none; } .ds-approach li { padding:15px 0; border-top:1px solid var(--line); } .ds-approach h3 { margin:0; color:var(--forest-deep); font:650 15px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-approach p { max-width:45ch; margin:4px 0 0; color:var(--muted); font:13px/1.5 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:900px) { .ds-approach { padding-left:25px; } } @media (max-width:700px) { .ds-approach { max-width:560px; padding-left:20px; } }"
     },
     {
       "name": "Expertise Columns",
@@ -105,7 +104,7 @@
   ],
   "narrative": {
     "northStar": "The Editorial Evidence Record",
-    "overview": "The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries without framing each item as a card. Its mood is calm, direct, and evidence-led for recruiters and technical managers.\n\nWarm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings and project transitions. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.",
+    "overview": "The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries without framing each item as a card. The hero introduces a general first-person summary of how I work; specific client evidence appears in the experience timeline. Its mood is calm, direct, and evidence-led for recruiters and technical managers.\n\nWarm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.",
     "keyCharacteristics": [
       "Forest green carries primary emphasis; rust is a restrained pointer.",
       "IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.",
@@ -114,7 +113,7 @@
     ],
     "rules": [
       { "name": "The Green Structure Rule", "body": "Forest green establishes hierarchy; rust stays a small directional and focus accent.", "section": "colors" },
-      { "name": "The Two-Voice Rule", "body": "Use IBM Plex Sans for reading and controls; reserve Georgia for display headings, subheadings, and transition lines.", "section": "typography" },
+      { "name": "The Two-Voice Rule", "body": "Use IBM Plex Sans for reading and controls; reserve Georgia for display headings and subheadings.", "section": "typography" },
       { "name": "The Paper-Plane Rule", "body": "Paper shifts and fine rules define planes; no shadow treatment is part of the current system.", "section": "elevation" }
     ],
     "dos": [
