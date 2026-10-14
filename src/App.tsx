@@ -397,7 +397,7 @@ function App() {
             <div className="contact-actions">
               <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">E-mail</span><strong>{links.email}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
               <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">Téléphone</span><strong>{links.displayPhone}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
-              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">Rendez-vous</span><strong>Choisir un créneau</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
+              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
               <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">Profil</span><strong>LinkedIn</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
