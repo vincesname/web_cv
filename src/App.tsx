@@ -316,8 +316,7 @@ function App() {
 
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
           <div className="section-heading">
-            <p className="section-index">01 / COMPÉTENCES</p>
-            <div><h2 id="expertise-title">Domaines d’intervention</h2><p>Un profil qui relie les choix techniques aux besoins métier et à la réalisation.</p></div>
+            <div><h2 id="expertise-title">01 / EXPERTISES</h2><p>Un profil qui relie les choix techniques aux besoins métier et à la réalisation.</p></div>
           </div>
           <div className="expertise-grid">
             {expertise.map((area) => (
@@ -335,8 +334,7 @@ function App() {
         <section className="experience-section" id="experience" aria-labelledby="experience-title">
           <div className="page-wrap">
             <div className="section-heading experience-heading">
-              <p className="section-index">02 / EXPÉRIENCE</p>
-              <div><h2 id="experience-title">Parcours professionnel</h2><p>Les missions sont présentées de la plus récente à la plus ancienne. Ouvrez une ligne pour le détail et l’environnement technique.</p></div>
+              <div><h2 id="experience-title">02 / EXPÉRIENCE</h2><p>Les missions sont présentées de la plus récente à la plus ancienne. Ouvrez une ligne pour le détail et l’environnement technique.</p></div>
             </div>
             <div className="timeline">
               {experienceGroups.map((group) => (
@@ -368,8 +366,7 @@ function App() {
 
         <section className="credentials-section page-wrap" aria-labelledby="credentials-title">
           <div className="section-heading credentials-heading">
-            <p className="section-index">03 / FORMATION</p>
-            <div><h2 id="credentials-title">Formation & repères</h2></div>
+            <div><h2 id="credentials-title">03 / FORMATION & REPÈRES</h2></div>
           </div>
           <div className="credentials-body">
             <div className="education-list">

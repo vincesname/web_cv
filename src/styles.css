@@ -93,7 +93,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .proof-note { margin: 0 auto; padding: 0 0 15px; color: #d1dace; font-size: 10px; line-height: 1.45; }
 
 .expertise-section { padding-block: 104px 108px; }
-.section-heading { display: grid; grid-template-columns: minmax(150px, .55fr) minmax(0, 1.45fr); gap: 35px; align-items: start; margin-bottom: 43px; }
+.section-heading { display: block; margin-bottom: 43px; }
 .section-index { margin: 10px 0 0; color: var(--forest); font-size: 11px; font-weight: 650; letter-spacing: .1em; }
 .section-heading h2 { margin: 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(2.35rem, 4vw, 3.3rem); font-weight: 500; line-height: 1.08; letter-spacing: -.045em; }
 .section-heading > div > p { max-width: 57ch; margin: 13px 0 0; color: var(--muted); font-size: 15px; }
@@ -202,7 +202,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item dt { font-size: 11px; }
 
   .expertise-section, .credentials-section { padding-block: 72px; }
-  .section-heading { grid-template-columns: 1fr; gap: 9px; margin-bottom: 29px; }
+  .section-heading { margin-bottom: 29px; }
   .section-index { margin-top: 0; }
   .section-heading h2 { font-size: clamp(2.3rem, 9vw, 3.1rem); }
   .section-heading > div > p { margin-top: 10px; font-size: 14px; }

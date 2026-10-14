@@ -159,7 +159,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. At desktop widths, the hero and section headings use editorial columns; the six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. The hero uses editorial columns; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -175,6 +175,11 @@ The system is flat. It uses no box shadows; changes between warm paper and alter
 Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules create edges around sections and rows; the recent-work rail adds a single vertical rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
 
 ## Components
+
+### Section Headings
+- **Character:** One numbered uppercase title names each content section, avoiding a separate index and a second title that repeat the same subject.
+- **Type and spacing:** The title uses the existing Georgia section-heading style; supporting context sits directly beneath it.
+- **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact area keeps its short index alongside its separate call-to-action heading.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
