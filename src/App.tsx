@@ -211,7 +211,7 @@ function CareerSnapshot() {
         <span className="career-caption">Du développement au Tech Lead et à l’architecture</span>
       </figcaption>
       <ol className="career-track">
-        {[...experienceGroups].reverse().map((group, index) => (
+        {experienceGroups.map((group, index) => (
           <li className="career-stage" key={group.company}>
             <span className="career-marker" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
             <div className="career-stage-copy">

@@ -360,7 +360,7 @@ h1, h2, h3, h4, p, figure, dl { margin-top: 0; }
   font-variant-numeric: tabular-nums;
 }
 
-.career-stage:last-child .career-marker {
+.career-stage:first-child .career-marker {
   border-color: var(--coral-light);
   background: #8c482f;
   color: white;
