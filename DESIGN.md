@@ -121,7 +121,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 - **Forest Green:** Structures headings, primary actions, and dark section bands; the deeper green supports the strongest text and hover states.
 
 ### Secondary
-- **Restrained Rust:** Marks transition arrows and numbered indexes, and provides hover and keyboard-focus emphasis.
+- **Restrained Rust:** Marks numbered indexes and directional cues, and provides hover and keyboard-focus emphasis.
 
 ### Neutral
 - **Warm Paper:** The main reading canvas.
@@ -195,10 +195,10 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Focus:** All links retain the visible rust keyboard outline.
 
 ### Proof Band
-- **Character:** A flat, full-width forest measure band with six career indicators: employers, clients, experience, roles, and front-end/back-end technologies.
+- **Character:** A flat, full-width forest measure band with six career indicators: ESN employers, a lower-bound client count, experience, role families, and front-end/back-end and infrastructure skills.
 - **Shape and spacing:** No radius; three columns by two rows on wide screens, with fine separators and 16px vertical padding. Below 900px it uses two columns.
-- **Type and color:** Large Georgia numerals share a line with short evidence notes; paper tones provide contrast against deep forest.
-- **Responsive behavior:** Two columns remain at tablet and phone widths; a small footnote says that databases such as Cosmos DB count as back-end, while cloud platforms and tools are excluded.
+- **Type and color:** Large Georgia figures sit above their short labels; paper tones provide contrast against deep forest.
+- **Responsive behavior:** Two columns remain at tablet and phone widths. The band contains only figures and labels, without supporting notes or a methodology footnote.
 
 ### Approach Summary
 - **Character:** A short, general summary of how I work: framing, evolving applications, and working with the team. Specific client missions stay in the experience timeline.

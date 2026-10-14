@@ -141,7 +141,8 @@ const experienceGroups: ExperienceGroup[] = [
 ];
 
 const esnEmployers = ['Exakis-Nelite', 'Apollo SSC', 'Exo Partners'];
-const clientOrganizations = [
+// The career history also mentions unnamed client assignments, so this is a minimum.
+const knownClientOrganizations = [
   'Watts',
   'Legrand',
   'CNR',
@@ -152,86 +153,46 @@ const clientOrganizations = [
   'INDESO',
 ];
 
-// Distinct role labels across client missions; the same title is counted once.
-const distinctRoles = [
-  'Tech Lead',
-  'Responsable technique',
-  'Architecte technique',
-  'Tech Lead front-end',
-  'Responsable équipe technique',
-  'Développeur full stack',
-  'Analyste technique',
-  'Lead Developer',
-  'Chef de projet',
-  'Développeur logiciel',
+// Role families group equivalent titles such as Tech Lead and Lead Developer.
+const roleFamilies = [
+  'Leadership technique',
+  'Architecture technique',
+  'Développement logiciel',
+  'Analyse technique',
+  'Gestion de projet',
 ];
 
-// Counts cover unique technologies shown in the mission stacks, grouped by use.
-const frontendTechnologies = [
-  'React',
-  'Tailwind CSS',
-  'WPF',
-  'Angular',
-  'Telerik',
-  'Blazor',
-  'MUI',
-  'Angular Material',
-  'TypeScript',
-  'D3.js',
-  'RxJS',
-  'WinForms',
-  'Silverlight',
-];
-const backendTechnologies = [
-  'C#',
-  'API REST',
-  'PowerShell',
-  'Python',
-  'SQL Server',
-  'Oracle',
-  'Azure Cosmos DB',
-  '.NET Core',
-  'RPG',
-  'AS/400',
-  'Entity Framework',
-  '.NET Framework',
-  'ASP.NET',
-  'VB.NET',
-];
+// Lower bounds cover front-end skills and back-end/infrastructure together.
+const frontendSkillCount = '10+';
+const backendAndInfrastructureSkillCount = '15+';
 
 const now = new Date();
 const yearsOfExperience = now.getFullYear() - 2015 - (now.getMonth() < 8 ? 1 : 0);
 
 const proofItems = [
   {
-    label: 'ESN employeurs',
+    label: 'ESN',
     value: esnEmployers.length,
-    note: esnEmployers.join(' · '),
   },
   {
     label: 'Clients',
-    value: clientOrganizations.length,
-    note: 'Watts · Legrand · CNR…',
+    value: `${knownClientOrganizations.length}+`,
   },
   {
     label: 'Années d’expérience',
     value: yearsOfExperience,
-    note: 'Depuis septembre 2015',
   },
   {
     label: 'Rôles distincts',
-    value: distinctRoles.length,
-    note: 'Intitulés relevés dans les missions',
+    value: roleFamilies.length,
   },
   {
-    label: 'Technologies front-end',
-    value: frontendTechnologies.length,
-    note: 'Interfaces · React · Angular · WPF…',
+    label: 'Maîtrises front-end',
+    value: frontendSkillCount,
   },
   {
-    label: 'Technologies back-end',
-    value: backendTechnologies.length,
-    note: 'Services et données · C# · .NET · SQL…',
+    label: 'Maîtrises back-end et infra',
+    value: backendAndInfrastructureSkillCount,
   },
 ];
 
@@ -279,11 +240,10 @@ function App() {
             {proofItems.map((item) => (
               <dl className="proof-item" key={item.label}>
                 <dt>{item.label}</dt>
-                <dd><strong>{item.value}</strong><span>{item.note}</span></dd>
+                <dd><strong>{item.value}</strong></dd>
               </dl>
             ))}
           </div>
-          <p className="page-wrap proof-note">Je compte les technologies citées dans mes missions ; les bases de données, dont Cosmos DB, sont incluses côté back, mais pas les plateformes et outils cloud ou métier.</p>
         </section>
 
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
