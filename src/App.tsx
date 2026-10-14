@@ -63,9 +63,9 @@ const areas: ExpertiseArea[] = [
     id: 'delivery',
     label: 'Développement & cloud',
     title: 'Rester proche du code, du front à la donnée.',
-    text: 'Mon parcours de développeur full stack nourrit mon approche d’architecte : je peux entrer dans le détail, construire un socle technique et accompagner sa mise en œuvre.',
-    proof: 'Watts · Architecture full stack et réécriture d’un portail d’administration',
-    skills: ['C# / .NET', 'React', 'Angular', 'TypeScript', 'Azure', 'SQL Server'],
+    text: 'Mon parcours de développeur full stack nourrit mon approche d’architecte : je peux entrer dans le détail, construire un socle technique et accompagner sa mise en œuvre, y compris sur le front-end d’une plateforme Private GPT agentique.',
+    proof: 'Private GPT · Refonte du front d’une plateforme agentique (Blazor → React)',
+    skills: ['C# / .NET', 'React', 'Angular', 'TypeScript', 'Azure', 'Azure AI', 'IA agentique', 'SQL Server'],
   },
 ];
 
@@ -109,9 +109,9 @@ const experienceGroups: ExperienceGroup[] = [
       {
         title: 'Tech Lead front-end · Projet Private GPT',
         period: 'Juil. 2025 — oct. 2025',
-        summary: 'Réécriture de l’interface d’une application multi-LLM, de Blazor vers React.',
-        details: 'Définition de l’architecture front, du socle technique et des bonnes pratiques, puis coordination et accompagnement des développeurs. Le périmètre de la mission était le front-end ; l’infrastructure et le back-end étaient pris en charge par une autre équipe.',
-        stack: ['React', 'Blazor', 'LLM locaux', 'MUI'],
+        summary: 'Refonte front-end d’une plateforme Private GPT agentique, de Blazor vers React.',
+        details: 'Définition de l’architecture front, du socle technique et des bonnes pratiques, puis coordination et accompagnement des développeurs. Le périmètre de la mission était le front-end ; le back-end et l’infrastructure étaient pris en charge par une autre équipe.',
+        stack: ['React', 'Blazor', 'LLM locaux', 'MUI', 'C#', 'Azure Cosmos DB', 'Azure AI', 'App Service'],
         categories: ['architecture', 'leadership', 'delivery'],
       },
       {
@@ -180,14 +180,13 @@ const experienceGroups: ExperienceGroup[] = [
   },
 ];
 
-type IconName = 'arrow' | 'external' | 'download' | 'check' | 'mail' | 'phone' | 'calendar' | 'chevron';
+type IconName = 'arrow' | 'external' | 'download' | 'mail' | 'phone' | 'calendar' | 'chevron';
 
 function Icon({ name, className = '' }: { name: IconName; className?: string }) {
   const paths: Record<IconName, ReactNode> = {
     arrow: <><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></>,
     external: <><path d="M14 4h6v6" /><path d="M20 4 10 14" /><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" /></>,
     download: <><path d="M12 3v12" /><path d="m7 10 5 5 5-5" /><path d="M5 21h14" /></>,
-    check: <path d="m5 12 4 4L19 6" />,
     mail: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></>,
     phone: <path d="M7 3H5a2 2 0 0 0-2 2c0 8.84 7.16 16 16 16a2 2 0 0 0 2-2v-2l-4.3-1.2-2 2a14 14 0 0 1-6.5-6.5l2-2L11 5H7Z" />,
     calendar: <><rect x="3" y="5" width="18" height="16" rx="2" /><path d="M16 3v4M8 3v4M3 10h18M8 14h3M8 17h6" /></>,
@@ -200,27 +199,29 @@ function Icon({ name, className = '' }: { name: IconName; className?: string }) 
   );
 }
 
-function ApproachMap() {
+const technologyCount = new Set(
+  experienceGroups.flatMap((group) => group.items.flatMap((item) => item.stack)),
+).size;
+
+function CareerSnapshot() {
   return (
-    <figure className="approach-map" aria-labelledby="approach-map-title">
+    <figure className="career-snapshot" aria-labelledby="career-snapshot-title">
       <figcaption>
-        <span id="approach-map-title" className="map-title">Du système à l’équipe</span>
-        <span className="map-caption">Une démarche de bout en bout</span>
+        <span id="career-snapshot-title" className="career-title">Parcours en un coup d’œil</span>
+        <span className="career-caption">Du développement au Tech Lead et à l’architecture</span>
       </figcaption>
-      <div className="map-origin">
-        <span className="map-pin" aria-hidden="true" />
-        <span><strong>Un existant</strong><small>à comprendre</small></span>
-      </div>
-      <div className="map-route" aria-hidden="true"><span /><span /><span /></div>
-      <ol className="map-stages">
-        <li><span className="stage-number">01</span><strong>Comprendre</strong><small>le besoin et les contraintes</small></li>
-        <li><span className="stage-number">02</span><strong>Structurer</strong><small>une cible et son chemin</small></li>
-        <li><span className="stage-number">03</span><strong>Transmettre</strong><small>pour que l’équipe avance</small></li>
+      <ol className="career-track">
+        {[...experienceGroups].reverse().map((group, index) => (
+          <li className="career-stage" key={group.company}>
+            <span className="career-marker" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <div className="career-stage-copy">
+              <small>{group.period}</small>
+              <strong>{group.company}</strong>
+              <span>{group.context}</span>
+            </div>
+          </li>
+        ))}
       </ol>
-      <div className="map-destination">
-        <span className="map-check" aria-hidden="true"><Icon name="check" /></span>
-        <span><strong>Un logiciel durable</strong><small>et une équipe autonome</small></span>
-      </div>
     </figure>
   );
 }
@@ -307,15 +308,16 @@ function App() {
             </div>
             <p className="hero-footnote">Basé à Lyon · mobilité sur site ou hybride</p>
           </div>
-          <div className="hero-visual"><ApproachMap /></div>
+          <div className="hero-visual"><CareerSnapshot /></div>
         </section>
 
         <section className="proof-band" aria-label="Repères du parcours">
           <div className="page-wrap proof-grid">
-            <div className="proof-intro"><p>Un parcours qui relie</p><h2>la vision<br />au quotidien</h2></div>
+            <div className="proof-intro"><p>Repères du parcours</p><h2>Des faits<br />concrets.</h2></div>
             <dl className="proof-item"><dt>années d’expérience<br />depuis 2015</dt><dd>10<span>+</span></dd></dl>
-            <dl className="proof-item"><dt>leviers d’intervention<br />du cadrage à la livraison</dt><dd>4</dd></dl>
-            <dl className="proof-item"><dt>écosystèmes front<br />Angular & React</dt><dd>2</dd></dl>
+            <dl className="proof-item"><dt>organisations clientes<br />nommées dans le parcours</dt><dd>8</dd></dl>
+            <dl className="proof-item"><dt>technologies et outils<br />cités dans les missions</dt><dd>{technologyCount}</dd></dl>
+            <dl className="proof-item"><dt>projets coordonnés<br />en parallèle chez Ayming</dt><dd>3</dd></dl>
           </div>
         </section>
 
@@ -350,8 +352,9 @@ function App() {
           <div className="capability-ledger">
             <div className="ledger-heading"><h3>Technologies & méthodes</h3><p>Choisies selon le contexte, au service d’une solution maintenable.</p></div>
             <div className="ledger-row"><h4>Conception</h4><p>Analyse de l’existant · Architecture de solution · Cadrage technique · Spécifications · Migrations · Modernisation</p></div>
-            <div className="ledger-row"><h4>Développement</h4><p>C# · .NET / ASP.NET Core · TypeScript · Angular · React · Blazor · SQL Server · Oracle</p></div>
-            <div className="ledger-row"><h4>Plateforme & IA</h4><p>Azure · Azure DevOps · Bicep · PowerShell · Python · Django · LLM locaux · API REST</p></div>
+            <div className="ledger-row"><h4>Développement</h4><p>C# · .NET · TypeScript · Angular · React · Blazor · WPF · WinForms</p></div>
+            <div className="ledger-row"><h4>3 bases de données</h4><p>SQL Server · Oracle · Azure Cosmos DB · PLM · PowerShell · Python · Traitement et conversion de données</p></div>
+            <div className="ledger-row"><h4>Cloud & IA</h4><p>Azure · Azure AI · App Service · Bicep · LLM locaux · Plateforme Private GPT agentique</p></div>
           </div>
         </section>
 
@@ -391,7 +394,7 @@ function App() {
                         </summary>
                         <div className="experience-detail">
                           <p>{item.details}</p>
-                          <ul className="tag-list" aria-label="Technologies et méthodes">
+                          <ul className="tag-list" aria-label={`Technologies et méthodes pour ${item.title}`}>
                             {item.stack.map((skill) => <li key={skill}>{skill}</li>)}
                           </ul>
                         </div>
