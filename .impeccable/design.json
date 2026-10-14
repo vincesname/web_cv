@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T19:43:26Z",
+  "title": "Design System: Vincent Mangel",
+  "extensions": {
+    "colorMeta": {
+      "forest": { "role": "primary", "displayName": "Forest Green", "canonical": "#1d4b38", "tonalRamp": ["oklch(15% 0.061 163.7)", "oklch(26% 0.061 163.7)", "oklch(37% 0.061 163.7)", "oklch(48% 0.061 163.7)", "oklch(59% 0.061 163.7)", "oklch(70% 0.061 163.7)", "oklch(81% 0.061 163.7)", "oklch(92% 0.061 163.7)"] },
+      "forest-deep": { "role": "primary", "displayName": "Deep Forest", "canonical": "#173a2c", "tonalRamp": ["oklch(15% 0.048 164.9)", "oklch(26% 0.048 164.9)", "oklch(37% 0.048 164.9)", "oklch(48% 0.048 164.9)", "oklch(59% 0.048 164.9)", "oklch(70% 0.048 164.9)", "oklch(81% 0.048 164.9)", "oklch(92% 0.048 164.9)"] },
+      "forest-light": { "role": "primary", "displayName": "Pale Forest", "canonical": "#cbd9cb", "tonalRamp": ["oklch(15% 0.024 145.4)", "oklch(26% 0.024 145.4)", "oklch(37% 0.024 145.4)", "oklch(48% 0.024 145.4)", "oklch(59% 0.024 145.4)", "oklch(70% 0.024 145.4)", "oklch(81% 0.024 145.4)", "oklch(92% 0.024 145.4)"] },
+      "rust": { "role": "secondary", "displayName": "Restrained Rust", "canonical": "#a74931", "tonalRamp": ["oklch(15% 0.130 35.4)", "oklch(26% 0.130 35.4)", "oklch(37% 0.130 35.4)", "oklch(48% 0.130 35.4)", "oklch(59% 0.130 35.4)", "oklch(70% 0.130 35.4)", "oklch(81% 0.130 35.4)", "oklch(92% 0.130 35.4)"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#202b25", "tonalRamp": ["oklch(15% 0.019 161.0)", "oklch(26% 0.019 161.0)", "oklch(37% 0.019 161.0)", "oklch(48% 0.019 161.0)", "oklch(59% 0.019 161.0)", "oklch(70% 0.019 161.0)", "oklch(81% 0.019 161.0)", "oklch(92% 0.019 161.0)"] },
+      "muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#5c665f", "tonalRamp": ["oklch(15% 0.016 155.2)", "oklch(26% 0.016 155.2)", "oklch(37% 0.016 155.2)", "oklch(48% 0.016 155.2)", "oklch(59% 0.016 155.2)", "oklch(70% 0.016 155.2)", "oklch(81% 0.016 155.2)", "oklch(92% 0.016 155.2)"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f7f6f0", "tonalRamp": ["oklch(15% 0.008 98.9)", "oklch(26% 0.008 98.9)", "oklch(37% 0.008 98.9)", "oklch(48% 0.008 98.9)", "oklch(59% 0.008 98.9)", "oklch(70% 0.008 98.9)", "oklch(81% 0.008 98.9)", "oklch(92% 0.008 98.9)"] },
+      "paper-alt": { "role": "neutral", "displayName": "Alternate Paper", "canonical": "#efeee6", "tonalRamp": ["oklch(15% 0.011 100.8)", "oklch(26% 0.011 100.8)", "oklch(37% 0.011 100.8)", "oklch(48% 0.011 100.8)", "oklch(59% 0.011 100.8)", "oklch(70% 0.011 100.8)", "oklch(81% 0.011 100.8)", "oklch(92% 0.011 100.8)"] },
+      "line": { "role": "neutral", "displayName": "Fine Rule", "canonical": "#d2d5ca", "tonalRamp": ["oklch(15% 0.015 119.1)", "oklch(26% 0.015 119.1)", "oklch(37% 0.015 119.1)", "oklch(48% 0.015 119.1)", "oklch(59% 0.015 119.1)", "oklch(70% 0.015 119.1)", "oklch(81% 0.015 119.1)", "oklch(92% 0.015 119.1)"] },
+      "white": { "role": "neutral", "displayName": "White", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(37% 0 0)", "oklch(48% 0 0)", "oklch(59% 0 0)", "oklch(70% 0 0)", "oklch(81% 0 0)", "oklch(92% 0 0)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headings in Georgia." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings in Georgia." },
+      "title": { "displayName": "Title", "purpose": "Expertise and company subheadings in Georgia." },
+      "body": { "displayName": "Body", "purpose": "Default reading text in IBM Plex Sans." },
+      "nav": { "displayName": "Navigation", "purpose": "Header links in IBM Plex Sans." },
+      "label": { "displayName": "Label", "purpose": "Eyebrows and section indexes in IBM Plex Sans." },
+      "action": { "displayName": "Action", "purpose": "Primary and contact actions in IBM Plex Sans." },
+      "transition": { "displayName": "Transition", "purpose": "Project transformation lines in Georgia." },
+      "summary": { "displayName": "Summary", "purpose": "Experience disclosure titles in IBM Plex Sans." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-feedback", "value": "150ms ease", "purpose": "Color, arrow, and disclosure state changes." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Near-zero transition duration when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "900px" },
+      { "name": "mobile", "value": "700px" },
+      { "name": "compact", "value": "400px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "refersTo": "nav-links",
+      "description": "Compact section links in the site header, with a horizontal scrolling treatment on mobile.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"#expertises\">Expertises</a><a href=\"#experience\">Experience</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav { display:flex; gap:clamp(20px,3vw,40px); margin-left:auto; } .ds-nav a { color:var(--muted); font:400 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:none; text-underline-offset:5px; } .ds-nav a:hover { color:var(--forest); text-decoration:underline; } .ds-nav a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:700px) { .ds-nav { order:3; width:100%; gap:22px; padding-top:11px; overflow-x:auto; } .ds-nav a { flex:0 0 auto; font-size:12px; } }"
+    },
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The filled contact action, rendered as a link with a trailing arrow.",
+      "html": "<a class=\"ds-action-primary\" href=\"#contact\">Me contacter <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-action-primary { display:inline-flex; min-height:46px; align-items:center; justify-content:center; gap:12px; padding:0 16px; background:var(--forest); color:#fff; font:600 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:none; transition:color 150ms ease,background-color 150ms ease; } .ds-action-primary:hover { background:var(--forest-deep); } .ds-action-primary:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-action-primary span { font-size:17px; }"
+    },
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "An underlined text link for a secondary action such as the CV download.",
+      "html": "<a class=\"ds-action-text\" href=\"#cv\">Télécharger mon CV <span aria-hidden=\"true\">↓</span></a>",
+      "css": ".ds-action-text { color:var(--forest-deep); font:600 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:underline; text-decoration-color:#8e9e8f; text-underline-offset:5px; } .ds-action-text:hover { color:var(--rust); text-decoration-color:currentColor; } .ds-action-text:focus-visible { outline:3px solid var(--focus); outline-offset:4px; }"
+    },
+    {
+      "name": "Proof Band",
+      "kind": "custom",
+      "refersTo": "proof-band",
+      "description": "A flat three-column measure band with large serif figures and fine separators.",
+      "html": "<div class=\"ds-proof-grid\"><dl><dt>Organisations clientes</dt><dd>8</dd></dl><dl><dt>Années d’expérience</dt><dd>11</dd></dl><dl><dt>Projets en parallèle</dt><dd>3</dd></dl></div>",
+      "css": ".ds-proof-grid { display:grid; grid-template-columns:repeat(3,1fr); padding:30px 0; background:var(--forest-deep); color:var(--paper); } .ds-proof-grid dl { display:flex; min-height:92px; flex-direction:column; justify-content:center; margin:0; padding:0 32px; border-left:1px solid #567264; } .ds-proof-grid dl:first-child { padding-left:0; border-left:0; } .ds-proof-grid dd { order:-1; margin:0 0 -4px; color:#e4eadc; font:52px/1.1 Georgia,'Times New Roman',serif; font-variant-numeric:tabular-nums; letter-spacing:-.04em; } .ds-proof-grid dt { color:#d1dace; font:13px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:700px) { .ds-proof-grid { padding:20px 0; } .ds-proof-grid dl { min-height:96px; padding:0 13px; } .ds-proof-grid dd { font-size:42px; } .ds-proof-grid dt { font-size:10px; } }"
+    },
+    {
+      "name": "Transition Rows",
+      "kind": "custom",
+      "refersTo": "transition-row",
+      "description": "Open before-and-after project rows with client metadata and a rust arrow.",
+      "html": "<ol class=\"ds-transitions\"><li><strong>Legrand</strong><small>Nov. 2025 — févr. 2026</small><p>Données métier <span aria-hidden=\"true\">→</span> PLM</p><small>Traitement et migration de données</small></li><li><strong>CNR</strong><small>Juil. 2025 — févr. 2026</small><p>WPF <span aria-hidden=\"true\">→</span> Application web</p><small>Cadrage technique et architecture cible</small></li><li><strong>Private GPT</strong><small>Juil. 2025 — oct. 2025</small><p>Blazor <span aria-hidden=\"true\">→</span> React</p><small>Tech Lead front-end · plateforme agentique</small></li></ol>",
+      "css": ".ds-transitions { margin:0; padding:0; list-style:none; } .ds-transitions li { display:grid; grid-template-columns:1fr auto; gap:5px 14px; padding:18px 0 17px; border-bottom:1px solid var(--line); } .ds-transitions li strong { color:var(--forest-deep); font:650 15px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-transitions li small { color:var(--muted); font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-align:right; } .ds-transitions li p { grid-column:1/-1; display:flex; flex-wrap:wrap; gap:8px; margin:0; color:var(--ink); font:clamp(19px,2vw,25px)/1.25 Georgia,'Times New Roman',serif; letter-spacing:-.025em; } .ds-transitions li p span { color:var(--rust); font:18px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-transitions li small:last-child { grid-column:1/-1; text-align:left; font-size:12px; }"
+    },
+    {
+      "name": "Expertise Columns",
+      "kind": "custom",
+      "refersTo": "expertise-column",
+      "description": "Three open expertise columns led by a number and serif heading.",
+      "html": "<div class=\"ds-expertise-grid\"><article><span>01</span><h3>Architecture</h3><p>Analyse du legacy, cadrage technique et définition d’architectures cibles.</p><strong>CNR · Refonte WPF vers une application web</strong></article><article><span>02</span><h3>Leadership technique</h3><p>Coordination transverse et accompagnement des développeurs.</p><strong>Ayming · Trois projets menés en parallèle</strong></article><article><span>03</span><h3>Développement</h3><p>Pratique full stack, du front-end aux données et aux API.</p><strong>Private GPT · Réalisation front-end</strong></article></div>",
+      "css": ".ds-expertise-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px; } .ds-expertise-grid article { display:flex; min-height:245px; flex-direction:column; padding-top:16px; border-top:1px solid #9aac98; } .ds-expertise-grid article span { color:var(--rust); font:650 12px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; font-variant-numeric:tabular-nums; } .ds-expertise-grid h3 { margin:15px 0 10px; color:var(--forest-deep); font:500 25px Georgia,'Times New Roman',serif; letter-spacing:-.025em; } .ds-expertise-grid p { max-width:38ch; margin:0; color:#4d5b52; font:14px/1.6 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-expertise-grid strong { margin-top:auto; padding-top:22px; color:var(--forest); font:620 12px/1.45 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:700px) { .ds-expertise-grid { grid-template-columns:1fr; gap:25px; } .ds-expertise-grid article { min-height:0; padding-top:12px; } }"
+    },
+    {
+      "name": "Experience Disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure-summary",
+      "description": "Native keyboard-operable details rows with a rotating plus indicator.",
+      "html": "<details class=\"ds-disclosure\"><summary><span><strong>Architecte technique · CNR</strong><small>Cadrage d’une refonte d’application métier critique, de WPF vers le web.</small></span><time>Juil. 2025 — févr. 2026 <i aria-hidden=\"true\">+</i></time></summary><div class=\"ds-detail\"><p>Analyse du besoin, cadrage technique et définition de l’architecture cible.</p><p><b>Environnement</b> C# · WPF · Angular · SQL Server</p></div></details>",
+      "css": ".ds-disclosure { border-bottom:1px solid #c7cbbf; } .ds-disclosure summary { display:flex; min-height:70px; align-items:center; justify-content:space-between; gap:24px; padding:14px 0; cursor:pointer; list-style:none; } .ds-disclosure summary::-webkit-details-marker { display:none; } .ds-disclosure summary:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-disclosure summary span { display:grid; gap:3px; } .ds-disclosure strong { color:var(--ink); font:630 14px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-disclosure small { max-width:55ch; color:var(--muted); font:12px/1.45 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-disclosure time { display:inline-flex; align-items:center; gap:10px; color:var(--muted); font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; white-space:nowrap; } .ds-disclosure i { color:var(--forest); font:19px/1 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; transition:transform 150ms ease; } .ds-disclosure[open] i { transform:rotate(45deg); } .ds-detail { padding:0 32px 18px 0; color:#43534a; font:13px/1.6 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-detail p { margin:0 0 10px; } .ds-detail b { margin-right:9px; color:var(--forest); } @media (prefers-reduced-motion:reduce) { .ds-disclosure i { transition-duration:.01ms; } }"
+    },
+    {
+      "name": "Contact Links",
+      "kind": "custom",
+      "refersTo": "contact-link",
+      "description": "Label, destination, and arrow in ruled rows on a deep forest section.",
+      "html": "<div class=\"ds-contact\"><a href=\"mailto:vincent.mangel.pro@gmail.com\"><span>E-mail</span><strong>vincent.mangel.pro@gmail.com</strong><i aria-hidden=\"true\">→</i></a><a href=\"tel:+33637369836\"><span>Téléphone</span><strong>06 37 36 98 36</strong><i aria-hidden=\"true\">→</i></a><a href=\"#calendar\"><span>Rendez-vous</span><strong>Choisir un créneau</strong><i aria-hidden=\"true\">→</i></a></div>",
+      "css": ".ds-contact { border-top:1px solid #577263; background:var(--forest-deep); } .ds-contact a { display:grid; grid-template-columns:98px minmax(0,1fr) 20px; align-items:center; gap:15px; min-height:61px; padding:9px 0; border-bottom:1px solid #577263; color:#f1f3eb; text-decoration:none; } .ds-contact a span { color:#c5d1c6; font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-contact a strong { font:550 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; overflow-wrap:anywhere; } .ds-contact a i { color:#ceddcc; font:18px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-align:right; transition:color 150ms ease,transform 150ms ease; } .ds-contact a:hover strong { text-decoration:underline; text-underline-offset:4px; } .ds-contact a:hover i { color:#eaa58a; transform:translate(2px,-2px); } .ds-contact a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:700px) { .ds-contact a { grid-template-columns:82px minmax(0,1fr) 18px; gap:9px; } .ds-contact a strong { font-size:13px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Editorial Evidence Record",
+    "overview": "The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries without framing each item as a card. Its mood is calm, direct, and evidence-led for recruiters and technical managers.\n\nWarm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings and project transitions. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.",
+    "keyCharacteristics": [
+      "Forest green carries primary emphasis; rust is a restrained pointer.",
+      "IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.",
+      "Warm paper, ink, and fine rules keep the canvas quiet and legible.",
+      "Open grids and flat section bands provide structure without shadows."
+    ],
+    "rules": [
+      { "name": "The Green Structure Rule", "body": "Forest green establishes hierarchy; rust stays a small directional and focus accent.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Use IBM Plex Sans for reading and controls; reserve Georgia for display headings, subheadings, and transition lines.", "section": "typography" },
+      { "name": "The Paper-Plane Rule", "body": "Paper shifts and fine rules define planes; no shadow treatment is part of the current system.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use forest green for primary emphasis and actions, with rust reserved for small directional and focus cues.",
+      "Do let warm paper, ink, whitespace, and fine rules organize reading surfaces.",
+      "Do keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.",
+      "Do keep keyboard focus visible and respect reduced-motion settings."
+    ],
+    "donts": [
+      "Don't add rounded corners to the primary action or the current row patterns.",
+      "Don't treat shadows as an existing depth token; the implementation uses tonal shifts and rules instead.",
+      "Don't use rust as a broad surface color; it is an accent in the current palette."
+    ]
+  }
+}
