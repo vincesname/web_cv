@@ -28,21 +28,21 @@ const recentTransitions = [
     period: 'Nov. 2025 — févr. 2026',
     from: 'Données métier',
     to: 'PLM',
-    note: 'Traitement et migration de données',
+    note: 'Scripts de traitement et de conversion de données pour un outil PLM',
   },
   {
     client: 'CNR',
     period: 'Juil. 2025 — févr. 2026',
     from: 'WPF',
     to: 'Application web',
-    note: 'Cadrage technique et architecture cible',
+    note: 'Ateliers utilisateurs et définition de l’architecture cible',
   },
   {
     client: 'Private GPT',
     period: 'Juil. 2025 — oct. 2025',
     from: 'Blazor',
     to: 'React',
-    note: 'Tech Lead front-end · plateforme agentique',
+    note: 'Architecture front-end et accompagnement de l’équipe de développement',
   },
 ];
 
@@ -50,21 +50,21 @@ const expertise = [
   {
     number: '01',
     title: 'Architecture',
-    text: 'Analyse du legacy, cadrage technique et définition d’architectures cibles adaptées aux contraintes métier.',
+    text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
     proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
     number: '02',
     title: 'Leadership technique',
-    text: 'Coordination transverse, ateliers, revues de code et accompagnement des développeurs au quotidien.',
+    text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
     proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
     number: '03',
     title: 'Développement',
-    text: 'Une pratique full stack pour rester proche de la réalisation, du front-end aux données et aux API.',
+    text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
     proof: 'Private GPT · Architecture et réalisation front-end',
     skills: 'C# / .NET · React · Angular · TypeScript · Azure',
   },
@@ -79,36 +79,36 @@ const experienceGroups: ExperienceGroup[] = [
       {
         title: 'Tech Lead · Watts',
         period: 'Depuis juin 2026',
-        summary: 'Refonte d’un portail d’administration, de l’analyse de l’existant au nouvel applicatif.',
-        details: 'Définition de l’architecture full stack, réécriture iso-fonctionnelle et accompagnement de l’équipe de développement.',
+        summary: 'Je mène la refonte d’un portail d’administration, de l’analyse de l’existant à la réalisation.',
+        details: 'J’ai défini l’architecture full stack, réécrit l’application en conservant ses fonctionnalités et accompagné l’équipe de développement.',
         stack: ['React', 'Tailwind CSS', 'C#', 'API REST', 'Bicep'],
       },
       {
         title: 'Responsable technique · Legrand',
         period: 'Nov. 2025 — févr. 2026',
-        summary: 'Traitement et migration de données pour un outil de Product Lifecycle Management.',
-        details: 'Maintenance et création de scripts de traitement, calcul et conversion entre bases. Rétro-documentation de l’existant dans un contexte métier et technique contraint.',
+        summary: 'Chez Legrand, j’ai traité et migré des données pour un outil de Product Lifecycle Management.',
+        details: 'J’ai maintenu et écrit des scripts pour traiter, calculer et convertir les données entre bases, puis documenté l’existant dans un contexte métier et technique contraint.',
         stack: ['PowerShell', 'Python', 'Excel', 'PLM'],
       },
       {
         title: 'Architecte technique · CNR',
         period: 'Juil. 2025 — févr. 2026',
-        summary: 'Cadrage d’une refonte d’application métier critique, de WPF vers le web.',
-        details: 'Analyse du besoin, rédaction du cadrage technique et définition de l’architecture cible. Ateliers avec les utilisateurs et prise en compte des contraintes métier et techniques.',
+        summary: 'Chez CNR, j’ai cadré la refonte d’une application métier critique, de WPF vers le web.',
+        details: 'Après avoir analysé le besoin, j’ai rédigé le cadrage technique et défini l’architecture cible. Les ateliers avec les utilisateurs m’ont permis d’intégrer les contraintes métier et techniques.',
         stack: ['C#', 'WPF', 'Angular', 'Telerik', 'SQL Server', 'Oracle'],
       },
       {
         title: 'Tech Lead front-end · Projet Private GPT',
         period: 'Juil. 2025 — oct. 2025',
-        summary: 'Refonte front-end d’une plateforme Private GPT agentique, de Blazor vers React.',
-        details: 'Définition de l’architecture front, du socle technique et des bonnes pratiques, puis coordination et accompagnement des développeurs. Le périmètre de la mission était le front-end ; le back-end et l’infrastructure étaient pris en charge par une autre équipe.',
+        summary: 'Pour Private GPT, j’ai piloté la refonte front-end de Blazor vers React.',
+        details: 'J’ai défini l’architecture front-end, choisi le socle technique et posé les bonnes pratiques, puis coordonné et accompagné les développeurs. Mon périmètre couvrait le front-end ; une autre équipe gérait le back-end et l’infrastructure.',
         stack: ['React', 'Blazor', 'LLM locaux', 'MUI', 'C#', 'Azure Cosmos DB', 'Azure AI', 'App Service'],
       },
       {
         title: 'Responsable équipe technique · Ayming',
         period: 'Oct. 2023 — juin 2025',
-        summary: 'Lead développeur full stack sur trois projets aux objectifs et équipes différents.',
-        details: 'Modernisation d’applications, migrations Angular et Angular Material, maintenance du code et des bases, décisions d’architecture, revues de pull requests et accompagnement des développeurs. Équipes organisées en sprints de deux semaines.',
+        summary: 'Chez Ayming, j’ai été Lead développeur full stack sur trois projets aux objectifs et équipes différents.',
+        details: 'J’ai modernisé des applications, mené des migrations Angular et Angular Material, maintenu le code et les bases, pris des décisions d’architecture, revu des pull requests et accompagné les développeurs. Nous travaillions par sprints de deux semaines.',
         stack: ['Angular', 'Angular Material', '.NET Core', 'SQL Server', 'Oracle', 'Azure DevOps'],
       },
     ],
@@ -121,29 +121,29 @@ const experienceGroups: ExperienceGroup[] = [
       {
         title: 'Développeur full stack · Stanley Security France',
         period: 'Mai 2021 — sept. 2023',
-        summary: 'Évolution d’un extranet client et modernisation d’une application de suivi en temps réel.',
-        details: 'D’abord intervenu sur une application ASP / C# existante, j’ai ensuite rejoint l’équipe de la nouvelle version. Développement front, back et base de données, ateliers techniques, revues de code, tests et accompagnement des développeurs.',
+        summary: 'Chez Stanley Security France, j’ai fait évoluer un extranet client et modernisé une application de suivi en temps réel.',
+        details: 'Après mon intervention sur l’application ASP / C# existante, j’ai rejoint l’équipe chargée de sa nouvelle version. J’y ai développé le front-end, le back-end et la base de données, animé des ateliers techniques, revu le code, testé les évolutions et accompagné les développeurs.',
         stack: ['Angular', 'TypeScript', 'D3.js', 'RxJS', 'C#', 'API REST', 'SQL Server'],
       },
       {
         title: 'Analyste technique · Groupe APICIL',
         period: 'Juil. 2020 — mars 2021',
-        summary: 'Traduction de besoins fonctionnels complexes en spécifications pour les équipes de développement.',
-        details: 'Échanges et ateliers avec les analystes fonctionnels, suivi de qualification, tests et documentation dans un environnement applicatif historique.',
+        summary: 'Au Groupe APICIL, j’ai traduit des besoins fonctionnels complexes en spécifications pour les équipes de développement.',
+        details: 'J’ai échangé avec les analystes fonctionnels, suivi la qualification, réalisé les tests et documenté un environnement applicatif historique.',
         stack: ['RPG', 'AS/400', 'Oracle', 'Data Modeler', 'SoapUI'],
       },
       {
         title: 'Lead Developer puis chef de projet · SMERRA',
         period: 'Avr. 2019 — juin 2020',
-        summary: 'Maintenance et évolution d’une application WinForms, avec transfert de connaissances et pilotage.',
-        details: 'Accompagnement et formation de développeurs, suivi du projet, évolution vers Azure DevOps et adoption de sprints agiles. Participation à la montée de version .NET.',
+        summary: 'Chez SMERRA, j’ai maintenu et fait évoluer une application WinForms, transmis les connaissances et piloté le projet.',
+        details: 'J’ai formé les développeurs et suivi le projet, tout en participant au passage vers Azure DevOps, aux sprints agiles et à la montée de version .NET.',
         stack: ['C#', 'WinForms', '.NET Framework', 'SQL Server', 'Azure DevOps'],
       },
       {
         title: 'Développeur logiciel · INDESO',
         period: 'Janv. 2019 — mars 2019',
-        summary: 'Développement d’une application métier WPF.',
-        details: 'Conception et développement d’une application interne avec Entity Framework, SQL Server et une documentation de projet partagée.',
+        summary: 'Pour INDESO, j’ai développé une application métier avec WPF.',
+        details: 'J’ai conçu et développé une application interne avec Entity Framework et SQL Server, puis partagé sa documentation.',
         stack: ['C#', 'WPF', 'Entity Framework', 'SQL Server', 'Confluence'],
       },
     ],
@@ -156,8 +156,8 @@ const experienceGroups: ExperienceGroup[] = [
       {
         title: 'Applications comptables et hôtelières',
         period: '2015 — 2018',
-        summary: 'Développement, maintenance et modernisation de plusieurs applications métier.',
-        details: 'Participation à la refonte d’une application Silverlight vers ASP.NET / C#, gestion de données et Business Intelligence, rédaction de spécifications et accompagnement des autres développeurs.',
+        summary: 'Pendant mon alternance chez Exo Partners, j’ai développé, maintenu et modernisé plusieurs applications métier.',
+        details: 'J’ai contribué à la refonte d’une application Silverlight vers ASP.NET / C#. Mon travail couvrait aussi la gestion des données, la Business Intelligence, la rédaction de spécifications et l’accompagnement d’autres développeurs.',
         stack: ['C#', 'ASP.NET', 'Silverlight', 'SQL Server', 'WPF', 'VB.NET', 'Excel', 'Access'],
       },
     ],
@@ -311,12 +311,12 @@ function App() {
               </dl>
             ))}
           </div>
-          <p className="page-wrap proof-note">Comptes tirés des stacks des missions ; le back inclut les bases de données (dont Cosmos DB), hors plateformes et outillage cloud ou métier.</p>
+          <p className="page-wrap proof-note">Je compte les technologies citées dans mes missions ; les bases de données, dont Cosmos DB, sont incluses côté back, mais pas les plateformes et outils cloud ou métier.</p>
         </section>
 
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
           <div className="section-heading">
-            <div><h2 id="expertise-title">01 / EXPERTISES</h2><p>Un profil qui relie les choix techniques aux besoins métier et à la réalisation.</p></div>
+            <div><h2 id="expertise-title">01 / EXPERTISES</h2><p>Je relie les choix techniques aux besoins métier, du cadrage à la réalisation.</p></div>
           </div>
           <div className="expertise-grid">
             {expertise.map((area) => (
@@ -334,7 +334,7 @@ function App() {
         <section className="experience-section" id="experience" aria-labelledby="experience-title">
           <div className="page-wrap">
             <div className="section-heading experience-heading">
-              <div><h2 id="experience-title">02 / EXPÉRIENCE</h2><p>Les missions sont présentées de la plus récente à la plus ancienne. Ouvrez une ligne pour le détail et l’environnement technique.</p></div>
+              <div><h2 id="experience-title">02 / EXPÉRIENCE</h2><p>Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.</p></div>
             </div>
             <div className="timeline">
               {experienceGroups.map((group) => (
@@ -381,8 +381,8 @@ function App() {
           <aside className="personal-note" aria-label="Transmission et centres d’intérêt">
             <p className="personal-note-label">Transmission & curiosité</p>
             <div>
-              <p className="personal-note-statement"><strong>Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.</strong></p>
-              <p className="personal-note-interest">Intérêt personnel pour l’art, les expositions et les ateliers créatifs.</p>
+              <p className="personal-note-statement"><strong>Je suis membre du jury de soutenance en BTS SIO à l’ICOF depuis 2024.</strong></p>
+              <p className="personal-note-interest">Je m’intéresse aussi à l’art, aux expositions et aux ateliers créatifs.</p>
             </div>
           </aside>
         </section>
@@ -392,7 +392,7 @@ function App() {
             <div className="contact-copy">
               <p className="section-index">04 / CONTACT</p>
               <h2 id="contact-title">Échangeons sur votre besoin.</h2>
-              <p>Pour un poste de Tech Lead ou d’architecte logiciel, ou pour une mission de modernisation applicative à Lyon.</p>
+              <p>Je suis ouvert à un poste de Tech Lead ou d’architecte logiciel, ainsi qu’à une mission de modernisation applicative à Lyon.</p>
             </div>
             <div className="contact-actions">
               <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">E-mail</span><strong>{links.email}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
