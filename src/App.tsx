@@ -47,17 +47,17 @@ const areas: ExpertiseArea[] = [
     id: 'architecture',
     label: 'Architecture',
     title: 'Rendre l’existant compréhensible, puis le faire évoluer.',
-    text: 'Cadrage technique, analyse d’applications complexes et définition d’architectures cibles : je relie les contraintes métier aux choix de conception et au chemin de migration.',
+    text: 'Cadrage technique, analyse du legacy et définition d’architectures cibles : je relie les priorités métier aux choix de conception et à une trajectoire de modernisation.',
     proof: 'CNR · Cadrage d’une refonte de WPF vers une application web',
-    skills: ['Architecture de solution', 'Modernisation', 'Cadrage technique', 'Spécifications', 'Migration'],
+    skills: ['Architecture logicielle', 'Architecture cible', 'Modernisation applicative', 'Cadrage technique', 'Migration'],
   },
   {
     id: 'leadership',
     label: 'Leadership',
     title: 'Donner un cadre de travail clair et faire progresser l’équipe.',
-    text: 'J’accompagne les développeurs au quotidien, facilite les décisions, relis les changements et diffuse des pratiques qui rendent l’équipe plus autonome.',
+    text: 'Coordination transverse, animation d’ateliers, mentorat et revues de code : je fluidifie la collaboration métier-technique et fais grandir l’autonomie des équipes.',
     proof: 'Ayming · Coordination de trois projets et de leurs équipes métier et techniques',
-    skills: ['Mentorat', 'Revue de code', 'Décisions techniques', 'Agile', 'Transmission'],
+    skills: ['Leadership transverse', 'Gestion de projet', 'Mentorat', 'Gouvernance technique', 'Agile / Scrum', 'Transmission'],
   },
   {
     id: 'delivery',
@@ -297,7 +297,15 @@ function App() {
           <div className="hero-copy">
             <p className="availability"><span className="availability-dot" />À l’écoute de nouvelles opportunités <span className="availability-place">· Lyon, sur site ou hybride</span></p>
             <h1 id="hero-title">Faire évoluer l’existant.<br />Donner de l’élan aux équipes.</h1>
-            <p className="hero-intro">Tech Lead & Architecte logiciel, j’accompagne les refontes d’applications complexes — du cadrage technique à la progression des équipes de développement.</p>
+            <p className="hero-intro">Tech Lead & Architecte logiciel, j’accompagne la transformation digitale et la modernisation d’applications complexes : cadrage technique, architecture cible, migration de données et delivery avec les équipes.</p>
+            <ul className="positioning-tags" aria-label="Expertises clés">
+              <li>Transformation digitale</li>
+              <li>Modernisation applicative</li>
+              <li>Architecture logicielle</li>
+              <li>Delivery agile</li>
+              <li>Leadership transverse</li>
+              <li>IA générative & agentique</li>
+            </ul>
             <div className="hero-actions">
               <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent('Échange professionnel')}`}>
                 Échanger avec moi <Icon name="arrow" />
@@ -324,7 +332,7 @@ function App() {
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
           <div className="section-heading">
             <div><p className="section-overline">Domaines d’intervention</p><h2 id="expertise-title">Architecture et leadership,<br />au service du produit.</h2></div>
-            <p className="section-aside">Des systèmes historiques aux socles web modernes, avec une attention constante aux personnes qui les font vivre.</p>
+            <p className="section-aside">Architecture cible, gouvernance technique et pilotage du delivery : je relie les priorités métier aux choix de conception.</p>
           </div>
           <div className="domain-browser">
             <div className="domain-tabs" role="tablist" aria-label="Choisir un domaine d’intervention">
@@ -350,11 +358,12 @@ function App() {
           </div>
 
           <div className="capability-ledger">
-            <div className="ledger-heading"><h3>Technologies & méthodes</h3><p>Choisies selon le contexte, au service d’une solution maintenable.</p></div>
-            <div className="ledger-row"><h4>Conception</h4><p>Analyse de l’existant · Architecture de solution · Cadrage technique · Spécifications · Migrations · Modernisation</p></div>
+            <div className="ledger-heading"><h3>Technologies & savoir-faire</h3><p>De la stratégie de modernisation à la livraison, avec la qualité logicielle et la valeur métier comme priorités.</p></div>
+            <div className="ledger-row"><h4>Architecture & transformation</h4><p>Cadrage technique · Architecture logicielle et cible · Analyse du legacy · Modernisation applicative · Trajectoire de migration</p></div>
             <div className="ledger-row"><h4>Développement</h4><p>C# · .NET · TypeScript · Angular · React · Blazor · WPF · WinForms</p></div>
             <div className="ledger-row"><h4>3 bases de données</h4><p>SQL Server · Oracle · Azure Cosmos DB · PLM · PowerShell · Python · Traitement et conversion de données</p></div>
-            <div className="ledger-row"><h4>Cloud & IA</h4><p>Azure · Azure AI · App Service · Bicep · LLM locaux · Plateforme Private GPT agentique</p></div>
+            <div className="ledger-row"><h4>Cloud & IA</h4><p>Azure · Azure DevOps · Bicep · Azure AI · App Service · LLM locaux · IA générative et agentique</p></div>
+            <div className="ledger-row"><h4>Pilotage & delivery</h4><p>Gestion de projet · Coordination transverse · Animation d’ateliers · Méthodes agiles / Scrum · Mentorat · Revues de code · Accompagnement du changement</p></div>
           </div>
         </section>
 
