@@ -164,6 +164,101 @@ const experienceGroups: ExperienceGroup[] = [
   },
 ];
 
+const esnEmployers = ['Exakis-Nelite', 'Apollo SSC', 'Exo Partners'];
+const clientOrganizations = [
+  'Watts',
+  'Legrand',
+  'CNR',
+  'Ayming',
+  'Stanley Security France',
+  'Groupe APICIL',
+  'SMERRA',
+  'INDESO',
+];
+
+// Distinct role labels across client missions; the same title is counted once.
+const distinctRoles = [
+  'Tech Lead',
+  'Responsable technique',
+  'Architecte technique',
+  'Tech Lead front-end',
+  'Responsable équipe technique',
+  'Développeur full stack',
+  'Analyste technique',
+  'Lead Developer',
+  'Chef de projet',
+  'Développeur logiciel',
+];
+
+// Counts cover unique technologies shown in the mission stacks, grouped by use.
+const frontendTechnologies = [
+  'React',
+  'Tailwind CSS',
+  'WPF',
+  'Angular',
+  'Telerik',
+  'Blazor',
+  'MUI',
+  'Angular Material',
+  'TypeScript',
+  'D3.js',
+  'RxJS',
+  'WinForms',
+  'Silverlight',
+];
+const backendTechnologies = [
+  'C#',
+  'API REST',
+  'PowerShell',
+  'Python',
+  'SQL Server',
+  'Oracle',
+  'Azure Cosmos DB',
+  '.NET Core',
+  'RPG',
+  'AS/400',
+  'Entity Framework',
+  '.NET Framework',
+  'ASP.NET',
+  'VB.NET',
+];
+
+const now = new Date();
+const yearsOfExperience = now.getFullYear() - 2015 - (now.getMonth() < 8 ? 1 : 0);
+
+const proofItems = [
+  {
+    label: 'ESN employeurs',
+    value: esnEmployers.length,
+    note: esnEmployers.join(' · '),
+  },
+  {
+    label: 'Clients',
+    value: clientOrganizations.length,
+    note: 'Watts · Legrand · CNR…',
+  },
+  {
+    label: 'Années d’expérience',
+    value: yearsOfExperience,
+    note: 'Depuis septembre 2015',
+  },
+  {
+    label: 'Rôles distincts',
+    value: distinctRoles.length,
+    note: 'Intitulés relevés dans les missions',
+  },
+  {
+    label: 'Technologies front-end',
+    value: frontendTechnologies.length,
+    note: 'Interfaces · React · Angular · WPF…',
+  },
+  {
+    label: 'Technologies back-end',
+    value: backendTechnologies.length,
+    note: 'Services et données · C# · .NET · SQL…',
+  },
+];
+
 function App() {
   return (
     <>
@@ -209,10 +304,14 @@ function App() {
 
         <section className="proof-band" aria-label="Repères du parcours">
           <div className="page-wrap proof-grid">
-            <dl><dt>Organisations clientes</dt><dd>8</dd></dl>
-            <dl><dt>Années d’expérience<br />depuis septembre 2015</dt><dd>11</dd></dl>
-            <dl><dt>Projets menés en parallèle<br />chez Ayming</dt><dd>3</dd></dl>
+            {proofItems.map((item) => (
+              <dl className="proof-item" key={item.label}>
+                <dt>{item.label}</dt>
+                <dd><strong>{item.value}</strong><span>{item.note}</span></dd>
+              </dl>
+            ))}
           </div>
+          <p className="page-wrap proof-note">Comptes tirés des stacks des missions ; le back inclut les bases de données (dont Cosmos DB), hors plateformes et outillage cloud ou métier.</p>
         </section>
 
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">

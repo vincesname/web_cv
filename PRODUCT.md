@@ -38,7 +38,10 @@ Use direct, professional language that can speak to recruiters and commercial de
 
 - `public/CV_Vincent_Mangel.pdf` is the supplied CV.
 - The career history starts in September 2015; as of October 2026 it represents 11 years of experience.
+- Three ESN employers are listed: Exakis-Nelite, Apollo SSC, and Exo Partners.
 - Eight named client organizations appear in the assignments: Watts, Legrand, CNR, Ayming, Stanley Security France, Groupe APICIL, SMERRA, and INDESO. The internal Private GPT project is not counted as a client.
+- Ten distinct role titles appear across the missions, counting “Lead Developer” and “chef de projet” separately for SMERRA and counting repeated titles once.
+- The mission stacks contain 13 distinct front-end/interface technologies and 14 distinct back-end/service/data technologies. Managed databases such as Azure Cosmos DB count as back-end data technologies; cloud platforms, tooling, and business tools are excluded from those two category counts.
 - The Ayming assignment covered three projects in parallel.
 - The Private GPT assignment was an agentic platform front-end rewrite from Blazor to React.
 - No profile photograph, client logos, product screenshots, quantified business outcomes, or testimonial assets are present in the repository.

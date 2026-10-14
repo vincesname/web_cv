@@ -82,7 +82,7 @@ components:
   proof-band:
     backgroundColor: "{colors.forest-deep}"
     textColor: "{colors.paper}"
-    padding: "30px 0"
+    padding: "16px 0"
   transition-row:
     textColor: "{colors.ink}"
     typography: "{typography.transition}"
@@ -159,7 +159,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. At desktop widths, the hero and section headings use editorial columns; proof and expertise use three columns, while the timeline pairs company context with mission details. At 900px the outer gutter narrows. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. At desktop widths, the hero and section headings use editorial columns; the six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -190,10 +190,10 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Focus:** All links retain the visible rust keyboard outline.
 
 ### Proof Band
-- **Character:** A flat, full-width forest measure band with three aligned facts.
-- **Shape and spacing:** No radius; three equal columns with vertical separators and 30px vertical padding on wide screens.
-- **Type and color:** Large Georgia numerals sit above smaller light labels; paper tones provide contrast against deep forest.
-- **Responsive behavior:** The three-column measure remains compact on mobile.
+- **Character:** A flat, full-width forest measure band with six career indicators: employers, clients, experience, roles, and front-end/back-end technologies.
+- **Shape and spacing:** No radius; three columns by two rows on wide screens, with fine separators and 16px vertical padding. Below 900px it uses two columns.
+- **Type and color:** Large Georgia numerals share a line with short evidence notes; paper tones provide contrast against deep forest.
+- **Responsive behavior:** Two columns remain at tablet and phone widths; a small footnote says that databases such as Cosmos DB count as back-end, while cloud platforms and tools are excluded.
 
 ### Transition Rows
 - **Character:** Typographic before-and-after lines, grouped in a simple ordered list.

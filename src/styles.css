@@ -82,11 +82,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .mission-note { margin: 5px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
 
 .proof-band { background: var(--forest-deep); color: var(--paper); }
-.proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); padding-block: 30px; }
-.proof-grid dl { display: flex; min-height: 92px; flex-direction: column; justify-content: center; margin: 0; padding: 0 32px; border-left: 1px solid #567264; }
-.proof-grid dl:first-child { padding-left: 0; border-left: 0; }
-.proof-grid dd { order: -1; margin: 0 0 -4px; color: #e4eadc; font-family: var(--serif); font-size: 52px; font-variant-numeric: tabular-nums; line-height: 1.1; letter-spacing: -.04em; }
-.proof-grid dt { color: #d1dace; font-size: 13px; line-height: 1.4; }
+.proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: 16px; }
+.proof-item { display: flex; min-width: 0; min-height: 132px; flex-direction: column; justify-content: center; margin: 0; padding: 18px 32px; border-right: 1px solid #567264; border-bottom: 1px solid #567264; }
+.proof-item:nth-child(3n) { border-right: 0; }
+.proof-item:nth-last-child(-n + 3) { border-bottom: 0; }
+.proof-item dd { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 14px; order: -1; margin: 0; }
+.proof-item dd strong { color: #e4eadc; font-family: var(--serif); font-size: 50px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.1; letter-spacing: -.04em; }
+.proof-item dd span { color: #d1dace; font-size: 11px; line-height: 1.4; }
+.proof-item dt { margin-top: 3px; color: #d1dace; font-size: 12px; font-weight: 560; line-height: 1.4; }
+.proof-note { margin: 0 auto; padding: 0 0 15px; color: #d1dace; font-size: 10px; line-height: 1.45; }
 
 .expertise-section { padding-block: 104px 108px; }
 .section-heading { display: grid; grid-template-columns: minmax(150px, .55fr) minmax(0, 1.45fr); gap: 35px; align-items: start; margin-bottom: 43px; }
@@ -166,7 +170,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .recent-work { padding-left: 25px; }
   .mission-meta { align-items: flex-start; flex-direction: column; gap: 0; }
   .mission-meta span { text-align: left; }
-  .proof-grid dl { padding-inline: 23px; }
+  .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .proof-item { padding-inline: 23px; }
+  .proof-item:nth-child(3n) { border-right: 1px solid #567264; }
+  .proof-item:nth-child(2n) { border-right: 0; }
+  .proof-item:nth-last-child(-n + 3) { border-bottom: 1px solid #567264; }
+  .proof-item:nth-last-child(-n + 2) { border-bottom: 0; }
   .credentials-body { margin-left: 0; }
 }
 
@@ -185,10 +194,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .recent-work { max-width: 560px; padding-left: 20px; }
   .mission-meta { align-items: baseline; flex-direction: row; }
 
-  .proof-grid { padding-block: 20px; }
-  .proof-grid dl { min-height: 96px; padding-inline: 13px; }
-  .proof-grid dd { font-size: 42px; }
-  .proof-grid dt { font-size: 10px; }
+  .proof-grid { padding-block: 8px; }
+  .proof-item { min-height: 136px; padding: 16px 13px; border-right: 1px solid #567264; border-bottom: 1px solid #567264; }
+  .proof-item dd { gap: 9px; }
+  .proof-item dd strong { font-size: 41px; }
+  .proof-item dd span { font-size: 10.5px; }
+  .proof-item dt { font-size: 11px; }
 
   .expertise-section, .credentials-section { padding-block: 72px; }
   .section-heading { grid-template-columns: 1fr; gap: 9px; margin-bottom: 29px; }
@@ -234,9 +245,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .hero-actions { gap: 10px 17px; }
   .button-primary, .button-text { font-size: 12px; }
   .mission-meta { align-items: flex-start; flex-direction: column; }
-  .proof-grid dl { padding-inline: 8px; }
-  .proof-grid dd { font-size: 37px; }
-  .proof-grid dt { font-size: 9px; }
+  .proof-item { min-height: 130px; padding-inline: 8px; }
+  .proof-item dd { gap: 6px; }
+  .proof-item dd strong { font-size: 35px; }
+  .proof-item dd span { font-size: 9.5px; }
+  .proof-item dt { font-size: 10px; }
   .experience-period { max-width: 106px; }
   .credentials-meta { grid-template-columns: 1fr 1fr; }
 }
