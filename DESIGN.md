@@ -103,7 +103,7 @@ components:
 
 **Creative North Star: "The Editorial Evidence Record"**
 
-The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers.
+The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers, with a pale forest header and a deep-green hero panel adding a clearer first-viewport anchor.
 
 Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.
 
@@ -154,7 +154,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. The hero uses editorial columns; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. The hero pairs a large direct headline with a deep-green intervention panel; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -178,37 +178,38 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Personal Note
 - **Character:** A full-width editorial callout highlights professional transmission and personal interests beneath education and credentials.
-- **Type and spacing:** A small forest label sits beside a larger Georgia statement, followed by quieter supporting copy; a fine top rule anchors the row without a card surface.
+- **Type and spacing:** A small forest label sits beside a moderate Georgia statement, followed by similarly readable supporting copy; a fine top rule anchors the row without a card surface.
 - **Responsive behavior:** The label moves above the statement on narrow screens.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
-- **Shape:** Square corners (0px radius); the primary action has a 46px minimum height.
-- **Primary:** Forest background, white label, 14px semibold type, and 16px horizontal padding; the arrow follows the label.
+- **Shape:** Square corners (0px radius); the primary action has a 48px minimum height.
+- **Primary:** Forest background, white label, 15px semibold type, and 20px horizontal padding.
 - **Hover / Focus:** Hover deepens the green. Keyboard focus receives the shared rust outline; color feedback transitions in 150ms.
+- **Header CV:** A compact forest button labeled `CV`.
 - **Text action:** The secondary CV action is an underlined text link, not a filled control.
 
 ### Navigation
-- **Style:** Brand, section links, and a text-style CV link sit in a single header row with a fine bottom rule.
-- **Type and color:** 14px IBM Plex Sans links use muted ink and turn forest green with an underline on hover.
+- **Style:** Brand, section links, and a compact CV button sit in a pale forest header band.
+- **Type and color:** 15px semibold IBM Plex Sans links use deep forest ink and turn rust with a stronger underline on hover.
 - **Responsive behavior:** At 700px and below, the section links move to a second horizontally scrollable row.
 - **Focus:** All links retain the visible rust keyboard outline.
 
 ### Proof Band
-- **Character:** A flat, full-width forest measure band with six career indicators: ESN employers, a lower-bound client count, experience, role families, and front-end/back-end and infrastructure skills.
+- **Character:** A flat, full-width forest measure band with six career indicators: lower-bound client missions, a lower-bound client count, experience, role families, and front-end/back-end and infrastructure skills.
 - **Shape and spacing:** No radius; three columns by two rows on wide screens, with fine separators and 16px vertical padding. Below 900px it uses two columns.
 - **Type and color:** Large Georgia figures sit above their short labels; paper tones provide contrast against deep forest.
 - **Responsive behavior:** Two columns remain at tablet and phone widths. The band contains only figures and labels, without supporting notes or a methodology footnote.
 
 ### Approach Summary
 - **Character:** A short, general summary of how I work: framing, evolving applications, and working with the team. Specific client missions stay in the experience timeline.
-- **Shape and spacing:** Three open rows use fine top rules and 15px vertical padding, beside a single forest-tinted vertical rule; there is no card background.
-- **Type and color:** A small uppercase forest heading introduces sans-serif verbs and concise first-person descriptions.
-- **Responsive behavior:** The summary follows the hero copy on narrow screens and keeps its left rule and readable measure.
+- **Shape and spacing:** Three open rows use fine top rules and 15px vertical padding inside one rectangular deep-forest surface; there is no shadow or border radius.
+- **Type and color:** A compact light-forest heading introduces Georgia action headings and concise pale-green descriptions.
+- **Responsive behavior:** The summary follows the hero copy on narrow screens and keeps a readable measure inside the same dark-green surface.
 
 ### Expertise Columns
 - **Character:** Three open columns with one short rule across each top edge.
-- **Spacing and type:** A numbered index leads a Georgia heading, description, evidence line, and supporting skills.
+- **Spacing and type:** A Georgia heading leads the description, evidence line, and supporting skills; the columns have no individual numbers because they are parallel areas, not a sequence.
 - **Responsive behavior:** The columns stack at 700px and below; there is no tab or hidden state.
 
 ### Native Disclosure
@@ -217,9 +218,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
 
 ### Contact Links
-- **Character:** Full-width text links in the dark contact section, arranged as label, destination, and arrow.
+- **Character:** Full-width text links in the dark contact section, arranged as label and destination, including a CV download.
 - **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
-- **Behavior:** Hover underlines the destination and nudges the arrow; keyboard focus uses the rust outline.
+- **Behavior:** Hover underlines the destination; keyboard focus uses the rust outline.
 
 ## Do's and Don'ts
 

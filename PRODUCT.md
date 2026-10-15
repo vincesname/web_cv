@@ -26,16 +26,16 @@ Visitors typically scan the first screen, look for role fit and relevant client 
 
 - Static React, TypeScript, and Vite site. The production build is committed in `www/` and served by OVH.
 - Push completed changes directly to `main`; do not create pull requests.
-- Run `npm run build` before pushing; this regenerates the tracked production site in `www/`.
+- Run `npm run build` before pushing site changes; this regenerates the tracked production site in `www/`.
 - Keep the site responsive, keyboard usable, and readable without interaction. Expandable mission details may remain progressive disclosure.
 - Preserve the scope of the Private GPT assignment: front-end architecture and delivery; another team owned back-end and infrastructure.
 - Use recruiter and commercial terminology only when it describes evidenced work. Do not invent outcomes, testimonials, client names, or measurements.
 
 ## Approved KPI Presentation
 
-Show these six figures in a 2×3 grid, in this order: **3 ESN**, **8+ clients**, **11 years of experience**, **5 distinct role families**, **10+ front-end skills**, and **15+ back-end and infrastructure skills**. Keep each cell to its figure and label; do not add per-cell explanations or a methodology footnote.
+Show these six figures in a 2×3 grid, in this order: **10+ client missions**, **8+ clients**, **11 years of experience**, **5 distinct role families**, **10+ front-end skills**, and **15+ back-end and infrastructure skills**. Keep each cell to its figure and label; do not add per-cell explanations or a methodology footnote.
 
-The client figure is a lower bound: at least eight organizations are named, while the history also mentions assignments for unnamed clients. Do not present eight as the exact career total unless a fuller source confirms it. The role count groups similar titles into five families: technical leadership, architecture, software development, technical analysis, and project management. The “10+” and “15+” skill figures are lower bounds supplied by the site owner.
+The mission figure is a lower bound: eight client organizations are named in the site's career history, and Ayming covered three separate projects. Exclude the internal Private GPT project and unnamed work from the minimum. The two PDF copies in `public/` and `www/` are identical; that CV names seven client groups and describes further missions without numbering them. Counting Ayming's three projects separately gives nine explicit client projects in that PDF, so it cannot establish an exact career total by itself. SMERRA and INDESO appear in the broader site history, which supports the site's 10+ lower bound. The client figure is also a lower bound: the history mentions assignments for unnamed clients, so do not present eight as the exact career total. The role count groups similar titles into five families: technical leadership, architecture, software development, technical analysis, and project management. The “10+” and “15+” skill figures are lower bounds supplied by the site owner.
 
 ## Editorial Preferences
 
@@ -43,7 +43,12 @@ The client figure is a lower bound: at least eight organizations are named, whil
 - Keep the hero’s approach summary general. Put named client examples in the experience timeline.
 - Combine section numbers and titles in a single heading, such as `01 / EXPERTISES`.
 - List experience newest first.
-- Keep forest green as the primary color and avoid generic AI-generated styling, sales clichés, and unsupported claims.
+- Do not number the three expertise columns; those categories are parallel areas, not a sequence.
+- Keep forest green as the primary color. Add color through purposeful surface areas and stronger hierarchy, not generic AI-generated decoration.
+- Keep the jury role readable without making it the largest copy in its section; make the interests and knowledge in art, exhibitions, creative workshops, marketing, video games, and communication equally legible.
+- Label the header download button `CV`; keep a clearly named PDF download in the contact links and omit it from the footer.
+- Use a simple green `VM` favicon.
+- Avoid sales clichés and unsupported claims.
 
 ## Brand Commitments
 

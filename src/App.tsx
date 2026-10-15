@@ -24,21 +24,18 @@ const links = {
 
 const expertise = [
   {
-    number: '01',
     title: 'Architecture',
     text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
     proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
-    number: '02',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
     proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
-    number: '03',
     title: 'Développement',
     text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
     proof: 'Private GPT · Architecture et réalisation front-end',
@@ -140,8 +137,6 @@ const experienceGroups: ExperienceGroup[] = [
   },
 ];
 
-const esnEmployers = ['Exakis-Nelite', 'Apollo SSC', 'Exo Partners'];
-// The career history also mentions unnamed client assignments, so this is a minimum.
 const knownClientOrganizations = [
   'Watts',
   'Legrand',
@@ -152,6 +147,10 @@ const knownClientOrganizations = [
   'SMERRA',
   'INDESO',
 ];
+// Ayming covered three projects, adding two beyond one project per client.
+// This lower bound excludes the internal Private GPT project and unnamed work.
+const aymingProjectCount = 3;
+const clientMissionCount = `${knownClientOrganizations.length - 1 + aymingProjectCount}+`;
 
 // Role families group equivalent titles such as Tech Lead and Lead Developer.
 const roleFamilies = [
@@ -171,8 +170,8 @@ const yearsOfExperience = now.getFullYear() - 2015 - (now.getMonth() < 8 ? 1 : 0
 
 const proofItems = [
   {
-    label: 'ESN',
-    value: esnEmployers.length,
+    label: 'Missions client',
+    value: clientMissionCount,
   },
   {
     label: 'Clients',
@@ -208,20 +207,20 @@ function App() {
             <a href="#experience">Expérience</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a className="header-cv" href={links.cv} download="CV_Vincent_Mangel.pdf">CV PDF <span aria-hidden="true">↓</span></a>
+          <a className="header-cv" href={links.cv} download="CV_Vincent_Mangel.pdf">CV</a>
         </div>
       </header>
 
       <main id="main">
         <section className="hero page-wrap" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="hero-role">Tech Lead <span>·</span> Architecte logiciel <span>·</span> Lyon</p>
-            <h1 id="hero-title">Architecture, modernisation et leadership technique.</h1>
-            <p className="hero-intro">J’interviens sur des applications métier à faire évoluer : analyse de l’existant, choix d’architecture, migration et réalisation avec les équipes. Mon parcours de développeur full stack me garde proche du code.</p>
+            <p className="hero-role">Tech Lead et architecte logiciel, à Lyon</p>
+            <h1 id="hero-title">Je fais évoluer les applications métier, du cadrage au code.</h1>
+            <p className="hero-intro">Je pars de l’existant, je définis une architecture adaptée, puis je reste impliqué dans la réalisation avec l’équipe.</p>
             <p className="availability">À l’écoute de nouvelles opportunités <span>· Sur site ou hybride</span></p>
             <div className="hero-actions">
-              <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent('Échange professionnel')}`}>Me contacter <span aria-hidden="true">→</span></a>
-              <a className="button button-text" href={links.cv} download="CV_Vincent_Mangel.pdf">Télécharger mon CV <span aria-hidden="true">↓</span></a>
+              <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent('Échange professionnel')}`}>Me contacter</a>
+              <a className="button button-text" href={links.cv} download="CV_Vincent_Mangel.pdf">Télécharger mon CV</a>
             </div>
           </div>
 
@@ -252,8 +251,7 @@ function App() {
           </div>
           <div className="expertise-grid">
             {expertise.map((area) => (
-              <article className="expertise-item" key={area.number}>
-                <span className="expertise-number">{area.number}</span>
+              <article className="expertise-item" key={area.title}>
                 <h3>{area.title}</h3>
                 <p>{area.text}</p>
                 <p className="expertise-proof">{area.proof}</p>
@@ -313,8 +311,8 @@ function App() {
           <aside className="personal-note" aria-label="Transmission et centres d’intérêt">
             <p className="personal-note-label">Transmission & curiosité</p>
             <div>
-              <p className="personal-note-statement"><strong>Je suis membre du jury de soutenance en BTS SIO à l’ICOF depuis 2024.</strong></p>
-              <p className="personal-note-interest">Je m’intéresse aussi à l’art, aux expositions et aux ateliers créatifs.</p>
+              <p className="personal-note-statement"><strong>Je suis membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.</strong></p>
+              <p className="personal-note-interest">J’ai aussi de bonnes connaissances en marketing, en jeux vidéo et en communication. Je m’intéresse à l’art, aux expositions et aux ateliers créatifs.</p>
             </div>
           </aside>
         </section>
@@ -327,17 +325,18 @@ function App() {
               <p>Je suis ouvert à un poste de Tech Lead ou d’architecte logiciel, ainsi qu’à une mission de modernisation applicative à Lyon.</p>
             </div>
             <div className="contact-actions">
-              <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">E-mail</span><strong>{links.email}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
-              <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">Téléphone</span><strong>{links.displayPhone}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
-              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
-              <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">Profil</span><strong>LinkedIn</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
+              <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">E-mail</span><strong>{links.email}</strong></a>
+              <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">Téléphone</span><strong>{links.displayPhone}</strong></a>
+              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><span className="contact-label">CV</span><strong>Télécharger le CV (PDF)</strong></a>
+              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong></a>
+              <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">Profil</span><strong>LinkedIn</strong></a>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>Tech Lead & Architecte logiciel · Lyon</p><a href={links.cv} download="CV_Vincent_Mangel.pdf">CV PDF ↓</a></div>
+        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>Tech Lead et architecte logiciel, Lyon</p></div>
       </footer>
     </>
   );
