@@ -50,6 +50,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .primary-nav { display: flex; gap: clamp(20px, 3vw, 40px); margin-left: auto; }
 .primary-nav a { display: inline-flex; min-height: 44px; align-items: center; color: var(--forest-deep); font-size: 15px; font-weight: 620; text-decoration: none; text-underline-offset: 5px; }
 .primary-nav a:hover { color: var(--rust-deep); text-decoration: underline; text-decoration-thickness: 2px; }
+.language-switcher { display: inline-flex; flex: 0 0 auto; gap: 2px; padding: 2px; border: 1px solid var(--line); }
+.language-switcher button { min-width: 36px; min-height: 38px; padding: 0 7px; border: 0; background: transparent; color: var(--forest-deep); font-size: 12px; font-weight: 650; cursor: pointer; }
+.language-switcher button:hover { color: var(--rust-deep); }
+.language-switcher button[aria-pressed="true"] { background: var(--forest); color: white; }
+.language-switcher button[aria-pressed="true"]:hover { background: var(--forest-deep); color: white; }
 .header-cv { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; padding: 0 22px; background: var(--forest); color: white; font-size: 15px; font-weight: 650; text-decoration: none; transition: background-color 150ms ease; }
 .header-cv:hover { background: var(--forest-deep); }
 
@@ -202,14 +207,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .search-principles { gap: 19px; }
 }
 
+@media (max-width: 850px) and (min-width: 701px) {
+  .header-inner { gap: 12px; }
+  .primary-nav { gap: 10px; }
+  .primary-nav a { font-size: 12px; }
+  .header-cv { padding-inline: 16px; }
+}
+
 @media (max-width: 700px) {
   html { scroll-padding-top: 16px; }
   .page-wrap, .header-inner { width: calc(100% - 40px); }
   .header-inner { min-height: 68px; flex-wrap: wrap; gap: 0 20px; padding-block: 12px; }
   .brand { font-size: 16px; }
-  .primary-nav { order: 3; width: 100%; gap: 22px; padding-top: 11px; overflow-x: auto; }
+  .language-switcher { order: 2; margin-left: auto; }
+  .language-switcher button { min-height: 34px; }
+  .primary-nav { order: 4; width: 100%; gap: 22px; padding-top: 11px; overflow-x: auto; }
   .primary-nav a { flex: 0 0 auto; font-size: 13px; }
-  .header-cv { min-height: 42px; margin-left: auto; padding-inline: 18px; font-size: 14px; }
+  .header-cv { min-height: 42px; margin-left: 0; padding-inline: 18px; font-size: 14px; }
 
   .hero { grid-template-columns: 1fr; gap: 34px; padding-block: 50px 54px; }
   .hero-role { margin-bottom: 17px; font-size: 14px; }
