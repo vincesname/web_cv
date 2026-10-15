@@ -24,18 +24,21 @@ const links = {
 
 const expertise = [
   {
+    number: '01',
     title: 'Architecture',
     text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
     proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
+    number: '02',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
     proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
+    number: '03',
     title: 'Développement',
     text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
     proof: 'Private GPT · Architecture et réalisation front-end',
@@ -137,6 +140,7 @@ const experienceGroups: ExperienceGroup[] = [
   },
 ];
 
+const esnEmployers = ['Exakis-Nelite', 'Apollo SSC', 'Exo Partners'];
 // The career history also mentions unnamed client assignments, so this is a minimum.
 const knownClientOrganizations = [
   'Watts',
@@ -161,15 +165,14 @@ const roleFamilies = [
 // Lower bounds cover front-end skills and back-end/infrastructure together.
 const frontendSkillCount = '10+';
 const backendAndInfrastructureSkillCount = '15+';
-const missionCount = experienceGroups.reduce((count, group) => count + group.items.length, 0);
 
 const now = new Date();
 const yearsOfExperience = now.getFullYear() - 2015 - (now.getMonth() < 8 ? 1 : 0);
 
 const proofItems = [
   {
-    label: 'Missions',
-    value: `${missionCount}+`,
+    label: 'ESN',
+    value: esnEmployers.length,
   },
   {
     label: 'Clients',
@@ -205,7 +208,7 @@ function App() {
             <a href="#experience">Expérience</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a className="header-cv" href={links.cv} download="CV_Vincent_Mangel.pdf" aria-label="Télécharger le CV en PDF">CV <span aria-hidden="true">↓</span></a>
+          <a className="header-cv" href={links.cv} download="CV_Vincent_Mangel.pdf">CV PDF <span aria-hidden="true">↓</span></a>
         </div>
       </header>
 
@@ -223,18 +226,7 @@ function App() {
           </div>
 
           <div className="approach-summary" aria-labelledby="approach-title">
-            <p className="approach-eyebrow">DU BESOIN AU CODE</p>
             <h2 id="approach-title">Ma façon d’intervenir</h2>
-            <div className="approach-diagram" aria-hidden="true">
-              <span className="diagram-eyebrow">APPLICATION MÉTIER</span>
-              <div className="diagram-flow">
-                <span className="diagram-node">Besoin</span>
-                <span className="diagram-connector" />
-                <span className="diagram-node diagram-node--focus">Architecture</span>
-                <span className="diagram-connector" />
-                <span className="diagram-node">Code</span>
-              </div>
-            </div>
             <ul className="approach-list">
               <li><h3>Cadrer</h3><p>Je pars du besoin métier et de l’existant pour définir l’architecture cible.</p></li>
               <li><h3>Faire évoluer</h3><p>Je modernise les applications et les données en tenant compte des contraintes du projet.</p></li>
@@ -260,7 +252,8 @@ function App() {
           </div>
           <div className="expertise-grid">
             {expertise.map((area) => (
-              <article className="expertise-item" key={area.title}>
+              <article className="expertise-item" key={area.number}>
+                <span className="expertise-number">{area.number}</span>
                 <h3>{area.title}</h3>
                 <p>{area.text}</p>
                 <p className="expertise-proof">{area.proof}</p>
@@ -321,7 +314,7 @@ function App() {
             <p className="personal-note-label">Transmission & curiosité</p>
             <div>
               <p className="personal-note-statement"><strong>Je suis membre du jury de soutenance en BTS SIO à l’ICOF depuis 2024.</strong></p>
-              <p className="personal-note-interest">Je m’intéresse aussi à l’art, aux expositions et aux ateliers créatifs. J’ai également de bonnes connaissances en marketing, en jeux vidéo et en communication.</p>
+              <p className="personal-note-interest">Je m’intéresse aussi à l’art, aux expositions et aux ateliers créatifs.</p>
             </div>
           </aside>
         </section>
@@ -338,14 +331,13 @@ function App() {
               <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">Téléphone</span><strong>{links.displayPhone}</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
               <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
               <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">Profil</span><strong>LinkedIn</strong><span className="contact-arrow" aria-hidden="true">→</span></a>
-              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><span className="contact-label">CV</span><strong>Télécharger le CV (PDF)</strong><span className="contact-arrow" aria-hidden="true">↓</span></a>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>Tech Lead & Architecte logiciel · Lyon</p></div>
+        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>Tech Lead & Architecte logiciel · Lyon</p><a href={links.cv} download="CV_Vincent_Mangel.pdf">CV PDF ↓</a></div>
       </footer>
     </>
   );
