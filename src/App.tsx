@@ -272,7 +272,7 @@ function App() {
           </div>
           <div className="search-content">
             <figure className="lyon-map">
-              <img src="/lyon-recherche.svg" alt="Carte schématique de Lyon et de ses deux cours d’eau, avec un repère au centre-ville." loading="lazy" />
+              <img src="/lyon-recherche.png" alt="Carte illustrée de Lyon, avec un repère au centre-ville." loading="lazy" />
               <figcaption><span>Zone de recherche</span><strong>Lyon uniquement</strong></figcaption>
             </figure>
             <div className="search-details">
