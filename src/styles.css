@@ -89,7 +89,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .search-heading { margin-bottom: 40px; }
 .search-content { display: grid; grid-template-columns: minmax(250px, .73fr) minmax(0, 1.27fr); align-items: start; gap: clamp(42px, 7vw, 88px); }
 .lyon-map { min-width: 0; margin: 0; }
-.lyon-map img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--paper-alt); }
+.lyon-map-frame { aspect-ratio: 1.42; overflow: hidden; border: 1px solid var(--line); background: var(--paper-alt); }
+.lyon-map-frame img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.1); }
 .lyon-map figcaption { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid #9aac98; }
 .lyon-map figcaption span { color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
 .lyon-map figcaption strong { color: var(--forest-deep); font-size: 13px; font-weight: 650; }

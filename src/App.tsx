@@ -272,7 +272,9 @@ function App() {
           </div>
           <div className="search-content">
             <figure className="lyon-map">
-              <img src="/lyon-recherche.png" alt="Carte illustrée de Lyon, avec un repère au centre-ville." loading="lazy" />
+              <div className="lyon-map-frame">
+                <img src="/lyon-recherche.png" alt="Carte illustrée de Lyon, avec un repère au centre-ville." loading="lazy" />
+              </div>
               <figcaption><span>Zone de recherche</span><strong>Lyon uniquement</strong></figcaption>
             </figure>
             <div className="search-details">
