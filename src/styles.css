@@ -85,6 +85,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .proof-item dd strong { color: #e4eadc; font-family: var(--serif); font-size: 50px; font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.1; letter-spacing: -.04em; }
 .proof-item dt { margin-top: 3px; color: #d1dace; font-size: 12px; font-weight: 560; line-height: 1.4; }
 
+.search-section { padding-block: 98px 102px; }
+.search-heading { margin-bottom: 40px; }
+.search-content { display: grid; grid-template-columns: minmax(250px, .73fr) minmax(0, 1.27fr); align-items: start; gap: clamp(42px, 7vw, 88px); }
+.lyon-map { min-width: 0; margin: 0; }
+.lyon-map img { display: block; width: 100%; aspect-ratio: 1.44; border: 1px solid var(--line); background: var(--paper-alt); object-fit: cover; }
+.lyon-map figcaption { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid #9aac98; }
+.lyon-map figcaption span { color: var(--muted); font-size: 10px; font-weight: 650; letter-spacing: .09em; text-transform: uppercase; }
+.lyon-map figcaption strong { color: var(--forest-deep); font-size: 13px; font-weight: 650; }
+.search-criteria { margin: 0; }
+.search-criteria > div { display: grid; grid-template-columns: 126px minmax(0, 1fr); gap: 20px; padding: 15px 0; border-top: 1px solid var(--line); }
+.search-criteria > div:last-child { border-bottom: 1px solid var(--line); }
+.search-criteria dt { color: var(--forest); font-size: 12px; font-weight: 650; }
+.search-criteria dd { margin: 0; color: var(--ink); font-size: 14px; line-height: 1.55; }
+.search-principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; margin: 31px 0 0; padding: 0; list-style: none; }
+.search-principles li { padding-top: 13px; border-top: 1px solid #9aac98; }
+.search-principles h3 { margin: 0 0 6px; color: var(--forest-deep); font-family: var(--serif); font-size: 19px; font-weight: 500; letter-spacing: -.02em; }
+.search-principles p { max-width: 34ch; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+
 .expertise-section { padding-block: 104px 108px; }
 .section-heading { display: block; margin-bottom: 43px; }
 .section-index { margin: 10px 0 0; color: var(--forest); font-size: 11px; font-weight: 650; letter-spacing: .1em; }
@@ -178,6 +196,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item:nth-last-child(-n + 3) { border-bottom: 1px solid #567264; }
   .proof-item:nth-last-child(-n + 2) { border-bottom: 0; }
   .credentials-body { margin-left: 0; }
+  .search-content { grid-template-columns: minmax(220px, .75fr) minmax(0, 1.25fr); gap: 35px; }
+  .search-criteria > div { grid-template-columns: 96px minmax(0, 1fr); gap: 13px; }
+  .search-principles { gap: 19px; }
 }
 
 @media (max-width: 700px) {
@@ -199,6 +220,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item { min-height: 136px; padding: 16px 13px; border-right: 1px solid #567264; border-bottom: 1px solid #567264; }
   .proof-item dd strong { font-size: 41px; }
   .proof-item dt { font-size: 11px; }
+
+  .search-section { padding-block: 72px; }
+  .search-heading { margin-bottom: 28px; }
+  .search-content { grid-template-columns: 1fr; gap: 34px; }
+  .lyon-map { width: min(100%, 500px); }
+  .search-criteria > div { grid-template-columns: 88px minmax(0, 1fr); gap: 12px; padding-block: 13px; }
+  .search-criteria dd { font-size: 13px; }
+  .search-principles { grid-template-columns: 1fr; gap: 18px; margin-top: 24px; }
+  .search-principles li { padding-top: 11px; }
+  .search-principles h3 { font-size: 18px; }
 
   .expertise-section, .credentials-section { padding-block: 72px; }
   .ai-section { padding-block: 72px; }
@@ -256,6 +287,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item { min-height: 130px; padding-inline: 8px; }
   .proof-item dd strong { font-size: 35px; }
   .proof-item dt { font-size: 10px; }
+  .lyon-map figcaption { grid-template-columns: 1fr; gap: 2px; }
+  .search-criteria > div { grid-template-columns: 72px minmax(0, 1fr); gap: 9px; }
   .experience-period { max-width: 106px; }
   .credentials-meta { grid-template-columns: 1fr 1fr; }
 }

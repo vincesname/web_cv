@@ -176,6 +176,12 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Type and spacing:** The title uses the existing Georgia section-heading style; supporting context sits directly beneath it.
 - **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact area keeps its short index alongside its separate call-to-action heading.
 
+### Search Section
+- **Character:** A concise statement of the target role, location, preferred project engagement, and working principles. A small schematic Lyon map makes the location easy to scan.
+- **Shape and spacing:** Open editorial columns with fine rules; the map is a flat SVG illustration without a shadow or rounded frame.
+- **Type and color:** Existing numbered Georgia section heading, IBM Plex Sans details, forest green labels, warm paper canvas, and a quiet green map treatment.
+- **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction.
+
 ### Personal Note
 - **Character:** A full-width editorial callout highlights professional transmission and personal interests beneath education and credentials.
 - **Type and spacing:** A small forest label sits beside a moderate Georgia statement, followed by similarly readable supporting copy; a fine top rule anchors the row without a card surface.

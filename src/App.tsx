@@ -222,6 +222,7 @@ function App() {
         <div className="header-inner">
           <a className="brand" href="#top" aria-label="Vincent Mangel, accueil">Vincent Mangel</a>
           <nav className="primary-nav" aria-label="Navigation principale">
+            <a href="#recherche">Ma recherche</a>
             <a href="#expertises">Expertises</a>
             <a href="#ia">IA</a>
             <a href="#experience">Expérience</a>
@@ -237,7 +238,7 @@ function App() {
             <p className="hero-role">Tech Lead et architecte logiciel, à Lyon</p>
             <h1 id="hero-title">Je fais évoluer les applications métier, du cadrage à la livraison.</h1>
             <p className="hero-intro">Je pars du besoin et de l’existant, puis j’accompagne l’équipe jusqu’à la livraison.</p>
-            <p className="availability">À l’écoute de nouvelles opportunités <span>· Sur site ou hybride</span></p>
+            <p className="availability">Poste recherché : architecte <span>· Lyon uniquement</span></p>
             <div className="hero-actions">
               <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent('Échange professionnel')}`}>Me contacter</a>
               <a className="button button-text" href={links.cv} download="CV_Vincent_Mangel.pdf">Télécharger mon CV</a>
@@ -265,9 +266,31 @@ function App() {
           </div>
         </section>
 
+        <section className="search-section page-wrap" id="recherche" aria-labelledby="search-title">
+          <div className="section-heading search-heading">
+            <div><h2 id="search-title">01 / MA RECHERCHE</h2></div>
+          </div>
+          <div className="search-content">
+            <figure className="lyon-map">
+              <img src="/lyon-recherche.svg" alt="Carte schématique de Lyon et de ses deux cours d’eau, avec un repère au centre-ville." loading="lazy" />
+              <figcaption><span>Zone de recherche</span><strong>Lyon uniquement</strong></figcaption>
+            </figure>
+            <div className="search-details">
+              <dl className="search-criteria">
+                <div><dt>Poste</dt><dd>Architecte logiciel</dd></div>
+                <div><dt>Mode d’intervention</dt><dd>Je privilégie le forfait à la régie : un objectif partagé pour m’investir dans la durée, grandir avec l’entreprise et accompagner ses équipes.</dd></div>
+              </dl>
+              <ul className="search-principles">
+                <li><h3>Apprendre & transmettre</h3><p>Continuer à apprendre et partager mes connaissances pour aider l’équipe à progresser.</p></li>
+                <li><h3>Technique & humain</h3><p>Prendre en compte les enjeux techniques et les personnes qui conçoivent, développent et utilisent les solutions.</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
           <div className="section-heading">
-            <div><h2 id="expertise-title">01 / EXPERTISES</h2><p>Je relie les choix techniques aux besoins métier, du cadrage à la réalisation.</p></div>
+            <div><h2 id="expertise-title">02 / EXPERTISES</h2><p>Je relie les choix techniques aux besoins métier, du cadrage à la réalisation.</p></div>
           </div>
           <div className="expertise-grid">
             {expertise.map((area) => (
@@ -283,7 +306,7 @@ function App() {
 
         <section className="ai-section page-wrap" id="ia" aria-labelledby="ai-title">
           <div className="section-heading ai-heading">
-            <div><h2 id="ai-title">02 / IA & DÉVELOPPEMENT</h2><p>Je considère l’IA comme un outil incontournable du développement aujourd’hui. Je l’intègre à ma pratique selon le besoin et l’ampleur du projet.</p></div>
+            <div><h2 id="ai-title">03 / IA & DÉVELOPPEMENT</h2><p>Je considère l’IA comme un outil incontournable du développement aujourd’hui. Je l’intègre à ma pratique selon le besoin et l’ampleur du projet.</p></div>
           </div>
           <div className="ai-practice-grid">
             {aiPractices.map((practice) => (
@@ -305,7 +328,7 @@ function App() {
         <section className="experience-section" id="experience" aria-labelledby="experience-title">
           <div className="page-wrap">
             <div className="section-heading experience-heading">
-              <div><h2 id="experience-title">03 / EXPÉRIENCE</h2><p>Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.</p></div>
+              <div><h2 id="experience-title">04 / EXPÉRIENCE</h2><p>Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.</p></div>
             </div>
             <div className="timeline">
               {experienceGroups.map((group) => (
@@ -337,7 +360,7 @@ function App() {
 
         <section className="credentials-section page-wrap" aria-labelledby="credentials-title">
           <div className="section-heading credentials-heading">
-            <div><h2 id="credentials-title">04 / FORMATION & REPÈRES</h2></div>
+            <div><h2 id="credentials-title">05 / FORMATION & REPÈRES</h2></div>
           </div>
           <div className="credentials-body">
             <div className="education-list">
@@ -361,9 +384,9 @@ function App() {
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
-              <p className="section-index">05 / CONTACT</p>
+              <p className="section-index">06 / CONTACT</p>
               <h2 id="contact-title">Échangeons sur votre besoin.</h2>
-              <p>Je suis ouvert à un poste de Tech Lead ou d’architecte logiciel, ainsi qu’à une mission de modernisation applicative à Lyon.</p>
+              <p>Je recherche un poste d’architecte à Lyon. Je privilégie le forfait, pour m’engager sur un objectif commun et accompagner les équipes dans la durée.</p>
             </div>
             <div className="contact-actions">
               <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">E-mail</span><strong>{links.email}</strong></a>

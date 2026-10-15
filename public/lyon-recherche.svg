@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" fill="none">
+  <title>Carte schématique de Lyon — zone de recherche</title>
+  <desc>La Saône et le Rhône traversent un plan urbain épuré, avec un repère sur Lyon.</desc>
+  <rect width="520" height="360" fill="#efeee6"/>
+  <g stroke="#c8cdc1" stroke-width="1.3">
+    <path d="M-25 45C66 28 105 38 154 68s77 46 135 40 118-37 256-27"/>
+    <path d="M-20 78c83-15 134 2 177 31s82 45 139 37 109-39 243-29"/>
+    <path d="M-20 112c74-13 121 0 164 30s88 49 145 42 115-38 239-30"/>
+    <path d="M-20 151c69-11 111 1 154 31s93 53 150 46 120-38 238-30"/>
+    <path d="M-20 194c64-9 104 1 147 31s100 54 159 47 119-35 237-26"/>
+    <path d="M-20 239c56-9 96 0 140 31s108 55 166 46 120-30 237-19"/>
+    <path d="M-20 286c52-8 89-1 134 29s108 53 168 43 130-23 241-11"/>
+    <path d="M28-20c-8 57 2 91 23 126s24 70 13 108-27 73-17 166"/>
+    <path d="M80-20c-7 58 3 93 25 127s27 68 17 107-25 76-16 166"/>
+    <path d="M126-20c-5 58 6 93 29 127s30 67 21 107-23 76-13 166"/>
+    <path d="M188-20c-4 54 10 89 34 121s34 65 28 105-18 77-4 174"/>
+    <path d="M253-20c3 54 19 87 46 116s39 63 35 103-11 80 8 181"/>
+    <path d="M326-20c11 53 29 83 57 109s46 58 46 98-3 84 25 183"/>
+    <path d="M405-20c17 50 37 76 67 99s53 51 58 90 7 87 43 182"/>
+    <path d="M472-20c22 47 43 71 74 91s58 44 67 82 18 88 59 177"/>
+  </g>
+  <g stroke="#b6c5b7" stroke-width="1.1">
+    <path d="M-16 15 182 115 288 137 533 13"/>
+    <path d="M-13 331 174 222 279 196 530 329"/>
+    <path d="M37-14 229 111 326 143 492-13"/>
+    <path d="M10 371 206 226 296 193 488 374"/>
+  </g>
+  <path d="M151-20c16 38 31 60 27 91s-23 51-15 79 31 46 52 73 37 47 52 77" stroke="#d4e0d5" stroke-width="20"/>
+  <path d="M151-20c16 38 31 60 27 91s-23 51-15 79 31 46 52 73 37 47 52 77" stroke="#faf9f4" stroke-width="2"/>
+  <path d="M391-20c-7 40-13 70-5 99s19 48 11 76-28 52-49 77-43 42-81 68" stroke="#d4e0d5" stroke-width="22"/>
+  <path d="M391-20c-7 40-13 70-5 99s19 48 11 76-28 52-49 77-43 42-81 68" stroke="#faf9f4" stroke-width="2"/>
+  <g fill="#5c665f" font-family="Arial, sans-serif" font-size="9" font-weight="600" letter-spacing="1.4">
+    <text x="30" y="27">ZONE DE RECHERCHE</text>
+    <text x="73" y="142" transform="rotate(72 73 142)">SAÔNE</text>
+    <text x="422" y="180" transform="rotate(102 422 180)">RHÔNE</text>
+    <text x="363" y="323" letter-spacing="1.1">CONFLUENCE</text>
+  </g>
+  <g transform="translate(261 143)">
+    <circle r="23" fill="#cbd9cb"/>
+    <circle r="15" fill="#1d4b38"/>
+    <circle r="5" fill="#f7f6f0"/>
+  </g>
+  <path d="M278 137h72" stroke="#1d4b38" stroke-width="1.2"/>
+  <g fill="#173a2c">
+    <text x="287" y="126" font-family="Georgia, 'Times New Roman', serif" font-size="21" letter-spacing="-.5">Lyon</text>
+    <text x="287" y="151" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.25">RHÔNE · FRANCE</text>
+  </g>
+</svg>
