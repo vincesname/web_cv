@@ -55,7 +55,7 @@ The mission figure is a lower bound: eight client organizations are named in the
 - Explain the work from the start through delivery with a simple three-step timeline and green dots. Keep the hero headline moderate in size.
 - Keep the jury role readable without making it the largest copy in its section; make the interests and knowledge in art, exhibitions, creative workshops, marketing, video games, and communication equally legible.
 - Label the header download button `CV`; keep a clearly named PDF download in the contact links and omit it from the footer.
-- Use a simple green `VM` favicon.
+- Use a simple white `VM` monogram on a forest-green favicon background.
 - Avoid sales clichés and unsupported claims.
 
 ## Brand Commitments
