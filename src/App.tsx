@@ -478,7 +478,7 @@ const pageCopy: Record<Language, PageCopy> = {
     noteInterest: 'J’ai aussi de bonnes connaissances en marketing, en jeux vidéo et en communication. Je m’intéresse à l’art, aux expositions et aux ateliers créatifs.',
     contactIndex: '06 / CONTACT',
     contactTitle: 'Échangeons sur votre besoin.',
-    contactIntro: 'Je recherche un poste d’architecte à Lyon. Je privilégie le forfait, pour m’engager sur un objectif commun et accompagner les équipes dans la durée.',
+    contactIntro: 'Je recherche un poste d’architecte à Lyon. Je privilégie le forfait, pour m’engager sur un objectif commun et accompagner les équipes dans la durée. Choisissez le moyen qui vous convient pour échanger.',
     emailLabel: 'E-mail',
     phoneLabel: 'Téléphone',
     cvLabel: 'CV',
@@ -559,7 +559,7 @@ const pageCopy: Record<Language, PageCopy> = {
     noteInterest: 'I also have a good knowledge of marketing, video games, and communications. My interests include art, exhibitions, and creative workshops.',
     contactIndex: '06 / CONTACT',
     contactTitle: 'Let’s discuss your needs.',
-    contactIntro: 'I am looking for a software architect role in Lyon. I prefer fixed price work, with a shared goal that lets me commit for the long term and support the team.',
+    contactIntro: 'I am looking for a software architect role in Lyon. I prefer fixed price work, with a shared goal that lets me commit for the long term and support the team. Choose the way you prefer to get in touch.',
     emailLabel: 'Email',
     phoneLabel: 'Phone',
     cvLabel: 'CV',
@@ -664,7 +664,7 @@ function App() {
             <p className="hero-intro">{copy.heroIntro}</p>
             <p className="availability">{copy.availability} <span>{copy.availabilityMode}</span></p>
             <div className="hero-actions">
-              <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}>{copy.contactCta}</a>
+              <a className="button button-primary" href="#contact">{copy.contactCta}</a>
               <a className="button button-text" href={links.cv} download="CV_Vincent_Mangel.pdf">{copy.cvCta}</a>
             </div>
           </div>
@@ -803,19 +803,19 @@ function App() {
           </aside>
         </section>
 
-        <section className="contact-section" id="contact" aria-labelledby="contact-title">
+        <section className="contact-section" aria-labelledby="contact">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
               <p className="section-index">{copy.contactIndex}</p>
-              <h2 id="contact-title">{copy.contactTitle}</h2>
+              <h2 id="contact" tabIndex={-1}>{copy.contactTitle}</h2>
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
-              <a className="contact-link" href={`mailto:${links.email}`}><span className="contact-label">{copy.emailLabel}</span><strong>{links.email}</strong></a>
+              <a className="contact-link" href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><span className="contact-label">{copy.emailLabel}</span><strong>{links.email}</strong></a>
               <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">{copy.phoneLabel}</span><strong>{displayPhone}</strong></a>
-              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><span className="contact-label">{copy.cvLabel}</span><strong>{copy.cvDownloadLabel}</strong></a>
               <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">{copy.meetingLabel}</span><strong>{copy.meetingLinkLabel}</strong></a>
               <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">{copy.profileLabel}</span><strong>LinkedIn</strong></a>
+              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><span className="contact-label">{copy.cvLabel}</span><strong>{copy.cvDownloadLabel}</strong></a>
             </div>
           </div>
         </section>

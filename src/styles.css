@@ -178,6 +178,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .contact-wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(350px, 1.1fr); gap: clamp(48px, 9vw, 124px); padding-block: 88px 94px; }
 .contact-copy .section-index { color: #d4dfd1; }
 .contact-copy h2 { max-width: 12ch; margin: 18px 0 0; color: #f2f1e9; font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 4.1rem); font-weight: 500; line-height: 1.02; letter-spacing: -.05em; }
+.contact-copy h2:focus-visible { outline: 3px solid #f2f1e9; outline-offset: 4px; }
 .contact-copy > p:last-child { max-width: 46ch; margin: 20px 0 0; color: #d0dacf; font-size: 15px; line-height: 1.6; }
 .contact-actions { border-top: 1px solid #577263; }
 .contact-link { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: center; gap: 15px; min-height: 61px; padding: 9px 0; border-bottom: 1px solid #577263; color: #f1f3eb; text-decoration: none; }
