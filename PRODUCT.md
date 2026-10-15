@@ -44,7 +44,8 @@ The mission figure is a lower bound: eight client organizations are named in the
 - Combine section numbers and titles in a single heading, such as `01 / EXPERTISES`.
 - List experience newest first.
 - Do not number the three expertise columns; those categories are parallel areas, not a sequence.
-- Keep forest green as the primary color. Add color through purposeful surface areas and stronger hierarchy, not generic AI-generated decoration.
+- Keep forest green as the primary color. Keep the header on the paper background; the hero should not use a large solid-color card.
+- Explain the work from the start through delivery with a simple three-step timeline and green dots. Keep the hero headline moderate in size.
 - Keep the jury role readable without making it the largest copy in its section; make the interests and knowledge in art, exhibitions, creative workshops, marketing, video games, and communication equally legible.
 - Label the header download button `CV`; keep a clearly named PDF download in the contact links and omit it from the footer.
 - Use a simple green `VM` favicon.
@@ -65,7 +66,7 @@ Use direct, professional language that can speak to recruiters and commercial de
 - The Ayming assignment covered three projects in parallel.
 - The Private GPT assignment was an agentic platform front-end rewrite from Blazor to React.
 - No profile photograph, client logos, product screenshots, quantified business outcomes, or testimonial assets are present in the repository.
-- The site owner prefers forest green as the primary color and requested direct implementation rather than a mockup approval stage.
+- The site owner prefers forest green as the primary color, a paper-colored header, and no large green hero card. The owner requested a simple three-dot timeline in its place and a smaller headline that describes work from scoping to delivery. They prefer direct implementation rather than a mockup approval stage.
 
 ## Product Principles
 

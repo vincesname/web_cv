@@ -215,8 +215,8 @@ function App() {
         <section className="hero page-wrap" aria-labelledby="hero-title">
           <div className="hero-copy">
             <p className="hero-role">Tech Lead et architecte logiciel, à Lyon</p>
-            <h1 id="hero-title">Je fais évoluer les applications métier, du cadrage au code.</h1>
-            <p className="hero-intro">Je pars de l’existant, je définis une architecture adaptée, puis je reste impliqué dans la réalisation avec l’équipe.</p>
+            <h1 id="hero-title">Je fais évoluer les applications métier, du cadrage à la livraison.</h1>
+            <p className="hero-intro">Je pars du besoin et de l’existant, puis j’accompagne l’équipe jusqu’à la livraison.</p>
             <p className="availability">À l’écoute de nouvelles opportunités <span>· Sur site ou hybride</span></p>
             <div className="hero-actions">
               <a className="button button-primary" href={`mailto:${links.email}?subject=${encodeURIComponent('Échange professionnel')}`}>Me contacter</a>
@@ -226,11 +226,11 @@ function App() {
 
           <div className="approach-summary" aria-labelledby="approach-title">
             <h2 id="approach-title">Ma façon d’intervenir</h2>
-            <ul className="approach-list">
-              <li><h3>Cadrer</h3><p>Je pars du besoin métier et de l’existant pour définir l’architecture cible.</p></li>
-              <li><h3>Faire évoluer</h3><p>Je modernise les applications et les données en tenant compte des contraintes du projet.</p></li>
-              <li><h3>Travailler avec l’équipe</h3><p>Je participe aux choix techniques, accompagne les développeurs et reste proche du code.</p></li>
-            </ul>
+            <ol className="approach-list">
+              <li><h3>Cadrer</h3><p>Je clarifie le besoin, l’existant et les contraintes métier.</p></li>
+              <li><h3>Concevoir et réaliser</h3><p>Je définis l’architecture et reste impliqué dans le développement avec l’équipe.</p></li>
+              <li><h3>Livrer</h3><p>Je participe aux tests et aux derniers ajustements jusqu’à la livraison.</p></li>
+            </ol>
           </div>
         </section>
 

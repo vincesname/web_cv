@@ -103,7 +103,7 @@ components:
 
 **Creative North Star: "The Editorial Evidence Record"**
 
-The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers, with a pale forest header and a deep-green hero panel adding a clearer first-viewport anchor.
+The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers. The header stays on the paper background, and the hero uses an unboxed three-step timeline to explain work from scoping through delivery.
 
 Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.
 
@@ -154,7 +154,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. The hero pairs a large direct headline with a deep-green intervention panel; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. The hero pairs a measured direct headline with a simple vertical three-step timeline and green markers; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the career timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -190,7 +190,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Text action:** The secondary CV action is an underlined text link, not a filled control.
 
 ### Navigation
-- **Style:** Brand, section links, and a compact CV button sit in a pale forest header band.
+- **Style:** Brand, section links, and a compact CV button sit on the paper background above a fine bottom rule.
 - **Type and color:** 15px semibold IBM Plex Sans links use deep forest ink and turn rust with a stronger underline on hover.
 - **Responsive behavior:** At 700px and below, the section links move to a second horizontally scrollable row.
 - **Focus:** All links retain the visible rust keyboard outline.
@@ -202,10 +202,10 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Responsive behavior:** Two columns remain at tablet and phone widths. The band contains only figures and labels, without supporting notes or a methodology footnote.
 
 ### Approach Summary
-- **Character:** A short, general summary of how I work: framing, evolving applications, and working with the team. Specific client missions stay in the experience timeline.
-- **Shape and spacing:** Three open rows use fine top rules and 15px vertical padding inside one rectangular deep-forest surface; there is no shadow or border radius.
-- **Type and color:** A compact light-forest heading introduces Georgia action headings and concise pale-green descriptions.
-- **Responsive behavior:** The summary follows the hero copy on narrow screens and keeps a readable measure inside the same dark-green surface.
+- **Character:** A short three-step summary of how I work, from scoping through design and implementation to delivery. Specific client missions stay in the experience timeline.
+- **Shape and spacing:** Three open rows sit on the paper background beside a thin vertical rule. Each row has one small forest-green circular marker, with no card surface, shadow, or ornament.
+- **Type and color:** A compact forest heading introduces sans-serif step titles and concise muted descriptions.
+- **Responsive behavior:** The timeline follows the hero copy on narrow screens and keeps a readable measure.
 
 ### Expertise Columns
 - **Character:** Three open columns with one short rule across each top edge.
