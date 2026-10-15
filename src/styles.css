@@ -97,6 +97,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .expertise-proof { margin: auto 0 4px; padding-top: 22px; color: var(--forest); font-size: 12px; font-weight: 620; line-height: 1.45; }
 .expertise-skills { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
 
+.ai-section { padding-block: 100px 105px; }
+.ai-heading { margin-bottom: 36px; }
+.ai-heading > div > p { max-width: 68ch; }
+.ai-practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(30px, 5vw, 68px); }
+.ai-practice { display: grid; grid-template-columns: minmax(135px, .8fr) minmax(0, 1.2fr); gap: 20px; align-content: start; padding: 17px 0; border-top: 1px solid #9aac98; }
+.ai-practice h3 { margin: 0; color: var(--forest-deep); font-family: var(--serif); font-size: 21px; font-weight: 500; letter-spacing: -.02em; line-height: 1.3; }
+.ai-practice p { max-width: 46ch; margin: 0; color: #4d5b52; font-size: 14px; line-height: 1.6; }
+.ai-interest { margin-top: 25px; }
+
 .experience-section { padding-block: 100px 105px; background: var(--paper-alt); }
 .experience-heading { margin-bottom: 42px; }
 .experience-heading > div > p { max-width: 65ch; }
@@ -192,7 +201,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item dt { font-size: 11px; }
 
   .expertise-section, .credentials-section { padding-block: 72px; }
+  .ai-section { padding-block: 72px; }
   .section-heading { margin-bottom: 29px; }
+  .ai-heading { margin-bottom: 28px; }
   .section-index { margin-top: 0; }
   .section-heading h2 { font-size: clamp(2.3rem, 9vw, 3.1rem); }
   .section-heading > div > p { margin-top: 10px; font-size: 14px; }
@@ -200,6 +211,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .expertise-item { min-height: auto; padding-top: 12px; }
   .expertise-item h3 { margin: 8px 0 5px; font-size: 23px; }
   .expertise-proof { margin-top: 12px; padding-top: 0; }
+
+  .ai-practice-grid { grid-template-columns: 1fr; }
+  .ai-practice { grid-template-columns: 1fr; gap: 5px; }
+  .ai-practice h3 { font-size: 20px; }
+  .ai-interest { grid-template-columns: 1fr; gap: 8px; margin-top: 24px; padding-top: 18px; }
 
   .experience-section { padding-block: 72px; }
   .experience-heading { margin-bottom: 28px; }

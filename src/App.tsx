@@ -43,6 +43,25 @@ const expertise = [
   },
 ];
 
+const aiPractices = [
+  {
+    title: 'Prompt engineering',
+    text: 'J’optimise mes requêtes en précisant le contexte, l’objectif et les contraintes, puis j’affine le prompt selon les réponses obtenues.',
+  },
+  {
+    title: 'Agents et skills',
+    text: 'Je mobilise des workflows agentiques et des skills pour structurer les tâches et adapter le contexte aux besoins du travail.',
+  },
+  {
+    title: 'Choix multi-modèle',
+    text: 'Je sélectionne le modèle en fonction de la tâche, du raisonnement attendu et du format de réponse recherché.',
+  },
+  {
+    title: 'Du prototype au SDD',
+    text: 'Le vibecoding me permet d’explorer rapidement une idée. Pour un développement de plus grande ampleur, je privilégie le Spec-Driven Development (SDD) : clarifier le besoin, les contraintes et les critères attendus avant de coder.',
+  },
+];
+
 const experienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
@@ -204,6 +223,7 @@ function App() {
           <a className="brand" href="#top" aria-label="Vincent Mangel, accueil">Vincent Mangel</a>
           <nav className="primary-nav" aria-label="Navigation principale">
             <a href="#expertises">Expertises</a>
+            <a href="#ia">IA</a>
             <a href="#experience">Expérience</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -261,10 +281,31 @@ function App() {
           </div>
         </section>
 
+        <section className="ai-section page-wrap" id="ia" aria-labelledby="ai-title">
+          <div className="section-heading ai-heading">
+            <div><h2 id="ai-title">02 / IA & DÉVELOPPEMENT</h2><p>Je considère l’IA comme un outil incontournable du développement aujourd’hui. Je l’intègre à ma pratique selon le besoin et l’ampleur du projet.</p></div>
+          </div>
+          <div className="ai-practice-grid">
+            {aiPractices.map((practice) => (
+              <article className="ai-practice" key={practice.title}>
+                <h3>{practice.title}</h3>
+                <p>{practice.text}</p>
+              </article>
+            ))}
+          </div>
+          <aside className="personal-note ai-interest" aria-label="Intérêt pour les modèles alternatifs">
+            <p className="personal-note-label">Veille & exploration</p>
+            <div>
+              <p className="personal-note-statement">Je m’intéresse aux modèles de langage alternatifs, notamment aux d-LLM.</p>
+              <p className="personal-note-interest">Je suis curieux de leurs approches et de ce qu’elles peuvent apporter au développement.</p>
+            </div>
+          </aside>
+        </section>
+
         <section className="experience-section" id="experience" aria-labelledby="experience-title">
           <div className="page-wrap">
             <div className="section-heading experience-heading">
-              <div><h2 id="experience-title">02 / EXPÉRIENCE</h2><p>Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.</p></div>
+              <div><h2 id="experience-title">03 / EXPÉRIENCE</h2><p>Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.</p></div>
             </div>
             <div className="timeline">
               {experienceGroups.map((group) => (
@@ -296,7 +337,7 @@ function App() {
 
         <section className="credentials-section page-wrap" aria-labelledby="credentials-title">
           <div className="section-heading credentials-heading">
-            <div><h2 id="credentials-title">03 / FORMATION & REPÈRES</h2></div>
+            <div><h2 id="credentials-title">04 / FORMATION & REPÈRES</h2></div>
           </div>
           <div className="credentials-body">
             <div className="education-list">
@@ -320,7 +361,7 @@ function App() {
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
-              <p className="section-index">04 / CONTACT</p>
+              <p className="section-index">05 / CONTACT</p>
               <h2 id="contact-title">Échangeons sur votre besoin.</h2>
               <p>Je suis ouvert à un poste de Tech Lead ou d’architecte logiciel, ainsi qu’à une mission de modernisation applicative à Lyon.</p>
             </div>
