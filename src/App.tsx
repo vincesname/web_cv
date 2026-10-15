@@ -648,8 +648,8 @@ function App() {
           </nav>
           <div className="header-actions">
             <div className="language-switcher" role="group" aria-label={copy.languageSwitch}>
-              <button type="button" lang="fr" aria-label={copy.switchToFrench} aria-pressed={language === 'fr'} onClick={() => chooseLanguage('fr')}>fr</button>
-              <button type="button" lang="en" aria-label={copy.switchToEnglish} aria-pressed={language === 'en'} onClick={() => chooseLanguage('en')}>en</button>
+              <button type="button" lang="fr" aria-label={copy.switchToFrench} aria-pressed={language === 'fr'} onClick={() => chooseLanguage('fr')}>FR</button>
+              <button type="button" lang="en" aria-label={copy.switchToEnglish} aria-pressed={language === 'en'} onClick={() => chooseLanguage('en')}>EN</button>
             </div>
             <a className="header-cv" href={links.cv} download="CV_Vincent_Mangel.pdf" aria-label={language === 'en' ? 'Download the French CV PDF' : undefined}>CV</a>
           </div>
