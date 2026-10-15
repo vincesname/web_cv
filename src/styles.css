@@ -50,6 +50,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .primary-nav { display: flex; gap: clamp(20px, 3vw, 40px); margin-left: auto; }
 .primary-nav a { display: inline-flex; min-height: 44px; align-items: center; color: var(--forest-deep); font-size: 15px; font-weight: 620; text-decoration: none; text-underline-offset: 5px; }
 .primary-nav a:hover { color: var(--rust-deep); text-decoration: underline; text-decoration-thickness: 2px; }
+.header-actions { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 16px; }
 .language-switcher { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; white-space: nowrap; }
 .language-switcher button { min-height: 44px; padding: 0; border: 0; background: none; color: var(--forest-deep); font-size: 13px; font-weight: 550; text-decoration: underline; text-decoration-color: #8e9e8f; text-underline-offset: 5px; cursor: pointer; transition: color 150ms ease, text-decoration-color 150ms ease; }
 .language-switcher button:hover { color: var(--rust-deep); text-decoration-color: currentColor; }
@@ -211,6 +212,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .header-inner { gap: 12px; }
   .primary-nav { gap: 10px; }
   .primary-nav a { font-size: 12px; }
+  .header-actions { gap: 10px; }
   .header-cv { padding-inline: 16px; }
 }
 
@@ -219,8 +221,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .page-wrap, .header-inner { width: calc(100% - 40px); }
   .header-inner { min-height: 68px; flex-wrap: wrap; gap: 0 20px; padding-block: 12px; }
   .brand { font-size: 16px; }
-  .language-switcher { order: 2; margin-left: auto; }
   .language-switcher button { min-height: 44px; }
+  .header-actions { order: 2; margin-left: auto; gap: 12px; }
   .primary-nav { order: 4; width: 100%; gap: 22px; padding-top: 11px; overflow-x: auto; }
   .primary-nav a { flex: 0 0 auto; font-size: 13px; }
   .header-cv { min-height: 42px; margin-left: 0; padding-inline: 18px; font-size: 14px; }
