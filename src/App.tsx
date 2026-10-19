@@ -109,7 +109,7 @@ const englishAiPractices = [
 const experienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
-    period: 'Oct. 2023 — aujourd’hui',
+    period: 'Oct. 2023 - aujourd’hui',
     context: 'Tech Lead · Lyon · hybride',
     items: [
       {
@@ -121,28 +121,28 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         title: 'Responsable technique · Legrand',
-        period: 'Nov. 2025 — févr. 2026',
+        period: 'Nov. 2025 - févr. 2026',
         summary: 'Chez Legrand, j’ai traité et migré des données pour un outil de Product Lifecycle Management.',
         details: 'J’ai maintenu et écrit des scripts pour traiter, calculer et convertir les données entre bases, puis documenté l’existant dans un contexte métier et technique contraint.',
         stack: ['PowerShell', 'Python', 'Excel', 'PLM'],
       },
       {
         title: 'Architecte technique · CNR',
-        period: 'Juil. 2025 — févr. 2026',
+        period: 'Juil. 2025 - févr. 2026',
         summary: 'Chez CNR, j’ai cadré la refonte d’une application métier critique, de WPF vers le web.',
         details: 'Après avoir analysé le besoin, j’ai rédigé le cadrage technique et défini l’architecture cible. Les ateliers avec les utilisateurs m’ont permis d’intégrer les contraintes métier et techniques.',
         stack: ['C#', 'WPF', 'Angular', 'Telerik', 'SQL Server', 'Oracle'],
       },
       {
         title: 'Tech Lead front-end · Projet Private GPT',
-        period: 'Juil. 2025 — oct. 2025',
+        period: 'Juil. 2025 - oct. 2025',
         summary: 'Pour Private GPT, j’ai piloté la refonte front-end de Blazor vers React.',
         details: 'J’ai défini l’architecture front-end, choisi le socle technique et posé les bonnes pratiques, puis coordonné et accompagné les développeurs. Mon périmètre couvrait le front-end ; une autre équipe gérait le back-end et l’infrastructure.',
         stack: ['React', 'Blazor', 'LLM locaux', 'MUI', 'C#', 'Azure Cosmos DB', 'Azure AI', 'App Service'],
       },
       {
         title: 'Responsable équipe technique · Ayming',
-        period: 'Oct. 2023 — juin 2025',
+        period: 'Oct. 2023 - juin 2025',
         summary: 'Chez Ayming, j’ai été Lead développeur full stack sur trois projets aux objectifs et équipes différents.',
         details: 'J’ai modernisé des applications, mené des migrations Angular et Angular Material, maintenu le code et les bases, pris des décisions d’architecture, revu des pull requests et accompagné les développeurs. Nous travaillions par sprints de deux semaines.',
         stack: ['Angular', 'Angular Material', '.NET Core', 'SQL Server', 'Oracle', 'Azure DevOps'],
@@ -151,33 +151,33 @@ const experienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Apollo SSC',
-    period: 'Janv. 2019 — sept. 2023',
+    period: 'Janv. 2019 - sept. 2023',
     context: 'Ingénieur d’études et développement · Lyon et périphérie',
     items: [
       {
         title: 'Développeur full stack · Stanley Security France',
-        period: 'Mai 2021 — sept. 2023',
+        period: 'Mai 2021 - sept. 2023',
         summary: 'Chez Stanley Security France, j’ai fait évoluer un extranet client et modernisé une application de suivi en temps réel.',
         details: 'Après mon intervention sur l’application ASP / C# existante, j’ai rejoint l’équipe chargée de sa nouvelle version. J’y ai développé le front-end, le back-end et la base de données, animé des ateliers techniques, revu le code, testé les évolutions et accompagné les développeurs.',
         stack: ['Angular', 'TypeScript', 'D3.js', 'RxJS', 'C#', 'API REST', 'SQL Server'],
       },
       {
         title: 'Analyste technique · Groupe APICIL',
-        period: 'Juil. 2020 — mars 2021',
+        period: 'Juil. 2020 - mars 2021',
         summary: 'Au Groupe APICIL, j’ai traduit des besoins fonctionnels complexes en spécifications pour les équipes de développement.',
         details: 'J’ai échangé avec les analystes fonctionnels, suivi la qualification, réalisé les tests et documenté un environnement applicatif historique.',
         stack: ['RPG', 'AS/400', 'Oracle', 'Data Modeler', 'SoapUI'],
       },
       {
         title: 'Lead Developer puis chef de projet · SMERRA',
-        period: 'Avr. 2019 — juin 2020',
+        period: 'Avr. 2019 - juin 2020',
         summary: 'Chez SMERRA, j’ai maintenu et fait évoluer une application WinForms, transmis les connaissances et piloté le projet.',
         details: 'J’ai formé les développeurs et suivi le projet, tout en participant au passage vers Azure DevOps, aux sprints agiles et à la montée de version .NET.',
         stack: ['C#', 'WinForms', '.NET Framework', 'SQL Server', 'Azure DevOps'],
       },
       {
         title: 'Développeur logiciel · INDESO',
-        period: 'Janv. 2019 — mars 2019',
+        period: 'Janv. 2019 - mars 2019',
         summary: 'Pour INDESO, j’ai développé une application métier avec WPF.',
         details: 'J’ai conçu et développé une application interne avec Entity Framework et SQL Server, puis partagé sa documentation.',
         stack: ['C#', 'WPF', 'Entity Framework', 'SQL Server', 'Confluence'],
@@ -186,12 +186,12 @@ const experienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Exo Partners',
-    period: 'Sept. 2015 — oct. 2018',
+    period: 'Sept. 2015 - oct. 2018',
     context: 'Développeur full stack · alternance',
     items: [
       {
         title: 'Applications comptables et hôtelières',
-        period: '2015 — 2018',
+        period: '2015 - 2018',
         summary: 'Pendant mon alternance chez Exo Partners, j’ai développé, maintenu et modernisé plusieurs applications métier.',
         details: 'J’ai contribué à la refonte d’une application Silverlight vers ASP.NET / C#. Mon travail couvrait aussi la gestion des données, la Business Intelligence, la rédaction de spécifications et l’accompagnement d’autres développeurs.',
         stack: ['C#', 'ASP.NET', 'Silverlight', 'SQL Server', 'WPF', 'VB.NET', 'Excel', 'Access'],
@@ -203,7 +203,7 @@ const experienceGroups: ExperienceGroup[] = [
 const englishExperienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
-    period: 'Oct 2023 — present',
+    period: 'Oct 2023 - present',
     context: 'Tech Lead · Lyon · hybrid',
     items: [
       {
@@ -215,28 +215,28 @@ const englishExperienceGroups: ExperienceGroup[] = [
       },
       {
         title: 'Technical Lead · Legrand',
-        period: 'Nov 2025 — Feb 2026',
+        period: 'Nov 2025 - Feb 2026',
         summary: 'At Legrand, I processed and migrated data for a Product Lifecycle Management (PLM) tool.',
         details: 'I maintained and wrote scripts to process, calculate, and convert data across databases, then documented the existing system in a demanding business and technical context.',
         stack: ['PowerShell', 'Python', 'Excel', 'PLM'],
       },
       {
         title: 'Technical Architect · CNR',
-        period: 'Jul 2025 — Feb 2026',
+        period: 'Jul 2025 - Feb 2026',
         summary: 'At CNR, I scoped the redesign of a critical business application, moving it from WPF to the web.',
         details: 'After analysing the requirements, I wrote the technical scoping document and defined the target architecture. Workshops with users helped me account for business and technical constraints.',
         stack: ['C#', 'WPF', 'Angular', 'Telerik', 'SQL Server', 'Oracle'],
       },
       {
         title: 'Front-end Tech Lead · Private GPT project',
-        period: 'Jul 2025 — Oct 2025',
+        period: 'Jul 2025 - Oct 2025',
         summary: 'I led the front-end rewrite of Private GPT from Blazor to React.',
         details: 'I defined the front-end architecture, selected the technology stack, set development practices, and coordinated and supported developers. My scope covered the front end; another team handled the back end and infrastructure.',
         stack: ['React', 'Blazor', 'Local LLMs', 'MUI', 'C#', 'Azure Cosmos DB', 'Azure AI', 'App Service'],
       },
       {
         title: 'Technical Team Lead · Ayming',
-        period: 'Oct 2023 — Jun 2025',
+        period: 'Oct 2023 - Jun 2025',
         summary: 'At Ayming, I was a full-stack Lead Developer across three projects with different goals and teams.',
         details: 'I modernised applications, led Angular and Angular Material migrations, maintained code and databases, made architecture decisions, reviewed pull requests, and supported developers. We worked in two-week sprints.',
         stack: ['Angular', 'Angular Material', '.NET Core', 'SQL Server', 'Oracle', 'Azure DevOps'],
@@ -245,33 +245,33 @@ const englishExperienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Apollo SSC',
-    period: 'Jan 2019 — Sep 2023',
+    period: 'Jan 2019 - Sep 2023',
     context: 'Software Development Engineer · Lyon and surrounding area',
     items: [
       {
         title: 'Full-stack Developer · Stanley Security France',
-        period: 'May 2021 — Sep 2023',
+        period: 'May 2021 - Sep 2023',
         summary: 'At Stanley Security France, I evolved a client extranet and modernised a real-time monitoring application.',
         details: 'After working on the existing ASP / C# application, I joined the team building its new version. I developed the front end, back end, and database, ran technical workshops, reviewed code, tested changes, and supported developers.',
         stack: ['Angular', 'TypeScript', 'D3.js', 'RxJS', 'C#', 'REST API', 'SQL Server'],
       },
       {
         title: 'Technical Analyst · Groupe APICIL',
-        period: 'Jul 2020 — Mar 2021',
+        period: 'Jul 2020 - Mar 2021',
         summary: 'At Groupe APICIL, I translated complex functional requirements into specifications for development teams.',
         details: 'I worked with business analysts, followed qualification activities, carried out tests, and documented a legacy application environment.',
         stack: ['RPG', 'AS/400', 'Oracle', 'Data Modeler', 'SoapUI'],
       },
       {
         title: 'Lead Developer, then Project Manager · SMERRA',
-        period: 'Apr 2019 — Jun 2020',
+        period: 'Apr 2019 - Jun 2020',
         summary: 'At SMERRA, I maintained and evolved a WinForms application, shared knowledge, and led the project.',
         details: 'I trained developers and tracked the project while contributing to the move to Azure DevOps, agile sprints, and a .NET upgrade.',
         stack: ['C#', 'WinForms', '.NET Framework', 'SQL Server', 'Azure DevOps'],
       },
       {
         title: 'Software Developer · INDESO',
-        period: 'Jan 2019 — Mar 2019',
+        period: 'Jan 2019 - Mar 2019',
         summary: 'I developed a business application with WPF for INDESO.',
         details: 'I designed and built an internal application with Entity Framework and SQL Server, then shared its documentation.',
         stack: ['C#', 'WPF', 'Entity Framework', 'SQL Server', 'Confluence'],
@@ -280,12 +280,12 @@ const englishExperienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Exo Partners',
-    period: 'Sep 2015 — Oct 2018',
+    period: 'Sep 2015 - Oct 2018',
     context: 'Full-stack Developer · work-study programme',
     items: [
       {
         title: 'Accounting and hospitality applications',
-        period: '2015 — 2018',
+        period: '2015 - 2018',
         summary: 'During my work-study programme at Exo Partners, I developed, maintained, and modernised several business applications.',
         details: 'I contributed to a rewrite from Silverlight to ASP.NET / C#. My work also covered data management, business intelligence, specification writing, and support for other developers.',
         stack: ['C#', 'ASP.NET', 'Silverlight', 'SQL Server', 'WPF', 'VB.NET', 'Excel', 'Access'],
@@ -408,9 +408,9 @@ type PageCopy = {
 
 const pageCopy: Record<Language, PageCopy> = {
   fr: {
-    pageTitle: 'Vincent Mangel — Tech Lead & Architecte logiciel',
+    pageTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
     pageDescription: 'Je suis Tech Lead et architecte logiciel à Lyon. Je conçois et fais évoluer des applications métier avec les équipes, de l’architecture au développement.',
-    openGraphTitle: 'Vincent Mangel — Tech Lead & Architecte logiciel',
+    openGraphTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
     openGraphDescription: 'Je conçois et fais évoluer des applications métier avec les équipes, de l’architecture au développement.',
     jobTitle: 'Tech Lead et Architecte logiciel',
     skipLink: 'Aller au contenu',
@@ -465,8 +465,8 @@ const pageCopy: Record<Language, PageCopy> = {
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
     education: [
-      { date: '2015 — 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
-      { date: '2013 — 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option développement' },
+      { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
+      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option développement' },
     ],
     certificationTitle: 'Certifications',
     certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Intelligence artificielle'],
@@ -489,9 +489,9 @@ const pageCopy: Record<Language, PageCopy> = {
     footerRole: 'Tech Lead et architecte logiciel, Lyon',
   },
   en: {
-    pageTitle: 'Vincent Mangel — Tech Lead & Software Architect',
+    pageTitle: 'Vincent Mangel - Tech Lead & Software Architect',
     pageDescription: 'I am a Tech Lead and software architect in Lyon. I design and evolve business applications with teams, from architecture through implementation.',
-    openGraphTitle: 'Vincent Mangel — Tech Lead & Software Architect',
+    openGraphTitle: 'Vincent Mangel - Tech Lead & Software Architect',
     openGraphDescription: 'I design and evolve business applications with teams, from architecture through implementation.',
     jobTitle: 'Tech Lead and Software Architect',
     skipLink: 'Skip to content',
@@ -546,8 +546,8 @@ const pageCopy: Record<Language, PageCopy> = {
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
     education: [
-      { date: '2015 — 2018', title: 'Expert en Systèmes d’Information (Information Systems Expert)', institution: 'ISITECH Lyon · Master’s degree' },
-      { date: '2013 — 2015', title: 'BTS Services Informatiques aux Organisations (IT Services for Organisations)', institution: 'ICOF Lyon · software development track' },
+      { date: '2015 - 2018', title: 'Expert en Systèmes d’Information (Information Systems Expert)', institution: 'ISITECH Lyon · Master’s degree' },
+      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (IT Services for Organisations)', institution: 'ICOF Lyon · software development track' },
     ],
     certificationTitle: 'Certifications',
     certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Artificial intelligence'],

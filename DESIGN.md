@@ -15,21 +15,30 @@ colors:
 typography:
   display:
     fontFamily: "Georgia, 'Times New Roman', serif"
-    fontSize: "clamp(3.4rem, 6.1vw, 5.25rem)"
+    fontSize: "clamp(2.75rem, 5vw, 3.75rem)"
     fontWeight: 500
     lineHeight: 1.01
     letterSpacing: "-0.055em"
   headline:
     fontFamily: "Georgia, 'Times New Roman', serif"
-    fontSize: "clamp(2.35rem, 4vw, 3.3rem)"
+    fontSize: "clamp(2.25rem, 4vw, 3rem)"
     fontWeight: 500
     lineHeight: 1.08
     letterSpacing: "-0.045em"
   title:
     fontFamily: "Georgia, 'Times New Roman', serif"
-    fontSize: "25px"
+    fontSize: "24px"
     fontWeight: 500
     letterSpacing: "-0.025em"
+  subheading:
+    fontFamily: "Georgia, 'Times New Roman', serif"
+    fontSize: "20px"
+    fontWeight: 500
+  lead:
+    fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1.6
   body:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "16px"
@@ -38,21 +47,25 @@ typography:
   nav:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
-    fontWeight: 400
+    fontWeight: 620
   label:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
-    fontSize: "11px"
+    fontSize: "12px"
     fontWeight: 650
     letterSpacing: "0.1em"
   action:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
-    fontWeight: 600
+    fontWeight: 650
   summary:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
     fontWeight: 630
     lineHeight: 1.4
+  stat:
+    fontFamily: "Georgia, 'Times New Roman', serif"
+    fontSize: "clamp(2.25rem, 4.2vw, 3rem)"
+    fontWeight: 500
 rounded:
   none: "0px"
 spacing:
@@ -143,11 +156,20 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 **Character:** IBM Plex Sans keeps reading and controls practical and clear. Georgia gives display headings a quieter editorial voice.
 
 ### Hierarchy
-- **Display** (500, responsive 3.4rem–5.25rem, 1.01 line-height): The hero heading; it tightens at narrower breakpoints.
-- **Headline** (500, responsive 2.35rem–3.3rem, 1.08 line-height): Section headings.
-- **Title** (500, 23–25px): Georgia subheadings for expertise and company entries.
-- **Body** (400, 16px, 1.6 line-height): Default reading text; lead copy may increase to 17px.
-- **Label** (650, 11–13px, tracked): Eyebrows, indexes, and small metadata; uppercase is used where the content calls for it.
+- **Display** (500, responsive 2.75–3.75rem, 1.01 line-height): The hero and contact headings.
+- **Headline** (500, responsive 2.25–3rem, 1.08 line-height): Section headings.
+- **Title** (500, 24px): Georgia subheadings for expertise and company entries.
+- **Subheading** (500, 20px): Compact Georgia headings for search principles and AI practice.
+- **Lead** (400, 18px, 1.6 line-height): The hero introduction.
+- **Body** (400, 16px, 1.6 line-height): Default reading text.
+- **Action and compact copy** (550–650, 14px): Navigation, buttons, summaries, and supporting paragraphs.
+- **Label and metadata** (550–650, 12px, tracked where useful): Indexes, dates, captions, and small metadata.
+- **Figures** (500, responsive 2.25–3rem): Proof-band values.
+
+### Type Scale
+Use the shared CSS tokens `--text-label` (12px), `--text-sm` (14px), `--text-base` (16px), `--text-lg` (18px), `--text-xl` (20px), and `--text-2xl` (24px). Section headings scale from 36px to 48px, display headings from 44px to 60px, and proof figures from 36px to 48px. Keep these roles stable at every breakpoint; responsive size changes come from the heading tokens rather than per-component overrides.
+
+Visible copy uses a plain hyphen for sentence breaks and date ranges.
 
 ### Named Rules
 **The Two-Voice Rule.** Use IBM Plex Sans for reading and controls; reserve Georgia for display headings and subheadings.

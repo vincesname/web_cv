@@ -8,15 +8,15 @@ Read [PRODUCT.md](PRODUCT.md) before changing the portfolio; it records the appr
 - Use Vincent’s direct, first-person voice where natural. Keep client examples in the experience timeline and list the newest experience first.
 - Preserve the forest-green editorial design. Avoid generic HR/commercial copy and generic AI-generated visual patterns.
 
-## Requested Design and Front-end Skills
+## Design and Front-end Skills
 
-For future visual or front-end work, inspect the skills actually available in the current environment and read their `SKILL.md` instructions before implementation. The site owner specifically asked that design skills not be skipped.
+Open-licensed design guidance is versioned under `.agents/skills/`. Read the relevant `SKILL.md` instructions before implementation; the site owner asked that design guidance not be skipped.
 
-Preferred workflow when these skills are available:
+1. **Impeccable** (`.agents/skills/impeccable/SKILL.md`) for design critique, visual polish, and typography.
+2. **Anthropic Frontend Design** is linked to its official plugin source. Its terms reserve rights, so its text is not redistributed in this repository.
+3. **Web Quality Skills** (`.agents/skills/web-quality-audit/SKILL.md`, with focused guidance in `accessibility/`, `performance/`, `core-web-vitals/`, `seo/`, and `best-practices/`) for the final quality review.
+4. **Claude Design Skills** under `.agents/skills/` for deeper information architecture, content design, or accessibility work when the task calls for it.
 
-1. **Impeccable** for design critique, visual polish, and AI-pattern checks: <https://github.com/pbakaus/impeccable>
-2. **Anthropic `frontend-design`** for the implementation direction: <https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design>
-3. **Addy Osmani Web Quality Skills** for the final accessibility, performance, SEO, and quality review: <https://github.com/addyosmani/web-quality-skills>
-4. Use **Claude Design Skills** for deeper information architecture, content design, or accessibility work when the task calls for it: <https://github.com/richhemsley3/claude-design-skills>
+Source repository URLs, pinned revisions, and license files are recorded in `.agents/skills/SOURCES.md` and `.agents/skills/licenses/`.
 
-Do not say a skill was applied unless it was available and its instructions were actually read. If a requested skill is unavailable, note that limitation and continue using this repository’s `PRODUCT.md` and `DESIGN.md` as the working brief.
+Do not say a skill was applied unless its instructions were actually read. Continue to use `PRODUCT.md` and `DESIGN.md` as the approved project brief.

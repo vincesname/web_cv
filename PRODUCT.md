@@ -57,6 +57,7 @@ The mission figure is a lower bound: eight client organizations are named in the
 - Label the header download button `CV`; keep a clearly named PDF download in the contact links and omit it from the footer.
 - Use a simple white `VM` monogram on a forest-green favicon background.
 - Avoid sales clichés and unsupported claims.
+- Use the standard hyphen for visible sentence breaks and date ranges; avoid long dash characters in site copy.
 
 ## Brand Commitments
 

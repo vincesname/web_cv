@@ -1,4 +1,4 @@
-# Vincent Mangel — CV Web
+# Vincent Mangel - CV Web
 
 Site vitrine de CV, en React, TypeScript et Vite. Le projet est entièrement statique : aucune API, base de données ni service externe requis à l’exécution. Le PDF source du CV est servi depuis `public/CV_Vincent_Mangel.pdf`.
 
