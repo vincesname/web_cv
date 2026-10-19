@@ -394,7 +394,6 @@ type PageCopy = {
   noteStatement: string;
   noteInterest: string;
   contactIndex: string;
-  contactTitle: string;
   contactIntro: string;
   emailLabel: string;
   phoneLabel: string;
@@ -477,7 +476,6 @@ const pageCopy: Record<Language, PageCopy> = {
     noteStatement: 'Je suis membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.',
     noteInterest: 'J’ai aussi de bonnes connaissances en marketing, en jeux vidéo et en communication. Je m’intéresse à l’art, aux expositions et aux ateliers créatifs.',
     contactIndex: '06 / CONTACT',
-    contactTitle: 'Échangeons sur votre besoin.',
     contactIntro: 'Je recherche un poste d’architecte à Lyon. Je privilégie le forfait, pour m’engager sur un objectif commun et accompagner les équipes dans la durée. Choisissez le moyen qui vous convient pour échanger.',
     emailLabel: 'E-mail',
     phoneLabel: 'Téléphone',
@@ -558,7 +556,6 @@ const pageCopy: Record<Language, PageCopy> = {
     noteStatement: 'I have served on BTS SIO oral examination panels at ICOF since 2024.',
     noteInterest: 'I also have a good knowledge of marketing, video games, and communications. My interests include art, exhibitions, and creative workshops.',
     contactIndex: '06 / CONTACT',
-    contactTitle: 'Let’s discuss your needs.',
     contactIntro: 'I am looking for a software architect role in Lyon. I prefer fixed price work, with a shared goal that lets me commit for the long term and support the team. Choose the way you prefer to get in touch.',
     emailLabel: 'Email',
     phoneLabel: 'Phone',
@@ -806,8 +803,7 @@ function App() {
         <section className="contact-section" aria-labelledby="contact">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
-              <p className="section-index">{copy.contactIndex}</p>
-              <h2 id="contact" tabIndex={-1}>{copy.contactTitle}</h2>
+              <h2 id="contact" tabIndex={-1}>{copy.contactIndex}</h2>
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">

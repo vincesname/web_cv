@@ -187,8 +187,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 .contact-section { background: var(--forest-deep); color: var(--paper); }
 .contact-wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(350px, 1.1fr); gap: clamp(48px, 9vw, 124px); padding-block: 88px 94px; }
-.contact-copy .section-index { color: #d4dfd1; }
-.contact-copy h2 { max-width: 12ch; margin: 18px 0 0; color: #f2f1e9; font-family: var(--serif); font-size: var(--text-display); font-weight: 500; line-height: 1.02; letter-spacing: -.05em; }
+.contact-copy h2 { max-width: 12ch; margin: 0; color: #f2f1e9; font-family: var(--serif); font-size: var(--text-display); font-weight: 500; line-height: 1.02; letter-spacing: -.05em; }
 .contact-copy h2:focus-visible { outline: 3px solid #f2f1e9; outline-offset: 4px; }
 .contact-copy > p:last-child { max-width: 46ch; margin: 20px 0 0; color: #d0dacf; font-size: var(--text-base); line-height: 1.6; }
 .contact-actions { border-top: 1px solid #577263; }
@@ -284,7 +283,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .personal-note-label { margin-top: 0; }
 
   .contact-wrap { grid-template-columns: 1fr; gap: 34px; padding-block: 70px; }
-  .contact-copy h2 { margin-top: 13px; }
   .contact-link { grid-template-columns: 82px minmax(0, 1fr); gap: 9px; }
   .footer-inner { min-height: auto; flex-wrap: wrap; justify-content: flex-start; gap: 8px 18px; padding-block: 17px; }
   .footer-inner p { order: 3; width: 100%; }
