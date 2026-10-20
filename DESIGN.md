@@ -5,6 +5,9 @@ colors:
   forest: "#1d4b38"
   forest-deep: "#173a2c"
   forest-light: "#cbd9cb"
+  forest-night: "#112d22"
+  forest-rule: "#9aac98"
+  forest-rule-dark: "#577263"
   rust: "#a74931"
   ink: "#202b25"
   muted: "#5c665f"
@@ -47,7 +50,7 @@ typography:
   nav:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
-    fontWeight: 620
+    fontWeight: 600
   label:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "12px"
@@ -60,7 +63,7 @@ typography:
   summary:
     fontFamily: '"IBM Plex Sans Variable", "IBM Plex Sans", sans-serif'
     fontSize: "14px"
-    fontWeight: 630
+    fontWeight: 600
     lineHeight: 1.4
   stat:
     fontFamily: "Georgia, 'Times New Roman', serif"
@@ -133,7 +136,7 @@ Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and
 The palette pairs forest greens with warm paper and quiet ink, using rust for small points of emphasis.
 
 ### Primary
-- **Forest Green:** Structures headings, primary actions, and dark section bands; the deeper green supports the strongest text and hover states.
+- **Forest Green:** Structures headings, primary actions, and dark section bands; the deeper green supports the strongest text and hover states, while forest night anchors the footer.
 
 ### Secondary
 - **Restrained Rust:** Marks numbered indexes and directional cues, and provides hover and keyboard-focus emphasis.
@@ -143,7 +146,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 - **Alternate Paper:** Separates the experience section from the primary canvas.
 - **Ink:** Main text color; **Muted Ink** carries dates, supporting copy, and secondary navigation.
 - **Pale Forest:** A quiet selection tone.
-- **Fine Rule:** Divides navigation, rows, and content groups.
+- **Fine Rule:** Divides navigation, rows, and content groups. One forest rule is used on paper; a darker forest rule separates content on green surfaces.
 - **White:** High-contrast text on primary green surfaces and actions.
 
 ### Named Rules
@@ -178,7 +181,7 @@ Visible copy uses a plain hyphen for sentence breaks and date ranges.
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. The hero pairs a measured direct headline with a simple vertical three-step timeline and green markers; each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the career timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. The hero pairs a measured direct headline with a simple vertical three-step timeline and green markers. The career timeline follows the six-indicator proof band so client work stays high in the reading order; role preferences, expertise, and AI practice follow. Each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the career timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -221,7 +224,8 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Navigation
 - **Style:** Brand, section links, and a compact CV button sit on the paper background above a fine bottom rule.
-- **Type and color:** 15px semibold IBM Plex Sans links use deep forest ink and turn rust with a stronger underline on hover.
+- **Type and color:** 14px semibold IBM Plex Sans links use deep forest ink and turn rust with a stronger underline on hover.
+- **Information order:** Experience, role search, expertise, AI, then contact.
 - **Responsive behavior:** At 700px and below, the section links move to a second horizontally scrollable row.
 - **Focus:** All links retain the visible rust keyboard outline.
 
@@ -254,11 +258,11 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Native Disclosure
 - **Character:** Each experience item uses the browser's native `details` and `summary` structure.
-- **Shape and color:** A top and bottom hairline frame the row; the title and date use ink and muted ink, with a forest plus indicator.
+- **Type, shape, and color:** A top and bottom hairline frame the row. The role and mission summary use 14px sans-serif type; dates and stack metadata use 12px. The title uses ink and dates use muted ink, with a forest plus indicator.
 - **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
 
 ### Contact Links
-- **Character:** Full-width links in the dark contact section, each led by a Regular Straight icon with its destination visible, including a CV download. The LinkedIn destination uses the Flaticon brand icon. Icons are decorative to screen readers; each link has a localized accessible name.
+- **Character:** A short section index sits above a separate call-to-action heading. Full-width links in the dark contact section are each led by a Regular Straight icon with the destination visible, including a CV download. The LinkedIn destination uses the Flaticon brand icon. Icons are decorative to screen readers; each link has a localized accessible name.
 - **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
 - **Behavior:** Hover underlines the destination; keyboard focus uses a light outline for contrast on the dark background.
 - **Attribution:** The footer links to Flaticon, with the credit shown in the active page language.

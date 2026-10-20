@@ -44,7 +44,7 @@ const expertise: ExpertiseItem[] = [
     icon: 'fi-rs-users',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
-    skills: 'Équipe · delivery · mentorat · agilité',
+    skills: 'Équipe · livraison · mentorat · agilité',
   },
   {
     icon: 'fi-rs-code-simple',
@@ -77,7 +77,7 @@ const aiPractices = [
   },
   {
     icon: 'fi-rs-code-branch',
-    title: 'Vibecoding ou SDD',
+    title: 'Vibe coding et SDD',
     text: 'Explorer rapidement une idée avec le vibecoding. Pour un développement de plus grande ampleur, clarifier le besoin, les contraintes et les critères de réussite avant de coder avec le Spec-Driven Development (SDD).',
   },
   {
@@ -131,7 +131,7 @@ const englishAiPractices = [
   },
   {
     icon: 'fi-rs-code-branch',
-    title: 'Vibe coding or SDD',
+    title: 'Vibe coding and SDD',
     text: 'I use vibe coding to explore ideas quickly. For larger projects, I clarify the need, constraints, and success criteria before coding with Spec-Driven Development (SDD).',
   },
   {
@@ -171,7 +171,7 @@ const technologyGroups = [
 const experienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
-    period: 'Oct. 2023 - aujourd’hui',
+    period: 'oct. 2023 - aujourd’hui',
     context: 'Tech Lead · Lyon · hybride',
     items: [
       {
@@ -183,29 +183,29 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         title: 'Responsable technique · Legrand',
-        period: 'Nov. 2025 - févr. 2026',
-        summary: 'Chez Legrand, j’ai traité et migré des données pour un outil de Product Lifecycle Management.',
+        period: 'nov. 2025 - févr. 2026',
+        summary: 'J’ai traité et migré des données pour un outil de Product Lifecycle Management.',
         details: 'J’ai maintenu et écrit des scripts pour traiter, calculer et convertir les données entre bases, puis documenté l’existant dans un contexte métier et technique contraint.',
         stack: ['PowerShell', 'Python', 'Excel', 'PLM'],
       },
       {
         title: 'Architecte technique · CNR',
-        period: 'Juil. 2025 - févr. 2026',
-        summary: 'Chez CNR, j’ai cadré la refonte d’une application métier critique, de WPF vers le web.',
+        period: 'juil. 2025 - févr. 2026',
+        summary: 'J’ai cadré la refonte d’une application métier critique, de WPF vers le web.',
         details: 'Après avoir analysé le besoin, j’ai rédigé le cadrage technique et défini l’architecture cible. Les ateliers avec les utilisateurs m’ont permis d’intégrer les contraintes métier et techniques.',
         stack: ['C#', 'WPF', 'Angular', 'Telerik', 'SQL Server', 'Oracle'],
       },
       {
         title: 'Tech Lead front-end · Projet Private GPT',
-        period: 'Juil. 2025 - oct. 2025',
-        summary: 'Pour Private GPT, j’ai piloté la refonte front-end de Blazor vers React.',
+        period: 'juil. 2025 - oct. 2025',
+        summary: 'J’ai piloté la refonte front-end de Private GPT, de Blazor à React.',
         details: 'J’ai défini l’architecture front-end, choisi le socle technique et posé les bonnes pratiques, puis coordonné et accompagné les développeurs. Mon périmètre couvrait le front-end ; une autre équipe gérait le back-end et l’infrastructure.',
         stack: ['React', 'Blazor', 'LLM locaux', 'MUI', 'C#', 'Azure Cosmos DB', 'Azure AI', 'App Service'],
       },
       {
         title: 'Responsable équipe technique · Ayming',
-        period: 'Oct. 2023 - juin 2025',
-        summary: 'Chez Ayming, j’ai été Lead développeur full stack sur trois projets aux objectifs et équipes différents.',
+        period: 'oct. 2023 - juin 2025',
+        summary: 'J’ai travaillé comme Lead Developer full stack sur trois projets menés en parallèle, avec des objectifs et des équipes différents.',
         details: 'J’ai modernisé des applications, mené des migrations Angular et Angular Material, maintenu le code et les bases, pris des décisions d’architecture, revu des pull requests et accompagné les développeurs. Nous travaillions par sprints de deux semaines.',
         stack: ['Angular', 'Angular Material', '.NET Core', 'SQL Server', 'Oracle', 'Azure DevOps'],
       },
@@ -213,34 +213,34 @@ const experienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Apollo SSC',
-    period: 'Janv. 2019 - sept. 2023',
-    context: 'Ingénieur d’études et développement · Lyon et périphérie',
+    period: 'janv. 2019 - sept. 2023',
+    context: 'Ingénieur d’études et de développement · Lyon et périphérie',
     items: [
       {
         title: 'Développeur full stack · Stanley Security France',
-        period: 'Mai 2021 - sept. 2023',
-        summary: 'Chez Stanley Security France, j’ai fait évoluer un extranet client et modernisé une application de suivi en temps réel.',
+        period: 'mai 2021 - sept. 2023',
+        summary: 'J’ai fait évoluer un extranet client et modernisé une application de suivi en temps réel.',
         details: 'Après mon intervention sur l’application ASP / C# existante, j’ai rejoint l’équipe chargée de sa nouvelle version. J’y ai développé le front-end, le back-end et la base de données, animé des ateliers techniques, revu le code, testé les évolutions et accompagné les développeurs.',
         stack: ['Angular', 'TypeScript', 'D3.js', 'RxJS', 'C#', 'API REST', 'SQL Server'],
       },
       {
         title: 'Analyste technique · Groupe APICIL',
-        period: 'Juil. 2020 - mars 2021',
-        summary: 'Au Groupe APICIL, j’ai traduit des besoins fonctionnels complexes en spécifications pour les équipes de développement.',
+        period: 'juil. 2020 - mars 2021',
+        summary: 'J’ai traduit des besoins fonctionnels complexes en spécifications pour les équipes de développement.',
         details: 'J’ai échangé avec les analystes fonctionnels, suivi la qualification, réalisé les tests et documenté un environnement applicatif historique.',
         stack: ['RPG', 'AS/400', 'Oracle', 'Data Modeler', 'SoapUI'],
       },
       {
         title: 'Lead Developer puis chef de projet · SMERRA',
-        period: 'Avr. 2019 - juin 2020',
-        summary: 'Chez SMERRA, j’ai maintenu et fait évoluer une application WinForms, transmis les connaissances et piloté le projet.',
+        period: 'avr. 2019 - juin 2020',
+        summary: 'J’ai maintenu et fait évoluer une application WinForms, transmis les connaissances et piloté le projet.',
         details: 'J’ai formé les développeurs et suivi le projet, tout en participant au passage vers Azure DevOps, aux sprints agiles et à la montée de version .NET.',
         stack: ['C#', 'WinForms', '.NET Framework', 'SQL Server', 'Azure DevOps'],
       },
       {
         title: 'Développeur logiciel · INDESO',
-        period: 'Janv. 2019 - mars 2019',
-        summary: 'Pour INDESO, j’ai développé une application métier avec WPF.',
+        period: 'janv. 2019 - mars 2019',
+        summary: 'J’ai développé une application métier avec WPF.',
         details: 'J’ai conçu et développé une application interne avec Entity Framework et SQL Server, puis partagé sa documentation.',
         stack: ['C#', 'WPF', 'Entity Framework', 'SQL Server', 'Confluence'],
       },
@@ -248,13 +248,13 @@ const experienceGroups: ExperienceGroup[] = [
   },
   {
     company: 'Exo Partners',
-    period: 'Sept. 2015 - oct. 2018',
+    period: 'sept. 2015 - oct. 2018',
     context: 'Développeur full stack · alternance',
     items: [
       {
         title: 'Applications comptables et hôtelières',
         period: '2015 - 2018',
-        summary: 'Pendant mon alternance chez Exo Partners, j’ai développé, maintenu et modernisé plusieurs applications métier.',
+        summary: 'J’ai développé, maintenu et modernisé plusieurs applications métier pendant mon alternance.',
         details: 'J’ai contribué à la refonte d’une application Silverlight vers ASP.NET / C#. Mon travail couvrait aussi la gestion des données, la Business Intelligence, la rédaction de spécifications et l’accompagnement d’autres développeurs.',
         stack: ['C#', 'ASP.NET', 'Silverlight', 'SQL Server', 'WPF', 'VB.NET', 'Excel', 'Access'],
       },
@@ -278,14 +278,14 @@ const englishExperienceGroups: ExperienceGroup[] = [
       {
         title: 'Technical Lead · Legrand',
         period: 'Nov 2025 - Feb 2026',
-        summary: 'At Legrand, I processed and migrated data for a Product Lifecycle Management (PLM) tool.',
+        summary: 'I processed and migrated data for a Product Lifecycle Management (PLM) tool.',
         details: 'I maintained and wrote scripts to process, calculate, and convert data across databases, then documented the existing system in a demanding business and technical context.',
         stack: ['PowerShell', 'Python', 'Excel', 'PLM'],
       },
       {
         title: 'Technical Architect · CNR',
         period: 'Jul 2025 - Feb 2026',
-        summary: 'At CNR, I scoped the redesign of a critical business application, moving it from WPF to the web.',
+        summary: 'I scoped the redesign of a critical business application, moving it from WPF to the web.',
         details: 'After analysing the requirements, I wrote the technical scoping document and defined the target architecture. Workshops with users helped me account for business and technical constraints.',
         stack: ['C#', 'WPF', 'Angular', 'Telerik', 'SQL Server', 'Oracle'],
       },
@@ -299,7 +299,7 @@ const englishExperienceGroups: ExperienceGroup[] = [
       {
         title: 'Technical Team Lead · Ayming',
         period: 'Oct 2023 - Jun 2025',
-        summary: 'At Ayming, I was a full-stack Lead Developer across three projects with different goals and teams.',
+        summary: 'I worked as a full-stack Lead Developer across three parallel projects, each with different goals and teams.',
         details: 'I modernised applications, led Angular and Angular Material migrations, maintained code and databases, made architecture decisions, reviewed pull requests, and supported developers. We worked in two-week sprints.',
         stack: ['Angular', 'Angular Material', '.NET Core', 'SQL Server', 'Oracle', 'Azure DevOps'],
       },
@@ -313,28 +313,28 @@ const englishExperienceGroups: ExperienceGroup[] = [
       {
         title: 'Full-stack Developer · Stanley Security France',
         period: 'May 2021 - Sep 2023',
-        summary: 'At Stanley Security France, I evolved a client extranet and modernised a real-time monitoring application.',
+        summary: 'I enhanced a client extranet and modernised a real-time monitoring application.',
         details: 'After working on the existing ASP / C# application, I joined the team building its new version. I developed the front end, back end, and database, ran technical workshops, reviewed code, tested changes, and supported developers.',
         stack: ['Angular', 'TypeScript', 'D3.js', 'RxJS', 'C#', 'REST API', 'SQL Server'],
       },
       {
         title: 'Technical Analyst · Groupe APICIL',
         period: 'Jul 2020 - Mar 2021',
-        summary: 'At Groupe APICIL, I translated complex functional requirements into specifications for development teams.',
+        summary: 'I translated complex functional requirements into specifications for development teams.',
         details: 'I worked with business analysts, followed qualification activities, carried out tests, and documented a legacy application environment.',
         stack: ['RPG', 'AS/400', 'Oracle', 'Data Modeler', 'SoapUI'],
       },
       {
         title: 'Lead Developer, then Project Manager · SMERRA',
         period: 'Apr 2019 - Jun 2020',
-        summary: 'At SMERRA, I maintained and evolved a WinForms application, shared knowledge, and led the project.',
+        summary: 'I maintained and enhanced a WinForms application, shared knowledge with the team, and led the project.',
         details: 'I trained developers and tracked the project while contributing to the move to Azure DevOps, agile sprints, and a .NET upgrade.',
         stack: ['C#', 'WinForms', '.NET Framework', 'SQL Server', 'Azure DevOps'],
       },
       {
         title: 'Software Developer · INDESO',
         period: 'Jan 2019 - Mar 2019',
-        summary: 'I developed a business application with WPF for INDESO.',
+        summary: 'I developed a business application with WPF.',
         details: 'I designed and built an internal application with Entity Framework and SQL Server, then shared its documentation.',
         stack: ['C#', 'WPF', 'Entity Framework', 'SQL Server', 'Confluence'],
       },
@@ -348,7 +348,7 @@ const englishExperienceGroups: ExperienceGroup[] = [
       {
         title: 'Accounting and hospitality applications',
         period: '2015 - 2018',
-        summary: 'During my work-study programme at Exo Partners, I developed, maintained, and modernised several business applications.',
+        summary: 'I developed, maintained, and modernised several business applications during my work-study programme.',
         details: 'I contributed to a rewrite from Silverlight to ASP.NET / C#. My work also covered data management, business intelligence, specification writing, and support for other developers.',
         stack: ['C#', 'ASP.NET', 'Silverlight', 'SQL Server', 'WPF', 'VB.NET', 'Excel', 'Access'],
       },
@@ -452,6 +452,7 @@ type PageCopy = {
   languages: string[];
   profileHighlights: { title: string; text: string }[];
   contactIndex: string;
+  contactTitle: string;
   contactIntro: string;
   emailLabel: string;
   phoneLabel: string;
@@ -467,9 +468,9 @@ type PageCopy = {
 const pageCopy: Record<Language, PageCopy> = {
   fr: {
     pageTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
-    pageDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Faire grandir les applications métier, du cadrage à la livraison et au maintien dans le temps.',
+    pageDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Je fais évoluer les applications métier, du cadrage à la livraison et dans la durée.',
     openGraphTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
-    openGraphDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Faire grandir les applications métier, du cadrage à la livraison et au maintien dans le temps.',
+    openGraphDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Je fais évoluer les applications métier, du cadrage à la livraison et dans la durée.',
     jobTitle: 'Tech Lead et Architecte logiciel',
     skipLink: 'Aller au contenu',
     brandAria: 'Vincent Mangel, accueil',
@@ -482,10 +483,10 @@ const pageCopy: Record<Language, PageCopy> = {
     navAI: 'IA',
     navExperience: 'Expérience',
     navContact: 'Contact',
-    heroRole: 'Tech Lead et architecte logiciel, à Lyon',
-    heroTitle: 'Faire grandir les applications, du cadrage à la livraison.',
-    heroIntro: 'Partir d’un besoin nouveau ou d’un existant, accompagner les équipes, déployer la solution et la maintenir dans le temps.',
-    availability: 'En recherche active de nouvelles opportunités à Lyon',
+    heroRole: 'Tech Lead · Architecte logiciel · Lyon',
+    heroTitle: 'Je fais évoluer les applications métier, du cadrage à la livraison.',
+    heroIntro: 'J’interviens en architecture comme en développement, au plus près des équipes.',
+    availability: 'Je recherche un poste d’architecte logiciel en CDI à Lyon.',
     emailSubject: 'Échange professionnel',
     contactCta: 'Me contacter',
     cvCta: 'Télécharger mon CV',
@@ -496,11 +497,11 @@ const pageCopy: Record<Language, PageCopy> = {
       { title: 'Livrer', description: 'Je participe aux tests et aux derniers ajustements jusqu’à la livraison.' },
     ],
     proofAria: 'Repères du parcours',
-    proofLabels: ['Missions client', 'Clients', 'Années d’expérience', 'Rôles distincts', 'Maîtrises front-end', 'Maîtrises back-end et infra'],
-    searchTitle: '01 / MA RECHERCHE',
+    proofLabels: ['Missions client', 'Clients', 'Années d’expérience', 'Familles de rôles', 'Compétences front-end', 'Compétences back-end et infrastructure'],
+    searchTitle: '02 / MA RECHERCHE',
     searchMapAlt: 'Carte illustrée de Lyon, avec un repère au centre-ville.',
     searchLocationLabel: 'Localisation',
-    searchLocation: 'Lyon uniquement',
+    searchLocation: 'Lyon',
     searchRoleLabel: 'Poste',
     searchRole: 'Architecte logiciel',
     searchContractLabel: 'Contrat',
@@ -508,16 +509,16 @@ const pageCopy: Record<Language, PageCopy> = {
     searchNoticePeriodLabel: 'Préavis',
     searchNoticePeriod: '3 mois',
     searchModeLabel: 'Mode d’intervention',
-    searchModeDescription: 'Je privilégie le forfait à la régie : m’investir dans la durée et grandir avec mon entreprise et ses équipes.',
+    searchModeDescription: 'Pour les missions, je privilégie le forfait à la régie, avec un objectif partagé et un engagement dans la durée auprès des équipes.',
     searchPrinciples: [
-      { title: 'Apprendre & transmettre', description: 'Continuer à apprendre et partager mes connaissances pour aider l’équipe à progresser.' },
-      { title: 'Technique & humain', description: 'Prendre en compte les enjeux techniques et les personnes qui conçoivent, développent et utilisent les solutions.' },
+      { title: 'Apprendre et transmettre', description: 'Je veux continuer à apprendre et à partager mes connaissances pour aider l’équipe à progresser.' },
+      { title: 'Technique et humain', description: 'Je prends en compte les contraintes techniques et les personnes qui conçoivent, développent et utilisent les solutions.' },
     ],
-    expertiseTitle: '02 / EXPERTISES',
+    expertiseTitle: '03 / EXPERTISES',
     technologyStackTitle: 'Technologies privilégiées',
     technologyStackIntro: 'Développement full stack, avec une préférence pour le front-end.',
-    aiTitle: '03 / IA & VEILLE',
-    experienceTitle: '04 / EXPÉRIENCE',
+    aiTitle: '04 / IA & VEILLE',
+    experienceTitle: '01 / EXPÉRIENCE',
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
     educationTitle: 'Diplômes',
@@ -535,7 +536,8 @@ const pageCopy: Record<Language, PageCopy> = {
       { title: 'Intérêts & connaissances', text: 'Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.' },
     ],
     contactIndex: '06 / CONTACT',
-    contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
+    contactTitle: 'Échangeons',
+    contactIntro: 'Je recherche un poste d’architecte logiciel en CDI à Lyon. Je suis aussi ouvert aux missions au forfait, avec un objectif partagé.',
     emailLabel: 'E-mail',
     phoneLabel: 'Téléphone',
     cvLabel: 'CV',
@@ -543,14 +545,14 @@ const pageCopy: Record<Language, PageCopy> = {
     meetingLabel: 'Rendez-vous',
     meetingLinkLabel: 'Choisir un créneau (Google Agenda)',
     profileLabel: 'Profil',
-    footerRole: 'Tech Lead et architecte logiciel, Lyon',
+    footerRole: 'Tech Lead · Architecte logiciel · Lyon',
     flaticonAttribution: 'Icônes UIcons par Flaticon',
   },
   en: {
     pageTitle: 'Vincent Mangel - Tech Lead & Software Architect',
-    pageDescription: 'I am a Tech Lead and software architect seeking opportunities in Lyon. I grow business applications from scoping through delivery and long-term maintenance.',
+    pageDescription: 'I am a Tech Lead and software architect seeking a role in Lyon. I take business applications from scoping through delivery and ongoing maintenance.',
     openGraphTitle: 'Vincent Mangel - Tech Lead & Software Architect',
-    openGraphDescription: 'I am a Tech Lead and software architect seeking opportunities in Lyon. I grow business applications from scoping through delivery and long-term maintenance.',
+    openGraphDescription: 'I am a Tech Lead and software architect seeking a role in Lyon. I take business applications from scoping through delivery and ongoing maintenance.',
     jobTitle: 'Tech Lead and Software Architect',
     skipLink: 'Skip to content',
     brandAria: 'Vincent Mangel, home',
@@ -563,10 +565,10 @@ const pageCopy: Record<Language, PageCopy> = {
     navAI: 'AI',
     navExperience: 'Experience',
     navContact: 'Contact',
-    heroRole: 'Tech Lead and software architect in Lyon',
-    heroTitle: 'Growing applications, from scoping through delivery.',
-    heroIntro: 'I start from a new need or an existing system, support teams, deploy the solution, and maintain it over time.',
-    availability: 'Actively seeking new opportunities in Lyon',
+    heroRole: 'Tech Lead · Software Architect · Lyon',
+    heroTitle: 'I take business applications from scoping through delivery.',
+    heroIntro: 'I work across architecture and development, alongside the team.',
+    availability: 'I am seeking a permanent software architect role in Lyon.',
     emailSubject: 'Professional enquiry',
     contactCta: 'Get in touch',
     cvCta: 'Download my CV (French PDF)',
@@ -578,10 +580,10 @@ const pageCopy: Record<Language, PageCopy> = {
     ],
     proofAria: 'Career at a glance',
     proofLabels: ['Client assignments', 'Clients', 'Years of experience', 'Role families', 'Front-end skills', 'Back-end and infrastructure skills'],
-    searchTitle: '01 / ROLE SEARCH',
+    searchTitle: '02 / ROLE SEARCH',
     searchMapAlt: 'Illustrated map of Lyon, with a marker in the city centre.',
     searchLocationLabel: 'Location',
-    searchLocation: 'Lyon only',
+    searchLocation: 'Lyon',
     searchRoleLabel: 'Role',
     searchRole: 'Software architect',
     searchContractLabel: 'Contract',
@@ -589,16 +591,16 @@ const pageCopy: Record<Language, PageCopy> = {
     searchNoticePeriodLabel: 'Notice period',
     searchNoticePeriod: '3 months',
     searchModeLabel: 'Engagement model',
-    searchModeDescription: 'I prefer fixed-price work to time and materials: committing for the long term and growing with my company and its teams.',
+    searchModeDescription: 'For project work, I prefer fixed-price engagements to time and materials, with a shared goal and a long-term commitment to the team.',
     searchPrinciples: [
-      { title: 'Learning & knowledge sharing', description: 'Keep learning and share what I know to help the team grow.' },
-      { title: 'Technology & people', description: 'Consider both technical challenges and the people who design, build, and use the solutions.' },
+      { title: 'Learning and sharing', description: 'I want to keep learning and share what I know to help the team grow.' },
+      { title: 'Technology and people', description: 'I consider technical constraints and the people who design, build, and use the solutions.' },
     ],
-    expertiseTitle: '02 / EXPERTISE',
+    expertiseTitle: '03 / EXPERTISE',
     technologyStackTitle: 'Preferred technologies',
     technologyStackIntro: 'Full-stack development, with a preference for front-end work.',
-    aiTitle: '03 / AI & RESEARCH',
-    experienceTitle: '04 / EXPERIENCE',
+    aiTitle: '04 / AI & RESEARCH',
+    experienceTitle: '01 / EXPERIENCE',
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
     educationTitle: 'Education',
@@ -616,7 +618,8 @@ const pageCopy: Record<Language, PageCopy> = {
       { title: 'Interests & knowledge', text: 'My interests include cinema, art, exhibitions, and creative workshops. I also have a good knowledge of marketing, video games, and communications.' },
     ],
     contactIndex: '06 / CONTACT',
-    contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
+    contactTitle: 'Let’s talk',
+    contactIntro: 'I am seeking a permanent software architect role in Lyon. I am also open to fixed-price project work with a shared goal.',
     emailLabel: 'Email',
     phoneLabel: 'Phone',
     cvLabel: 'CV',
@@ -624,7 +627,7 @@ const pageCopy: Record<Language, PageCopy> = {
     meetingLabel: 'Meeting',
     meetingLinkLabel: 'Choose a time (Google Calendar)',
     profileLabel: 'Profile',
-    footerRole: 'Tech Lead and software architect, Lyon',
+    footerRole: 'Tech Lead · Software Architect · Lyon',
     flaticonAttribution: 'UIcons by Flaticon',
   },
 };
@@ -698,10 +701,10 @@ function App() {
         <div className="header-inner">
           <a className="brand" href="#top" aria-label={copy.brandAria}>Vincent Mangel</a>
           <nav className="primary-nav" aria-label={copy.navAria}>
+            <a href="#experience">{copy.navExperience}</a>
             <a href="#recherche">{copy.navSearch}</a>
             <a href="#expertises">{copy.navExpertise}</a>
             <a href="#ia">{copy.navAI}</a>
-            <a href="#experience">{copy.navExperience}</a>
             <a href="#contact">{copy.navContact}</a>
           </nav>
           <div className="header-actions">
@@ -743,6 +746,39 @@ function App() {
                 <dd><strong>{item.value}</strong></dd>
               </dl>
             ))}
+          </div>
+        </section>
+
+        <section className="experience-section" id="experience" aria-labelledby="experience-title">
+          <div className="page-wrap">
+            <div className="section-heading experience-heading">
+              <div><h2 id="experience-title">{copy.experienceTitle}</h2></div>
+            </div>
+            <div className="timeline">
+              {currentExperienceGroups.map((group) => (
+                <section className="timeline-group" key={group.company} aria-label={`${group.company}, ${group.period}`}>
+                  <div className="timeline-company">
+                    <p className="timeline-period">{group.period}</p>
+                    <h3>{group.company}</h3>
+                    <p>{group.context}</p>
+                  </div>
+                  <div className="timeline-roles">
+                    {group.items.map((item) => (
+                      <details className="experience-entry" key={item.title}>
+                        <summary>
+                          <span className="experience-summary-main"><strong>{item.title}</strong><small>{item.summary}</small></span>
+                          <span className="experience-period">{item.period}<span className="disclosure-indicator" aria-hidden="true">+</span></span>
+                        </summary>
+                        <div className="experience-detail">
+                          <p>{item.details}</p>
+                          <p className="stack-line"><strong>{copy.environment}</strong><span>{item.stack.join(' · ')}</span></p>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -819,39 +855,6 @@ function App() {
           </div>
         </section>
 
-        <section className="experience-section" id="experience" aria-labelledby="experience-title">
-          <div className="page-wrap">
-            <div className="section-heading experience-heading">
-              <div><h2 id="experience-title">{copy.experienceTitle}</h2></div>
-            </div>
-            <div className="timeline">
-              {currentExperienceGroups.map((group) => (
-                <section className="timeline-group" key={group.company} aria-label={`${group.company}, ${group.period}`}>
-                  <div className="timeline-company">
-                    <p className="timeline-period">{group.period}</p>
-                    <h3>{group.company}</h3>
-                    <p>{group.context}</p>
-                  </div>
-                  <div className="timeline-roles">
-                    {group.items.map((item) => (
-                      <details className="experience-entry" key={item.title}>
-                        <summary>
-                          <span className="experience-summary-main"><strong>{item.title}</strong><small>{item.summary}</small></span>
-                          <span className="experience-period">{item.period}<span className="disclosure-indicator" aria-hidden="true">+</span></span>
-                        </summary>
-                        <div className="experience-detail">
-                          <p>{item.details}</p>
-                          <p className="stack-line"><strong>{copy.environment}</strong><span>{item.stack.join(' · ')}</span></p>
-                        </div>
-                      </details>
-                    ))}
-                  </div>
-                </section>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="credentials-section page-wrap" aria-labelledby="credentials-title">
           <div className="section-heading credentials-heading">
             <div><h2 id="credentials-title">{copy.credentialsTitle}</h2></div>
@@ -884,7 +887,8 @@ function App() {
         <section className="contact-section" aria-labelledby="contact">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
-              <h2 id="contact" tabIndex={-1}>{copy.contactIndex}</h2>
+              <p className="contact-index">{copy.contactIndex}</p>
+              <h2 id="contact" tabIndex={-1}>{copy.contactTitle}</h2>
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
