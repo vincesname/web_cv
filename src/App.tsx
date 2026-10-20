@@ -17,6 +17,14 @@ type ExperienceGroup = {
   items: ExperienceItem[];
 };
 
+type ExpertiseItem = {
+  title: string;
+  text: string;
+  proof: string;
+  skills: string;
+  icon: string;
+};
+
 const links = {
   email: 'vincent.mangel.pro@gmail.com',
   phone: '+33637369836',
@@ -26,20 +34,23 @@ const links = {
   cv: '/CV_Vincent_Mangel.pdf',
 };
 
-const expertise = [
+const expertise: ExpertiseItem[] = [
   {
+    icon: 'fi-rs-blueprint',
     title: 'Architecture',
     text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
     proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
+    icon: 'fi-rs-users',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
     proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
+    icon: 'fi-rs-code-simple',
     title: 'Développement',
     text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
     proof: 'Private GPT · Architecture et réalisation front-end',
@@ -66,20 +77,23 @@ const aiPractices = [
   },
 ];
 
-const englishExpertise = [
+const englishExpertise: ExpertiseItem[] = [
   {
+    icon: 'fi-rs-blueprint',
     title: 'Architecture',
     text: 'I assess existing systems, frame technical decisions, and define a target architecture that fits business constraints.',
     proof: 'CNR · WPF to web application redesign',
     skills: 'Scoping · software architecture · modernisation',
   },
   {
+    icon: 'fi-rs-users',
     title: 'Technical leadership',
     text: 'I run workshops, coordinate technical decisions, review code, and support developers as part of day-to-day delivery.',
     proof: 'Ayming · Three projects in parallel',
     skills: 'Teams · delivery · mentoring · agile methods',
   },
   {
+    icon: 'fi-rs-code-simple',
     title: 'Software development',
     text: 'I work across user interfaces, APIs, and data, and stay involved in the code.',
     proof: 'Private GPT · Front-end architecture and delivery',
@@ -715,7 +729,7 @@ function App() {
           <div className="expertise-grid">
             {currentExpertise.map((area) => (
               <article className="expertise-item" key={area.title}>
-                <h3>{area.title}</h3>
+                <h3><i aria-hidden="true" className={`fi ${area.icon} expertise-icon`} />{area.title}</h3>
                 <p>{area.text}</p>
                 <p className="expertise-proof">{area.proof}</p>
                 <p className="expertise-skills">{area.skills}</p>
@@ -807,18 +821,18 @@ function App() {
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
-              <a className="contact-link" href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><span className="contact-label">{copy.emailLabel}</span><strong>{links.email}</strong></a>
-              <a className="contact-link" href={`tel:${links.phone}`}><span className="contact-label">{copy.phoneLabel}</span><strong>{displayPhone}</strong></a>
-              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><span className="contact-label">{copy.meetingLabel}</span><strong>{copy.meetingLinkLabel}</strong></a>
-              <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><span className="contact-label">{copy.profileLabel}</span><strong>LinkedIn</strong></a>
-              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><span className="contact-label">{copy.cvLabel}</span><strong>{copy.cvDownloadLabel}</strong></a>
+              <a className="contact-link" href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><i aria-hidden="true" className="fi fi-rs-envelope contact-icon" /><span className="contact-label">{copy.emailLabel}</span><strong>{links.email}</strong></a>
+              <a className="contact-link" href={`tel:${links.phone}`}><i aria-hidden="true" className="fi fi-rs-phone-call contact-icon" /><span className="contact-label">{copy.phoneLabel}</span><strong>{displayPhone}</strong></a>
+              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-rs-calendar contact-icon" /><span className="contact-label">{copy.meetingLabel}</span><strong>{copy.meetingLinkLabel}</strong></a>
+              <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-brands-linkedin contact-icon" /><span className="contact-label">{copy.profileLabel}</span><strong>LinkedIn</strong></a>
+              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><i aria-hidden="true" className="fi fi-rs-file-pdf contact-icon" /><span className="contact-label">{copy.cvLabel}</span><strong>{copy.cvDownloadLabel}</strong></a>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>{copy.footerRole}</p></div>
+        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>{copy.footerRole}</p><a href="https://www.flaticon.com/uicons" target="_blank" rel="noreferrer">UIcons by Flaticon</a></div>
       </footer>
     </>
   );

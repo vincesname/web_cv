@@ -1,3 +1,6 @@
+@import "@flaticon/flaticon-uicons/css/regular/straight.css";
+@import "@flaticon/flaticon-uicons/css/brands/all.css";
+
 :root {
   font-family: "IBM Plex Sans Variable", "IBM Plex Sans", sans-serif;
   color: #202b25;
@@ -128,7 +131,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .section-heading > div > p { max-width: 57ch; margin: 13px 0 0; color: var(--muted); font-size: var(--text-base); }
 .expertise-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px; }
 .expertise-item { display: flex; min-height: 245px; flex-direction: column; padding-top: 16px; border-top: 1px solid #9aac98; }
-.expertise-item h3 { margin: 0 0 10px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-2xl); font-weight: 500; letter-spacing: -.025em; }
+.expertise-item h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-2xl); font-weight: 500; letter-spacing: -.025em; }
+.expertise-icon { color: var(--forest); font-size: var(--text-xl); line-height: 1; }
 .expertise-item > p:not(.expertise-proof):not(.expertise-skills) { max-width: 38ch; margin: 0; color: #4d5b52; font-size: var(--text-base); line-height: 1.6; }
 .expertise-proof { margin: auto 0 4px; padding-top: 22px; color: var(--forest); font-size: var(--text-sm); font-weight: 620; line-height: 1.45; }
 .expertise-skills { margin: 5px 0 0; color: var(--muted); font-size: var(--text-label); line-height: 1.5; }
@@ -191,7 +195,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .contact-copy h2:focus-visible { outline: 3px solid #f2f1e9; outline-offset: 4px; }
 .contact-copy > p:last-child { max-width: 46ch; margin: 20px 0 0; color: #d0dacf; font-size: var(--text-base); line-height: 1.6; }
 .contact-actions { border-top: 1px solid #577263; }
-.contact-link { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: center; gap: 15px; min-height: 61px; padding: 9px 0; border-bottom: 1px solid #577263; color: #f1f3eb; text-decoration: none; }
+.contact-link { display: grid; grid-template-columns: 22px 110px minmax(0, 1fr); align-items: center; gap: 15px; min-height: 61px; padding: 9px 0; border-bottom: 1px solid #577263; color: #f1f3eb; text-decoration: none; }
+.contact-icon { color: var(--forest-light); font-size: var(--text-lg); line-height: 1; }
 .contact-label { color: #c5d1c6; font-size: var(--text-label); }
 .contact-link strong { font-size: var(--text-sm); font-weight: 550; overflow-wrap: anywhere; }
 .contact-link:hover strong { text-decoration: underline; text-underline-offset: 4px; }
@@ -283,7 +288,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .personal-note-label { margin-top: 0; }
 
   .contact-wrap { grid-template-columns: 1fr; gap: 34px; padding-block: 70px; }
-  .contact-link { grid-template-columns: 82px minmax(0, 1fr); gap: 9px; }
+  .contact-link { grid-template-columns: 22px 82px minmax(0, 1fr); gap: 9px; }
   .footer-inner { min-height: auto; flex-wrap: wrap; justify-content: flex-start; gap: 8px 18px; padding-block: 17px; }
   .footer-inner p { order: 3; width: 100%; }
 }
