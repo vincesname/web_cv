@@ -206,10 +206,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 .contact-section { background: var(--forest-deep); color: var(--paper); }
 .contact-wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(350px, 1.1fr); gap: clamp(48px, 9vw, 124px); padding-block: 88px 94px; }
-.contact-index { margin: 0 0 12px; color: var(--forest-light); font-size: var(--text-label); font-weight: 650; letter-spacing: .1em; }
-.contact-copy h2 { max-width: 12ch; margin: 0; color: var(--paper); font-family: var(--serif); font-size: var(--text-display); font-weight: 500; line-height: 1.01; letter-spacing: -.055em; }
+.contact-copy .contact-heading { margin-bottom: 16px; }
+.contact-copy .contact-heading h2 { color: var(--paper); }
 .contact-copy h2:focus-visible { outline: 3px solid var(--paper); outline-offset: 4px; }
-.contact-copy > p:last-child { max-width: 46ch; margin: 20px 0 0; color: var(--forest-light); font-size: var(--text-base); line-height: 1.6; }
+.contact-copy > p:last-child { max-width: 46ch; margin: 0; color: var(--forest-light); font-size: var(--text-base); line-height: 1.6; }
 .contact-actions { border-top: 1px solid var(--forest-rule-dark); }
 .contact-link { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; gap: 15px; min-height: 61px; padding: 9px 0; border-bottom: 1px solid var(--forest-rule-dark); color: var(--paper); text-decoration: none; }
 .contact-icon { color: var(--forest-light); font-size: var(--text-lg); line-height: 1; }

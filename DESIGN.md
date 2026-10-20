@@ -161,7 +161,7 @@ The palette pairs forest greens with warm paper and quiet ink, using rust for sm
 **Character:** IBM Plex Sans keeps reading and controls practical and clear. Georgia gives display headings a quieter editorial voice.
 
 ### Hierarchy
-- **Display** (500, responsive 2.75–3.75rem, 1.01 line-height): The hero and contact headings.
+- **Display** (500, responsive 2.75–3.75rem, 1.01 line-height): The hero heading.
 - **Headline** (500, responsive 2.25–3rem, 1.08 line-height): Section headings.
 - **Title** (500, 24px): Georgia subheadings for expertise and company entries.
 - **Subheading** (500, 20px): Compact Georgia headings for search principles and AI practice.
@@ -201,7 +201,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 ### Section Headings
 - **Character:** One numbered uppercase title names each content section, avoiding a separate index and a second title that repeat the same subject.
 - **Type and spacing:** The title uses the existing Georgia section-heading style; supporting context sits directly beneath it.
-- **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact area keeps its short index alongside its separate call-to-action heading.
+- **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact heading uses the same type scale, serif face, and numbered format on its dark background.
 
 ### Search Section
 - **Character:** The search facts list role, contract, notice period, location, and preferred project engagement beside a closer crop of the Lyon map.
@@ -262,7 +262,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
 
 ### Contact Links
-- **Character:** A short section index sits above the “Échangeons” call-to-action heading and supporting paragraph. Full-width links in the dark contact section are each led by a Regular Straight icon with the destination visible, including a CV download. The LinkedIn destination uses the Flaticon brand icon. Icons are decorative to screen readers; each link has a localized accessible name.
+- **Character:** The numbered “Échangeons” heading and its supporting paragraph lead into full-width links in the dark section, each led by a Regular Straight icon with the destination visible, including a CV download. The LinkedIn destination uses the Flaticon brand icon. Icons are decorative to screen readers; each link has a localized accessible name.
 - **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
 - **Behavior:** Hover underlines the destination; keyboard focus uses a light outline for contrast on the dark background.
 - **Attribution:** The footer links to Flaticon, with the credit shown in the active page language.
