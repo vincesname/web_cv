@@ -1,110 +1,311 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T19:43:26Z",
+  "generatedAt": "2026-10-20T09:05:20.842Z",
   "title": "Design System: Vincent Mangel",
   "extensions": {
     "colorMeta": {
-      "forest": { "role": "primary", "displayName": "Forest Green", "canonical": "#1d4b38", "tonalRamp": ["oklch(15% 0.061 163.7)", "oklch(26% 0.061 163.7)", "oklch(37% 0.061 163.7)", "oklch(48% 0.061 163.7)", "oklch(59% 0.061 163.7)", "oklch(70% 0.061 163.7)", "oklch(81% 0.061 163.7)", "oklch(92% 0.061 163.7)"] },
-      "forest-deep": { "role": "primary", "displayName": "Deep Forest", "canonical": "#173a2c", "tonalRamp": ["oklch(15% 0.048 164.9)", "oklch(26% 0.048 164.9)", "oklch(37% 0.048 164.9)", "oklch(48% 0.048 164.9)", "oklch(59% 0.048 164.9)", "oklch(70% 0.048 164.9)", "oklch(81% 0.048 164.9)", "oklch(92% 0.048 164.9)"] },
-      "forest-light": { "role": "primary", "displayName": "Pale Forest", "canonical": "#cbd9cb", "tonalRamp": ["oklch(15% 0.024 145.4)", "oklch(26% 0.024 145.4)", "oklch(37% 0.024 145.4)", "oklch(48% 0.024 145.4)", "oklch(59% 0.024 145.4)", "oklch(70% 0.024 145.4)", "oklch(81% 0.024 145.4)", "oklch(92% 0.024 145.4)"] },
-      "rust": { "role": "secondary", "displayName": "Restrained Rust", "canonical": "#a74931", "tonalRamp": ["oklch(15% 0.130 35.4)", "oklch(26% 0.130 35.4)", "oklch(37% 0.130 35.4)", "oklch(48% 0.130 35.4)", "oklch(59% 0.130 35.4)", "oklch(70% 0.130 35.4)", "oklch(81% 0.130 35.4)", "oklch(92% 0.130 35.4)"] },
-      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#202b25", "tonalRamp": ["oklch(15% 0.019 161.0)", "oklch(26% 0.019 161.0)", "oklch(37% 0.019 161.0)", "oklch(48% 0.019 161.0)", "oklch(59% 0.019 161.0)", "oklch(70% 0.019 161.0)", "oklch(81% 0.019 161.0)", "oklch(92% 0.019 161.0)"] },
-      "muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#5c665f", "tonalRamp": ["oklch(15% 0.016 155.2)", "oklch(26% 0.016 155.2)", "oklch(37% 0.016 155.2)", "oklch(48% 0.016 155.2)", "oklch(59% 0.016 155.2)", "oklch(70% 0.016 155.2)", "oklch(81% 0.016 155.2)", "oklch(92% 0.016 155.2)"] },
-      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f7f6f0", "tonalRamp": ["oklch(15% 0.008 98.9)", "oklch(26% 0.008 98.9)", "oklch(37% 0.008 98.9)", "oklch(48% 0.008 98.9)", "oklch(59% 0.008 98.9)", "oklch(70% 0.008 98.9)", "oklch(81% 0.008 98.9)", "oklch(92% 0.008 98.9)"] },
-      "paper-alt": { "role": "neutral", "displayName": "Alternate Paper", "canonical": "#efeee6", "tonalRamp": ["oklch(15% 0.011 100.8)", "oklch(26% 0.011 100.8)", "oklch(37% 0.011 100.8)", "oklch(48% 0.011 100.8)", "oklch(59% 0.011 100.8)", "oklch(70% 0.011 100.8)", "oklch(81% 0.011 100.8)", "oklch(92% 0.011 100.8)"] },
-      "line": { "role": "neutral", "displayName": "Fine Rule", "canonical": "#d2d5ca", "tonalRamp": ["oklch(15% 0.015 119.1)", "oklch(26% 0.015 119.1)", "oklch(37% 0.015 119.1)", "oklch(48% 0.015 119.1)", "oklch(59% 0.015 119.1)", "oklch(70% 0.015 119.1)", "oklch(81% 0.015 119.1)", "oklch(92% 0.015 119.1)"] },
-      "white": { "role": "neutral", "displayName": "White", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(26% 0 0)", "oklch(37% 0 0)", "oklch(48% 0 0)", "oklch(59% 0 0)", "oklch(70% 0 0)", "oklch(81% 0 0)", "oklch(92% 0 0)"] }
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest Green",
+        "canonical": "#1d4b38",
+        "tonalRamp": [
+          "oklch(15% 0.061 163.7)",
+          "oklch(26% 0.061 163.7)",
+          "oklch(37% 0.061 163.7)",
+          "oklch(48% 0.061 163.7)",
+          "oklch(59% 0.061 163.7)",
+          "oklch(70% 0.061 163.7)",
+          "oklch(81% 0.061 163.7)",
+          "oklch(92% 0.061 163.7)"
+        ]
+      },
+      "forest-deep": {
+        "role": "primary",
+        "displayName": "Deep Forest",
+        "canonical": "#173a2c",
+        "tonalRamp": [
+          "oklch(15% 0.048 164.9)",
+          "oklch(26% 0.048 164.9)",
+          "oklch(37% 0.048 164.9)",
+          "oklch(48% 0.048 164.9)",
+          "oklch(59% 0.048 164.9)",
+          "oklch(70% 0.048 164.9)",
+          "oklch(81% 0.048 164.9)",
+          "oklch(92% 0.048 164.9)"
+        ]
+      },
+      "forest-light": {
+        "role": "neutral",
+        "displayName": "Pale Forest",
+        "canonical": "#cbd9cb",
+        "tonalRamp": [
+          "oklch(15% 0.024 145.4)",
+          "oklch(26% 0.024 145.4)",
+          "oklch(37% 0.024 145.4)",
+          "oklch(48% 0.024 145.4)",
+          "oklch(59% 0.024 145.4)",
+          "oklch(70% 0.024 145.4)",
+          "oklch(81% 0.024 145.4)",
+          "oklch(92% 0.024 145.4)"
+        ]
+      },
+      "rust": {
+        "role": "secondary",
+        "displayName": "Restrained Rust",
+        "canonical": "#a74931",
+        "tonalRamp": [
+          "oklch(15% 0.130 35.4)",
+          "oklch(26% 0.130 35.4)",
+          "oklch(37% 0.130 35.4)",
+          "oklch(48% 0.130 35.4)",
+          "oklch(59% 0.130 35.4)",
+          "oklch(70% 0.130 35.4)",
+          "oklch(81% 0.130 35.4)",
+          "oklch(92% 0.130 35.4)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#202b25",
+        "tonalRamp": [
+          "oklch(15% 0.019 161.0)",
+          "oklch(26% 0.019 161.0)",
+          "oklch(37% 0.019 161.0)",
+          "oklch(48% 0.019 161.0)",
+          "oklch(59% 0.019 161.0)",
+          "oklch(70% 0.019 161.0)",
+          "oklch(81% 0.019 161.0)",
+          "oklch(92% 0.019 161.0)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#5c665f",
+        "tonalRamp": [
+          "oklch(15% 0.016 155.2)",
+          "oklch(26% 0.016 155.2)",
+          "oklch(37% 0.016 155.2)",
+          "oklch(48% 0.016 155.2)",
+          "oklch(59% 0.016 155.2)",
+          "oklch(70% 0.016 155.2)",
+          "oklch(81% 0.016 155.2)",
+          "oklch(92% 0.016 155.2)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f7f6f0",
+        "tonalRamp": [
+          "oklch(15% 0.008 98.9)",
+          "oklch(26% 0.008 98.9)",
+          "oklch(37% 0.008 98.9)",
+          "oklch(48% 0.008 98.9)",
+          "oklch(59% 0.008 98.9)",
+          "oklch(70% 0.008 98.9)",
+          "oklch(81% 0.008 98.9)",
+          "oklch(92% 0.008 98.9)"
+        ]
+      },
+      "paper-alt": {
+        "role": "neutral",
+        "displayName": "Alternate Paper",
+        "canonical": "#efeee6",
+        "tonalRamp": [
+          "oklch(15% 0.011 100.8)",
+          "oklch(26% 0.011 100.8)",
+          "oklch(37% 0.011 100.8)",
+          "oklch(48% 0.011 100.8)",
+          "oklch(59% 0.011 100.8)",
+          "oklch(70% 0.011 100.8)",
+          "oklch(81% 0.011 100.8)",
+          "oklch(92% 0.011 100.8)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine Rule",
+        "canonical": "#d2d5ca",
+        "tonalRamp": [
+          "oklch(15% 0.015 119.1)",
+          "oklch(26% 0.015 119.1)",
+          "oklch(37% 0.015 119.1)",
+          "oklch(48% 0.015 119.1)",
+          "oklch(59% 0.015 119.1)",
+          "oklch(70% 0.015 119.1)",
+          "oklch(81% 0.015 119.1)",
+          "oklch(92% 0.015 119.1)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(59% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(81% 0 0)",
+          "oklch(92% 0 0)"
+        ]
+      }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero headings in Georgia." },
-      "headline": { "displayName": "Headline", "purpose": "Section headings in Georgia." },
-      "title": { "displayName": "Title", "purpose": "Expertise and company subheadings in Georgia." },
-      "body": { "displayName": "Body", "purpose": "Default reading text in IBM Plex Sans." },
-      "nav": { "displayName": "Navigation", "purpose": "Header links in IBM Plex Sans." },
-      "label": { "displayName": "Label", "purpose": "Eyebrows and section indexes in IBM Plex Sans." },
-      "action": { "displayName": "Action", "purpose": "Primary and contact actions in IBM Plex Sans." },
-      "summary": { "displayName": "Summary", "purpose": "Experience disclosure titles in IBM Plex Sans." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero and contact headings in Georgia."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings in Georgia."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Expertise and company subheadings in Georgia."
+      },
+      "subheading": {
+        "displayName": "Subheading",
+        "purpose": "Compact Georgia headings for search principles and AI practice."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Introductory copy beneath the hero heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text in IBM Plex Sans."
+      },
+      "nav": {
+        "displayName": "Navigation",
+        "purpose": "Header links in IBM Plex Sans."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrows, section indexes, and metadata in IBM Plex Sans."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Primary and secondary actions in IBM Plex Sans."
+      },
+      "summary": {
+        "displayName": "Summary",
+        "purpose": "Experience disclosure titles and summaries in IBM Plex Sans."
+      },
+      "stat": {
+        "displayName": "Stat",
+        "purpose": "Career figures in Georgia with tabular numerals."
+      }
     },
     "shadows": [],
     "motion": [
-      { "name": "state-feedback", "value": "150ms ease", "purpose": "Color, arrow, and disclosure state changes." },
-      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Near-zero transition duration when reduced motion is requested." }
+      {
+        "name": "state-feedback",
+        "value": "150ms ease",
+        "purpose": "Button and language-switcher color changes and disclosure indicator rotation."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "smooth",
+        "purpose": "In-page navigation; disabled when reduced motion is requested."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "Near-zero transition duration when reduced motion is requested."
+      }
     ],
     "breakpoints": [
-      { "name": "tablet", "value": "900px" },
-      { "name": "mobile", "value": "700px" },
-      { "name": "compact", "value": "400px" }
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "compact-tablet",
+        "value": "850px"
+      },
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "compact",
+        "value": "400px"
+      }
     ]
   },
   "components": [
     {
-      "name": "Primary Navigation",
+      "name": "Header Navigation",
       "kind": "nav",
       "refersTo": "nav-links",
-      "description": "Compact section links in the site header, with a horizontal scrolling treatment on mobile.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"#expertises\">Expertises</a><a href=\"#experience\">Experience</a><a href=\"#contact\">Contact</a></nav>",
-      "css": ".ds-nav { display:flex; gap:clamp(20px,3vw,40px); margin-left:auto; } .ds-nav a { color:var(--muted); font:400 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:none; text-underline-offset:5px; } .ds-nav a:hover { color:var(--forest); text-decoration:underline; } .ds-nav a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:700px) { .ds-nav { order:3; width:100%; gap:22px; padding-top:11px; overflow-x:auto; } .ds-nav a { flex:0 0 auto; font-size:12px; } }"
+      "description": "Paper-colored site header with five section links, FR/EN controls, and a compact CV download. The links move to a horizontally scrollable second row at 700px.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-inner\"><a class=\"ds-brand\" href=\"#top\">Vincent Mangel</a><nav class=\"ds-nav\" aria-label=\"Navigation principale\"><a href=\"#recherche\">Ma recherche</a><a href=\"#expertises\">Expertises</a><a href=\"#ia\">IA</a><a href=\"#experience\">Expérience</a><a href=\"#contact\">Contact</a></nav><div class=\"ds-header-actions\"><div class=\"ds-language\" role=\"group\" aria-label=\"Langue du site\"><button type=\"button\" aria-pressed=\"true\">FR</button><button type=\"button\" aria-pressed=\"false\">EN</button></div><a class=\"ds-header-cv\" href=\"/CV_Vincent_Mangel.pdf\">CV</a></div></div></header>",
+      "css": ".ds-header { border-bottom:1px solid var(--line); background:var(--paper); } .ds-header-inner { display:flex; width:min(var(--page,1200px),calc(100% - 72px)); min-height:78px; align-items:center; gap:clamp(12px,3vw,42px); margin:0 auto; } .ds-brand { color:var(--forest-deep); font:650 16px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; letter-spacing:-.035em; text-decoration:none; white-space:nowrap; } .ds-nav { display:flex; gap:clamp(10px,2vw,26px); margin-left:auto; } .ds-nav a { display:inline-flex; min-height:44px; align-items:center; color:var(--forest-deep); font:620 14px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; text-decoration:none; text-underline-offset:5px; } .ds-nav a:hover { color:var(--rust-deep); text-decoration:underline; text-decoration-thickness:2px; } .ds-header-actions,.ds-language { display:inline-flex; align-items:center; gap:12px; white-space:nowrap; } .ds-language button { min-height:44px; padding:0; border:0; background:none; color:var(--forest-deep); font:550 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; text-decoration:underline; text-decoration-color:#8e9e8f; text-underline-offset:5px; cursor:pointer; transition:color 150ms ease,text-decoration-color 150ms ease; } .ds-language button[aria-pressed=true] { color:var(--forest); font-weight:650; text-decoration:none; cursor:default; } .ds-header-cv { display:inline-flex; min-height:46px; align-items:center; justify-content:center; padding:0 22px; background:var(--forest); color:var(--white); font:650 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; text-decoration:none; transition:background-color 150ms ease; } .ds-header-cv:hover { background:var(--forest-deep); } .ds-header a:focus-visible,.ds-header button:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:850px) and (min-width:701px) { .ds-header-inner { gap:12px; } .ds-nav { gap:10px; } .ds-header-actions,.ds-language { gap:10px; } .ds-header-cv { padding-inline:16px; } } @media (max-width:700px) { .ds-header-inner { width:calc(100% - 40px); min-height:68px; flex-wrap:wrap; gap:0 20px; padding-block:12px; } .ds-header-actions { order:2; margin-left:auto; } .ds-nav { order:4; width:100%; gap:22px; padding-top:11px; overflow-x:auto; } .ds-nav a { flex:0 0 auto; } .ds-header-cv { min-height:42px; padding-inline:18px; } }"
     },
     {
-      "name": "Primary Action",
+      "name": "Hero Actions",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The filled contact action, rendered as a link with a trailing arrow.",
-      "html": "<a class=\"ds-action-primary\" href=\"#contact\">Me contacter <span aria-hidden=\"true\">→</span></a>",
-      "css": ".ds-action-primary { display:inline-flex; min-height:46px; align-items:center; justify-content:center; gap:12px; padding:0 16px; background:var(--forest); color:#fff; font:600 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:none; transition:color 150ms ease,background-color 150ms ease; } .ds-action-primary:hover { background:var(--forest-deep); } .ds-action-primary:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-action-primary span { font-size:17px; }"
+      "description": "A direct contact action paired with an underlined CV download link.",
+      "html": "<div class=\"ds-hero-actions\"><a class=\"ds-action-primary\" href=\"#contact\">Me contacter</a><a class=\"ds-action-text\" href=\"/CV_Vincent_Mangel.pdf\">Télécharger mon CV</a></div>",
+      "css": ".ds-hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px 25px; margin-top:26px; } .ds-action-primary { display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:0 20px; background:var(--forest); color:var(--white); font:650 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; text-decoration:none; transition:color 150ms ease,background-color 150ms ease; } .ds-action-primary:hover { background:var(--forest-deep); } .ds-action-text { color:var(--forest-deep); font:650 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; text-decoration:underline; text-decoration-color:#8e9e8f; text-underline-offset:5px; } .ds-action-text:hover { color:var(--rust); text-decoration-color:currentColor; } .ds-hero-actions a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:400px) { .ds-hero-actions { gap:10px 17px; } }"
     },
     {
-      "name": "Text Action",
-      "kind": "button",
-      "refersTo": "button-text",
-      "description": "An underlined text link for a secondary action such as the CV download.",
-      "html": "<a class=\"ds-action-text\" href=\"#cv\">Télécharger mon CV <span aria-hidden=\"true\">↓</span></a>",
-      "css": ".ds-action-text { color:var(--forest-deep); font:600 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-decoration:underline; text-decoration-color:#8e9e8f; text-underline-offset:5px; } .ds-action-text:hover { color:var(--rust); text-decoration-color:currentColor; } .ds-action-text:focus-visible { outline:3px solid var(--focus); outline-offset:4px; }"
+      "name": "Approach Timeline",
+      "kind": "custom",
+      "refersTo": "approach-summary",
+      "description": "Three open steps explain how work moves from scoping through design and implementation to delivery. The small green dots mark each step.",
+      "html": "<section class=\"ds-approach\" aria-labelledby=\"ds-approach-title\"><h2 id=\"ds-approach-title\">Ma façon d’intervenir</h2><ol class=\"ds-approach-list\"><li><h3>Cadrer</h3><p>Je clarifie le besoin, l’existant et les contraintes métier.</p></li><li><h3>Concevoir et réaliser</h3><p>Je définis l’architecture et reste impliqué dans le développement avec l’équipe.</p></li><li><h3>Livrer</h3><p>Je participe aux tests et aux derniers ajustements jusqu’à la livraison.</p></li></ol></section>",
+      "css": ".ds-approach { min-width:0; } .ds-approach h2 { margin:0 0 19px; color:var(--forest); font:650 12px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; letter-spacing:.1em; text-transform:uppercase; } .ds-approach-list { margin:0; padding:0; border-left:1px solid #a7b7a6; list-style:none; } .ds-approach-list li { position:relative; padding:0 0 22px 25px; } .ds-approach-list li:last-child { padding-bottom:0; } .ds-approach-list li:before { position:absolute; top:6px; left:-6px; width:11px; height:11px; border:2px solid var(--paper); border-radius:50%; background:var(--forest); content:\"\"; } .ds-approach-list h3 { margin:0; color:var(--forest-deep); font:650 14px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-approach-list p { max-width:45ch; margin:4px 0 0; color:var(--muted); font:14px/1.5 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; }"
     },
     {
       "name": "Proof Band",
       "kind": "custom",
       "refersTo": "proof-band",
-      "description": "A flat forest band with six concise career figures and labels, arranged as three columns by two rows on wide screens and two columns below 900px.",
-      "html": "<div class=\"ds-proof-grid\"><dl><dt>ESN</dt><dd><strong>3</strong></dd></dl><dl><dt>Clients</dt><dd><strong>8+</strong></dd></dl><dl><dt>Années d’expérience</dt><dd><strong>11</strong></dd></dl><dl><dt>Rôles distincts</dt><dd><strong>5</strong></dd></dl><dl><dt>Maîtrises front-end</dt><dd><strong>10+</strong></dd></dl><dl><dt>Maîtrises back-end et infra</dt><dd><strong>15+</strong></dd></dl></div>",
-      "css": ".ds-proof-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); padding:16px 0; background:var(--forest-deep); color:var(--paper); } .ds-proof-grid dl { display:flex; min-width:0; min-height:132px; flex-direction:column; justify-content:center; margin:0; padding:18px 32px; border-right:1px solid #567264; border-bottom:1px solid #567264; } .ds-proof-grid dl:nth-child(3n) { border-right:0; } .ds-proof-grid dl:nth-last-child(-n+3) { border-bottom:0; } .ds-proof-grid dd { display:block; order:-1; margin:0; } .ds-proof-grid dd strong { color:#e4eadc; font:500 50px/1.1 Georgia,'Times New Roman',serif; font-variant-numeric:tabular-nums; letter-spacing:-.04em; } .ds-proof-grid dt { color:#d1dace; margin-top:3px; font:560 12px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:900px) { .ds-proof-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .ds-proof-grid dl:nth-child(3n) { border-right:1px solid #567264; } .ds-proof-grid dl:nth-child(2n) { border-right:0; } .ds-proof-grid dl:nth-last-child(-n+3) { border-bottom:1px solid #567264; } .ds-proof-grid dl:nth-last-child(-n+2) { border-bottom:0; } } @media (max-width:700px) { .ds-proof-grid { padding:8px 0; } .ds-proof-grid dl { min-height:136px; padding:16px 13px; } .ds-proof-grid dd strong { font-size:41px; } .ds-proof-grid dt { font-size:11px; } } @media (max-width:400px) { .ds-proof-grid dl { min-height:130px; padding-inline:8px; } .ds-proof-grid dd strong { font-size:35px; } .ds-proof-grid dt { font-size:10px; } }"
-    },
-    {
-      "name": "Approach Summary",
-      "kind": "custom",
-      "refersTo": "approach-summary",
-      "description": "A general first-person summary of how I frame work, evolve applications, and work with teams; specific missions remain in the experience timeline.",
-      "html": "<div class=\"ds-approach\" aria-labelledby=\"ds-approach-title\"><h2 id=\"ds-approach-title\">Ma façon d’intervenir</h2><ul><li><h3>Cadrer</h3><p>Je pars du besoin métier et de l’existant pour définir l’architecture cible.</p></li><li><h3>Faire évoluer</h3><p>Je modernise les applications et les données en tenant compte des contraintes du projet.</p></li><li><h3>Travailler avec l’équipe</h3><p>Je participe aux choix techniques, accompagne les développeurs et reste proche du code.</p></li></ul></div>",
-      "css": ".ds-approach { min-width:0; padding-left:clamp(25px,4vw,48px); border-left:1px solid #a7b7a6; } .ds-approach h2 { margin:0 0 9px; color:var(--forest); font:650 12px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; letter-spacing:.11em; text-transform:uppercase; } .ds-approach ul { margin:0; padding:0; list-style:none; } .ds-approach li { padding:15px 0; border-top:1px solid var(--line); } .ds-approach h3 { margin:0; color:var(--forest-deep); font:650 15px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-approach p { max-width:45ch; margin:4px 0 0; color:var(--muted); font:13px/1.5 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:900px) { .ds-approach { padding-left:25px; } } @media (max-width:700px) { .ds-approach { max-width:560px; padding-left:20px; } }"
+      "description": "A flat forest measure band with six lower-bound figures and short labels. It uses three columns by two rows on wide screens and two columns below 900px.",
+      "html": "<div class=\"ds-proof-grid\"><dl class=\"ds-proof-item\"><dt>Missions client</dt><dd><strong>10+</strong></dd></dl><dl class=\"ds-proof-item\"><dt>Clients</dt><dd><strong>8+</strong></dd></dl><dl class=\"ds-proof-item\"><dt>Années d’expérience</dt><dd><strong>11</strong></dd></dl><dl class=\"ds-proof-item\"><dt>Rôles distincts</dt><dd><strong>5</strong></dd></dl><dl class=\"ds-proof-item\"><dt>Maîtrises front-end</dt><dd><strong>10+</strong></dd></dl><dl class=\"ds-proof-item\"><dt>Maîtrises back-end et infra</dt><dd><strong>15+</strong></dd></dl></div>",
+      "css": ".ds-proof-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); padding:16px 0; background:var(--forest-deep); color:var(--paper); } .ds-proof-item { display:flex; min-width:0; min-height:132px; flex-direction:column; justify-content:center; margin:0; padding:18px 32px; border-right:1px solid #567264; border-bottom:1px solid #567264; } .ds-proof-item:nth-child(3n) { border-right:0; } .ds-proof-item:nth-last-child(-n+3) { border-bottom:0; } .ds-proof-item dd { display:block; order:-1; margin:0; } .ds-proof-item dd strong { color:#e4eadc; font:500 var(--text-stat,clamp(2.25rem,4.2vw,3rem))/1.1 Georgia,\"Times New Roman\",serif; font-variant-numeric:tabular-nums; letter-spacing:-.04em; } .ds-proof-item dt { margin-top:3px; color:#d1dace; font:560 12px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:900px) { .ds-proof-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .ds-proof-item { padding-inline:23px; } .ds-proof-item:nth-child(3n) { border-right:1px solid #567264; } .ds-proof-item:nth-child(2n) { border-right:0; } .ds-proof-item:nth-last-child(-n+3) { border-bottom:1px solid #567264; } .ds-proof-item:nth-last-child(-n+2) { border-bottom:0; } } @media (max-width:700px) { .ds-proof-grid { padding:8px 0; } .ds-proof-item { min-height:136px; padding:16px 13px; } } @media (max-width:400px) { .ds-proof-item { min-height:130px; padding-inline:8px; } }"
     },
     {
       "name": "Expertise Columns",
       "kind": "custom",
       "refersTo": "expertise-column",
-      "description": "Three open expertise columns led by a number and serif heading.",
-      "html": "<div class=\"ds-expertise-grid\"><article><span>01</span><h3>Architecture</h3><p>Analyse du legacy, cadrage technique et définition d’architectures cibles.</p><strong>CNR · Refonte WPF vers une application web</strong></article><article><span>02</span><h3>Leadership technique</h3><p>Coordination transverse et accompagnement des développeurs.</p><strong>Ayming · Trois projets menés en parallèle</strong></article><article><span>03</span><h3>Développement</h3><p>Pratique full stack, du front-end aux données et aux API.</p><strong>Private GPT · Réalisation front-end</strong></article></div>",
-      "css": ".ds-expertise-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px; } .ds-expertise-grid article { display:flex; min-height:245px; flex-direction:column; padding-top:16px; border-top:1px solid #9aac98; } .ds-expertise-grid article span { color:var(--rust); font:650 12px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; font-variant-numeric:tabular-nums; } .ds-expertise-grid h3 { margin:15px 0 10px; color:var(--forest-deep); font:500 25px Georgia,'Times New Roman',serif; letter-spacing:-.025em; } .ds-expertise-grid p { max-width:38ch; margin:0; color:#4d5b52; font:14px/1.6 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-expertise-grid strong { margin-top:auto; padding-top:22px; color:var(--forest); font:620 12px/1.45 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } @media (max-width:700px) { .ds-expertise-grid { grid-template-columns:1fr; gap:25px; } .ds-expertise-grid article { min-height:0; padding-top:12px; } }"
+      "description": "Three open areas with evidence and supporting skills, set off by fine rules. The live headings also use official straight UIcons from Flaticon; the panel preview keeps this dependency-free sample focused on text and spacing.",
+      "html": "<div class=\"ds-expertise-grid\"><article><h3>Architecture</h3><p>J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.</p><strong>CNR · Refonte WPF vers une application web</strong><small>Cadrage · architecture logicielle · modernisation</small></article><article><h3>Leadership technique</h3><p>Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs.</p><strong>Ayming · Trois projets menés en parallèle</strong><small>Équipe · delivery · mentorat · agilité</small></article><article><h3>Développement</h3><p>Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.</p><strong>Private GPT · Architecture et réalisation front-end</strong><small>C# / .NET · React · Angular · TypeScript · Azure</small></article></div>",
+      "css": ".ds-expertise-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px; } .ds-expertise-grid article { display:flex; min-height:245px; flex-direction:column; padding-top:16px; border-top:1px solid #9aac98; } .ds-expertise-grid h3 { margin:0 0 10px; color:var(--forest-deep); font:500 24px/1.3 Georgia,\"Times New Roman\",serif; letter-spacing:-.025em; } .ds-expertise-grid p { max-width:38ch; margin:0; color:#4d5b52; font:16px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-expertise-grid strong { margin-top:auto; padding-top:22px; color:var(--forest); font:620 14px/1.45 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-expertise-grid small { margin-top:5px; color:var(--muted); font:12px/1.5 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-expertise-grid { grid-template-columns:1fr; gap:25px; } .ds-expertise-grid article { min-height:0; padding-top:12px; } .ds-expertise-grid strong { margin-top:12px; padding-top:0; } }"
+    },
+    {
+      "name": "Personal Note",
+      "kind": "custom",
+      "description": "An editorial note about professional transmission and personal interests, placed below education and credentials.",
+      "html": "<aside class=\"ds-personal-note\" aria-label=\"Transmission et centres d’intérêt\"><p class=\"ds-note-label\">Transmission &amp; curiosité</p><div><p class=\"ds-note-statement\"><strong>Je suis membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.</strong></p><p class=\"ds-note-interest\">J’ai aussi de bonnes connaissances en marketing, en jeux vidéo et en communication. Je m’intéresse à l’art, aux expositions et aux ateliers créatifs.</p></div></aside>",
+      "css": ".ds-personal-note { display:grid; grid-template-columns:minmax(165px,.42fr) minmax(0,1.58fr); gap:clamp(24px,5vw,60px); align-items:start; margin-top:43px; padding-top:22px; border-top:1px solid var(--line); } .ds-note-label { margin:4px 0 0; color:var(--forest); font:650 12px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; letter-spacing:.1em; text-transform:uppercase; } .ds-note-statement { margin:0; color:var(--forest-deep); font:500 18px/1.5 Georgia,\"Times New Roman\",serif; } .ds-note-statement strong { font-weight:650; } .ds-note-interest { margin:8px 0 0; color:var(--muted); font:16px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-personal-note { grid-template-columns:1fr; gap:8px; margin-top:30px; padding-top:18px; } .ds-note-label { margin-top:0; } }"
     },
     {
       "name": "Experience Disclosure",
       "kind": "custom",
       "refersTo": "disclosure-summary",
-      "description": "Native keyboard-operable details rows with a rotating plus indicator.",
-      "html": "<details class=\"ds-disclosure\"><summary><span><strong>Architecte technique · CNR</strong><small>Cadrage d’une refonte d’application métier critique, de WPF vers le web.</small></span><time>Juil. 2025 — févr. 2026 <i aria-hidden=\"true\">+</i></time></summary><div class=\"ds-detail\"><p>Analyse du besoin, cadrage technique et définition de l’architecture cible.</p><p><b>Environnement</b> C# · WPF · Angular · SQL Server</p></div></details>",
-      "css": ".ds-disclosure { border-bottom:1px solid #c7cbbf; } .ds-disclosure summary { display:flex; min-height:70px; align-items:center; justify-content:space-between; gap:24px; padding:14px 0; cursor:pointer; list-style:none; } .ds-disclosure summary::-webkit-details-marker { display:none; } .ds-disclosure summary:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-disclosure summary span { display:grid; gap:3px; } .ds-disclosure strong { color:var(--ink); font:630 14px/1.4 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-disclosure small { max-width:55ch; color:var(--muted); font:12px/1.45 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-disclosure time { display:inline-flex; align-items:center; gap:10px; color:var(--muted); font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; white-space:nowrap; } .ds-disclosure i { color:var(--forest); font:19px/1 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; transition:transform 150ms ease; } .ds-disclosure[open] i { transform:rotate(45deg); } .ds-detail { padding:0 32px 18px 0; color:#43534a; font:13px/1.6 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-detail p { margin:0 0 10px; } .ds-detail b { margin-right:9px; color:var(--forest); } @media (prefers-reduced-motion:reduce) { .ds-disclosure i { transition-duration:.01ms; } }"
+      "description": "Native keyboard-operable details rows with a hairline separator and rotating plus indicator.",
+      "html": "<details class=\"ds-disclosure\"><summary><span class=\"ds-summary-main\"><strong>Architecte technique · CNR</strong><small>Chez CNR, j’ai cadré la refonte d’une application métier critique, de WPF vers le web.</small></span><span class=\"ds-period\">Juil. 2025 - févr. 2026 <i aria-hidden=\"true\">+</i></span></summary><div class=\"ds-detail\"><p>Après avoir analysé le besoin, j’ai rédigé le cadrage technique et défini l’architecture cible.</p><p><b>Environnement</b><span>C# · WPF · Angular · Telerik · SQL Server · Oracle</span></p></div></details>",
+      "css": ".ds-disclosure { border-bottom:1px solid #c7cbbf; } .ds-disclosure summary { display:flex; min-height:70px; align-items:center; justify-content:space-between; gap:24px; padding:14px 0; cursor:pointer; list-style:none; } .ds-disclosure summary::-webkit-details-marker { display:none; } .ds-disclosure summary:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-summary-main { display:grid; gap:3px; } .ds-summary-main strong { color:var(--ink); font:630 14px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-summary-main small { max-width:55ch; color:var(--muted); font:12px/1.45 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-period { display:inline-flex; flex:0 0 auto; align-items:center; gap:10px; color:var(--muted); font:12px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; white-space:nowrap; } .ds-period i { color:var(--forest); font:400 20px/1 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; transition:transform 150ms ease; } .ds-disclosure[open] .ds-period i { transform:rotate(45deg); } .ds-detail { padding:0 32px 18px 0; } .ds-detail p { margin:0 0 10px; color:#43534a; font:14px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-detail p:last-child { display:grid; grid-template-columns:103px minmax(0,1fr); gap:9px; color:var(--muted); font-size:12px; } .ds-detail b { color:var(--forest); font-weight:650; } @media (max-width:700px) { .ds-disclosure summary { align-items:flex-start; gap:12px; } .ds-period { max-width:106px; white-space:normal; } .ds-detail { padding-right:0; } .ds-detail p:last-child { grid-template-columns:1fr; gap:2px; } } @media (prefers-reduced-motion:reduce) { .ds-period i { transition-duration:.01ms; } }"
     },
     {
       "name": "Contact Links",
       "kind": "custom",
       "refersTo": "contact-link",
-      "description": "Label, destination, and arrow in ruled rows on a deep forest section.",
-      "html": "<div class=\"ds-contact\"><a href=\"mailto:vincent.mangel.pro@gmail.com\"><span>E-mail</span><strong>vincent.mangel.pro@gmail.com</strong><i aria-hidden=\"true\">→</i></a><a href=\"tel:+33637369836\"><span>Téléphone</span><strong>06 37 36 98 36</strong><i aria-hidden=\"true\">→</i></a><a href=\"#calendar\"><span>Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong><i aria-hidden=\"true\">→</i></a></div>",
-      "css": ".ds-contact { border-top:1px solid #577263; background:var(--forest-deep); } .ds-contact a { display:grid; grid-template-columns:98px minmax(0,1fr) 20px; align-items:center; gap:15px; min-height:61px; padding:9px 0; border-bottom:1px solid #577263; color:#f1f3eb; text-decoration:none; } .ds-contact a span { color:#c5d1c6; font:11px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; } .ds-contact a strong { font:550 14px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; overflow-wrap:anywhere; } .ds-contact a i { color:#ceddcc; font:18px 'IBM Plex Sans Variable','IBM Plex Sans',sans-serif; text-align:right; transition:color 150ms ease,transform 150ms ease; } .ds-contact a:hover strong { text-decoration:underline; text-underline-offset:4px; } .ds-contact a:hover i { color:#eaa58a; transform:translate(2px,-2px); } .ds-contact a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } @media (max-width:700px) { .ds-contact a { grid-template-columns:82px minmax(0,1fr) 18px; gap:9px; } .ds-contact a strong { font-size:13px; } }"
+      "description": "Five text links in ruled rows on the deep-forest contact section. The live UI adds official straight UIcons before each label and credits UIcons by Flaticon in the footer; the panel preview keeps this sample self-contained.",
+      "html": "<div class=\"ds-contact-links\"><a href=\"mailto:vincent.mangel.pro@gmail.com\"><span>E-mail</span><strong>vincent.mangel.pro@gmail.com</strong></a><a href=\"tel:+33637369836\"><span>Téléphone</span><strong>06 37 36 98 36</strong></a><a href=\"#calendar\"><span>Rendez-vous</span><strong>Choisir un créneau (Google Agenda)</strong></a><a href=\"https://www.linkedin.com/in/vincent-mangel/\"><span>Profil</span><strong>LinkedIn</strong></a><a href=\"/CV_Vincent_Mangel.pdf\"><span>CV</span><strong>Télécharger le CV (PDF)</strong></a></div>",
+      "css": ".ds-contact-links { border-top:1px solid #577263; background:var(--forest-deep); } .ds-contact-links a { display:grid; grid-template-columns:110px minmax(0,1fr); align-items:center; gap:15px; min-height:61px; padding:9px 0; border-bottom:1px solid #577263; color:#f1f3eb; text-decoration:none; } .ds-contact-links a span { color:#c5d1c6; font:12px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-contact-links a strong { font:550 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; overflow-wrap:anywhere; } .ds-contact-links a:hover strong { text-decoration:underline; text-underline-offset:4px; } .ds-contact-links a:focus-visible { outline:3px solid #f2f1e9; outline-offset:4px; } @media (max-width:700px) { .ds-contact-links a { grid-template-columns:82px minmax(0,1fr); gap:9px; } .ds-contact-links a strong { font-size:13px; } }"
     }
   ],
   "narrative": {
     "northStar": "The Editorial Evidence Record",
-    "overview": "The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries without framing each item as a card. The hero introduces a general first-person summary of how I work; specific client evidence appears in the experience timeline. Its mood is calm, direct, and evidence-led for recruiters and technical managers.\n\nWarm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.",
+    "overview": "The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers. The header stays on the paper background, and the hero uses an unboxed three-step timeline to explain work from scoping through delivery.\n\nWarm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.",
     "keyCharacteristics": [
       "Forest green carries primary emphasis; rust is a restrained pointer.",
       "IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.",
@@ -112,9 +313,21 @@
       "Open grids and flat section bands provide structure without shadows."
     ],
     "rules": [
-      { "name": "The Green Structure Rule", "body": "Forest green establishes hierarchy; rust stays a small directional and focus accent.", "section": "colors" },
-      { "name": "The Two-Voice Rule", "body": "Use IBM Plex Sans for reading and controls; reserve Georgia for display headings and subheadings.", "section": "typography" },
-      { "name": "The Paper-Plane Rule", "body": "Paper shifts and fine rules define planes; no shadow treatment is part of the current system.", "section": "elevation" }
+      {
+        "name": "The Green Structure Rule",
+        "body": "Forest green establishes hierarchy; rust stays a small directional and focus accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Use IBM Plex Sans for reading and controls; reserve Georgia for display headings and subheadings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper-Plane Rule",
+        "body": "Paper shifts and fine rules define planes; no shadow treatment is part of the current system.",
+        "section": "elevation"
+      }
     ],
     "dos": [
       "Do use forest green for primary emphasis and actions, with rust reserved for small directional and focus cues.",
