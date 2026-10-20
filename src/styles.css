@@ -136,6 +136,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .expertise-item > p:not(.expertise-proof):not(.expertise-skills) { max-width: 38ch; margin: 0; color: #4d5b52; font-size: var(--text-base); line-height: 1.6; }
 .expertise-proof { margin: auto 0 4px; padding-top: 22px; color: var(--forest); font-size: var(--text-sm); font-weight: 620; line-height: 1.45; }
 .expertise-skills { margin: 5px 0 0; color: var(--muted); font-size: var(--text-label); line-height: 1.5; }
+.technology-stack { margin-top: 43px; padding-top: 22px; border-top: 1px solid var(--line); }
+.technology-stack > h3 { margin: 0 0 20px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; letter-spacing: -.02em; }
+.technology-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.technology-group h4 { margin: 0 0 11px; color: var(--forest); font-size: var(--text-label); font-weight: 650; letter-spacing: .075em; text-transform: uppercase; }
+.technology-items { display: flex; flex-wrap: wrap; gap: 11px 18px; margin: 0; padding: 0; list-style: none; }
+.technology-items li { display: flex; align-items: center; gap: 8px; color: var(--ink); font-size: var(--text-sm); font-weight: 560; line-height: 1.4; }
+.technology-mark { display: block; flex: 0 0 20px; width: 20px; height: 20px; background-color: var(--forest); -webkit-mask-image: var(--technology-logo); mask-image: var(--technology-logo); -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center; -webkit-mask-size: contain; mask-size: contain; }
+.technology-mark--react { --technology-logo: url("/technology-logos/react.svg"); }
+.technology-mark--angular { --technology-logo: url("/technology-logos/angular.svg"); }
+.technology-mark--typescript { --technology-logo: url("/technology-logos/typescript.svg"); }
+.technology-mark--dotnet { --technology-logo: url("/technology-logos/dotnet.svg"); }
+.technology-mark--sql-server { --technology-logo: url("/technology-logos/sql-server.svg"); }
+.technology-mark--python { --technology-logo: url("/technology-logos/python.svg"); }
+.technology-mark--azure { --technology-logo: url("/technology-logos/azure.svg"); }
+.technology-mark--azure-devops { --technology-logo: url("/technology-logos/azure-devops.svg"); }
+.technology-mark--powershell { --technology-logo: url("/technology-logos/powershell.svg"); }
 
 .ai-section { padding-block: 100px 105px; }
 .ai-heading { margin-bottom: 36px; }
@@ -267,6 +283,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .expertise-item { min-height: auto; padding-top: 12px; }
   .expertise-item h3 { margin: 8px 0 5px; }
   .expertise-proof { margin-top: 12px; padding-top: 0; }
+  .technology-stack { margin-top: 32px; padding-top: 20px; }
+  .technology-groups { grid-template-columns: 1fr; gap: 20px; }
 
   .ai-practice-grid { grid-template-columns: 1fr; }
   .ai-practice { grid-template-columns: 1fr; gap: 5px; }

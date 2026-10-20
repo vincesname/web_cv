@@ -126,6 +126,7 @@ Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and
 - Warm paper, ink, and fine rules keep the canvas quiet and legible.
 - Open grids and flat section bands provide structure without shadows.
 - Regular Straight UIcons mark expertise, AI practices, and contact actions.
+- Monochrome technology logos add a compact visual index while keeping their names visible.
 
 ## Colors
 
@@ -241,6 +242,11 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Spacing and type:** A small Regular Straight icon and Georgia heading lead the description, evidence line, and supporting skills; the columns have no individual numbers because they are parallel areas, not a sequence.
 - **Responsive behavior:** The columns stack at 700px and below; there is no tab or hidden state.
 
+### Core Technology Grid
+- **Character:** A compact, static technology index follows the expertise columns, grouping nine representative technologies under front-end, back-end and data, and cloud and DevOps.
+- **Visual treatment:** Brand marks render as monochrome forest-green masks beside visible names. Open spacing and a fine top rule keep the group aligned with the editorial layout.
+- **Responsive behavior:** The three groups sit in columns on wide screens and stack on phones. All technologies stay visible without a carousel or hidden state.
+
 ### AI Practice Grid
 - **Character:** Four AI development practices use open editorial rows rather than cards, with one small Regular Straight icon beside each heading.
 - **Structure:** Prompt engineering, agents and skills, model selection, and the move from prototype to Spec-Driven Development remain readable as text at every breakpoint.
@@ -265,6 +271,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Do** keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.
 - **Do** keep keyboard focus visible and respect reduced-motion settings.
 - **Do** use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs.
+- **Do** pair monochrome technology marks with visible text labels, and keep the full assignment-specific stacks in the experience details.
 
 ### Don't:
 - **Don't** add rounded corners to the primary action or the current row patterns.

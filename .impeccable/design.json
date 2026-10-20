@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T09:24:38.000Z",
+  "generatedAt": "2026-10-20T09:44:56.000Z",
   "title": "Design System: Vincent Mangel",
   "extensions": {
     "colorMeta": {
@@ -308,6 +308,14 @@
       "description": "Four open text rows distinguish prompt engineering, agents and skills, model selection, and Spec-Driven Development. The live page adds one small Flaticon Regular Straight icon beside each heading; icons stay out of this standalone panel sample.",
       "html": "<div class=\"ds-ai-grid\"><article><h3>Prompt engineering</h3><p>I clarify context, goals, and constraints, then refine prompts based on the responses.</p></article><article><h3>Agents and skills</h3><p>I use agentic workflows and skills to structure tasks and adapt context to the work at hand.</p></article><article><h3>Choosing a model</h3><p>I select a model based on the task, the reasoning required, and the response format I need.</p></article><article><h3>From prototype to SDD</h3><p>I explore quickly, then clarify requirements and acceptance criteria before larger developments.</p></article></div>",
       "css": ".ds-ai-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(30px,5vw,68px); } .ds-ai-grid article { display:grid; grid-template-columns:minmax(135px,.8fr) minmax(0,1.2fr); gap:20px; align-content:start; padding:17px 0; border-top:1px solid #9aac98; } .ds-ai-grid h3 { margin:0; color:var(--forest-deep); font:500 20px/1.3 Georgia,\"Times New Roman\",serif; letter-spacing:-.02em; } .ds-ai-grid p { max-width:46ch; margin:0; color:#4d5b52; font:16px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-ai-grid { grid-template-columns:1fr; } .ds-ai-grid article { grid-template-columns:1fr; gap:5px; } }"
+    },
+    {
+      "name": "Core Technology Grid",
+      "kind": "custom",
+      "refersTo": "technology-grid",
+      "description": "A compact static index of nine representative technologies, grouped by front end, back end and data, and cloud and DevOps. The live page uses Devicon brand marks as monochrome forest-green masks beside visible text labels; the panel preview keeps external logo assets out of the self-contained snippet.",
+      "html": "<div class=\"ds-technology-grid\" aria-labelledby=\"ds-tech-title\"><h3 id=\"ds-tech-title\">Technologies mobilisées</h3><div class=\"ds-tech-groups\"><div><h4>Front-end</h4><ul><li>React</li><li>Angular</li><li>TypeScript</li></ul></div><div><h4>Back-end &amp; données</h4><ul><li>C# / .NET</li><li>SQL Server</li><li>Python</li></ul></div><div><h4>Cloud &amp; DevOps</h4><ul><li>Azure</li><li>Azure DevOps</li><li>PowerShell</li></ul></div></div></div>",
+      "css": ".ds-technology-grid { margin-top:43px; padding-top:22px; border-top:1px solid var(--line); } .ds-technology-grid h3 { margin:0 0 20px; color:var(--forest-deep); font:500 20px Georgia,\"Times New Roman\",serif; } .ds-tech-groups { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; } .ds-tech-groups h4 { margin:0 0 11px; color:var(--forest); font:650 12px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; letter-spacing:.075em; text-transform:uppercase; } .ds-tech-groups ul { display:flex; flex-wrap:wrap; gap:11px 18px; margin:0; padding:0; list-style:none; } .ds-tech-groups li { color:var(--ink); font:560 14px/1.4 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-tech-groups { grid-template-columns:1fr; gap:20px; } }"
     }
   ],
   "narrative": {
@@ -318,7 +326,8 @@
       "IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.",
       "Warm paper, ink, and fine rules keep the canvas quiet and legible.",
       "Open grids and flat section bands provide structure without shadows.",
-      "Regular Straight UIcons mark expertise, AI practices, and contact actions."
+      "Regular Straight UIcons mark expertise, AI practices, and contact actions.",
+      "Monochrome technology logos add a compact visual index while keeping their names visible."
     ],
     "rules": [
       {
@@ -342,7 +351,8 @@
       "Do let warm paper, ink, whitespace, and fine rules organize reading surfaces.",
       "Do keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.",
       "Do keep keyboard focus visible and respect reduced-motion settings.",
-      "Do use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs."
+      "Do use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs.",
+      "Do pair monochrome technology marks with visible text labels, and keep the index compact and static."
     ],
     "donts": [
       "Don't add rounded corners to the primary action or the current row patterns.",

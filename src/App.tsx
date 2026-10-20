@@ -128,6 +128,33 @@ const englishAiPractices = [
   },
 ];
 
+const technologyGroups = [
+  {
+    title: { fr: 'Front-end', en: 'Front end' },
+    technologies: [
+      { name: 'React', icon: 'react' },
+      { name: 'Angular', icon: 'angular' },
+      { name: 'TypeScript', icon: 'typescript' },
+    ],
+  },
+  {
+    title: { fr: 'Back-end & données', en: 'Back end & data' },
+    technologies: [
+      { name: 'C# / .NET', icon: 'dotnet' },
+      { name: 'SQL Server', icon: 'sql-server' },
+      { name: 'Python', icon: 'python' },
+    ],
+  },
+  {
+    title: { fr: 'Cloud & DevOps', en: 'Cloud & DevOps' },
+    technologies: [
+      { name: 'Azure', icon: 'azure' },
+      { name: 'Azure DevOps', icon: 'azure-devops' },
+      { name: 'PowerShell', icon: 'powershell' },
+    ],
+  },
+];
+
 const experienceGroups: ExperienceGroup[] = [
   {
     company: 'Exakis-Nelite',
@@ -396,6 +423,7 @@ type PageCopy = {
   searchPrinciples: { title: string; description: string }[];
   expertiseTitle: string;
   expertiseIntro: string;
+  technologyStackTitle: string;
   aiTitle: string;
   aiIntro: string;
   aiInterestAria: string;
@@ -476,6 +504,7 @@ const pageCopy: Record<Language, PageCopy> = {
     ],
     expertiseTitle: '02 / EXPERTISES',
     expertiseIntro: 'Je relie les choix techniques aux besoins métier, du cadrage à la réalisation.',
+    technologyStackTitle: 'Technologies mobilisées',
     aiTitle: '03 / IA & DÉVELOPPEMENT',
     aiIntro: 'Je considère l’IA comme un outil incontournable du développement aujourd’hui. Je l’intègre à ma pratique selon le besoin et l’ampleur du projet.',
     aiInterestAria: 'Intérêt pour les modèles alternatifs',
@@ -557,6 +586,7 @@ const pageCopy: Record<Language, PageCopy> = {
     ],
     expertiseTitle: '02 / EXPERTISE',
     expertiseIntro: 'I connect technical decisions to business needs, from scoping through implementation.',
+    technologyStackTitle: 'Technologies used across assignments',
     aiTitle: '03 / AI & DEVELOPMENT',
     aiIntro: 'I see AI as an essential tool in software development today. I use it in my practice according to each project’s needs and scope.',
     aiInterestAria: 'Interest in alternative language models',
@@ -746,6 +776,24 @@ function App() {
                 <p className="expertise-skills">{area.skills}</p>
               </article>
             ))}
+          </div>
+          <div className="technology-stack" aria-labelledby="technology-stack-title">
+            <h3 id="technology-stack-title">{copy.technologyStackTitle}</h3>
+            <div className="technology-groups">
+              {technologyGroups.map((group) => (
+                <div className="technology-group" key={group.title.en}>
+                  <h4>{group.title[language]}</h4>
+                  <ul className="technology-items">
+                    {group.technologies.map((technology) => (
+                      <li key={technology.name}>
+                        <span aria-hidden="true" className={`technology-mark technology-mark--${technology.icon}`} />
+                        <span>{technology.name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
