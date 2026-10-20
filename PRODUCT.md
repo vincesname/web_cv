@@ -18,10 +18,11 @@ A public CV and portfolio that lets visitors understand Vincent's experience, re
 
 The profile combines hands-on full-stack development with technical leadership and software architecture. Evidence includes application modernization, target architecture, data migration, team guidance, and a front-end lead role on an internal agentic Private GPT platform.
 
+Vincent works across the full stack and has a preference for front-end development.
+
 ## Current Search Focus
 
-- The role sought is software architect.
-- The search area is Lyon only.
+- Vincent is actively seeking a software architect role in Lyon, under a permanent CDI contract, with a three-month notice period.
 - For project work, Vincent prefers a forfait engagement to régie, with a shared objective and room to grow with the company and support its teams over time.
 - He wants to keep learning and sharing knowledge, while accounting for both technical constraints and the people who use and build the solutions.
 

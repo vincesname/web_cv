@@ -201,15 +201,15 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Responsive behavior:** Long titles wrap naturally on narrow screens. The contact area keeps its short index alongside its separate call-to-action heading.
 
 ### Search Section
-- **Character:** A concise statement of the target role, location, preferred project engagement, and working principles. A small schematic Lyon map makes the location easy to scan.
-- **Shape and spacing:** Open editorial columns with fine rules; the map is a flat SVG illustration without a shadow or rounded frame.
+- **Character:** The search facts list role, contract, notice period, location, and preferred project engagement beside a closer crop of the Lyon map.
+- **Shape and spacing:** Open editorial columns with fine rules; the map is a flat illustration without a shadow or rounded frame.
 - **Type and color:** Existing numbered Georgia section heading, IBM Plex Sans details, forest green labels, warm paper canvas, and a quiet green map treatment.
 - **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction.
 
-### Personal Note
-- **Character:** A full-width editorial callout highlights professional transmission and personal interests beneath education and credentials.
-- **Type and spacing:** A small forest label sits beside a moderate Georgia statement, followed by similarly readable supporting copy; a fine top rule anchors the row without a card surface.
-- **Responsive behavior:** The label moves above the statement on narrow screens.
+### Credentials List
+- **Character:** Education, certifications, languages, knowledge sharing, and interests appear as eight concise editorial rows.
+- **Type and spacing:** A stable label column aligns with the value column; fine horizontal rules separate rows without cards.
+- **Responsive behavior:** Labels move above their values on narrow screens.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
@@ -239,17 +239,17 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Expertise Columns
 - **Character:** Three open columns with one short rule across each top edge.
-- **Spacing and type:** A small Regular Straight icon and Georgia heading lead the description, evidence line, and supporting skills; the columns have no individual numbers because they are parallel areas, not a sequence.
+- **Spacing and type:** A small Regular Straight icon and Georgia heading lead the description and a supporting skills line; the columns have no individual numbers because they are parallel areas, not a sequence.
 - **Responsive behavior:** The columns stack at 700px and below; there is no tab or hidden state.
 
 ### Core Technology Grid
 - **Character:** A compact, static technology index follows the expertise columns, grouping nine representative technologies under front-end, back-end and data, and cloud and DevOps.
-- **Visual treatment:** Brand marks render as monochrome forest-green masks beside visible names. Open spacing and a fine top rule keep the group aligned with the editorial layout.
+- **Visual treatment:** The title is followed by a short note identifying full-stack development and a front-end preference. Brand marks render as monochrome forest-green masks beside visible names. Open spacing and a fine top rule keep the group aligned with the editorial layout.
 - **Responsive behavior:** The three groups sit in columns on wide screens and stack on phones. All technologies stay visible without a carousel or hidden state.
 
 ### AI Practice Grid
-- **Character:** Four AI development practices use open editorial rows rather than cards, with one small Regular Straight icon beside each heading.
-- **Structure:** Prompt engineering, agents and skills, model selection, and the move from prototype to Spec-Driven Development remain readable as text at every breakpoint.
+- **Character:** Six AI and research practices use open editorial rows rather than cards, with one small Regular Straight icon beside each heading.
+- **Structure:** Philosophy, prompt engineering, agentic workflows and skills, model selection, vibecoding or SDD, and research into alternative language models remain readable as text at every breakpoint. French copy uses infinitive verbs; English copy uses natural first-person statements.
 - **Responsive behavior:** Two columns on wide screens; one column on phones.
 
 ### Native Disclosure

@@ -20,7 +20,6 @@ type ExperienceGroup = {
 type ExpertiseItem = {
   title: string;
   text: string;
-  proof: string;
   skills: string;
   icon: string;
 };
@@ -39,45 +38,52 @@ const expertise: ExpertiseItem[] = [
     icon: 'fi-rs-blueprint',
     title: 'Architecture',
     text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
-    proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
     icon: 'fi-rs-users',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
-    proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
     icon: 'fi-rs-code-simple',
     title: 'Développement',
     text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
-    proof: 'Private GPT · Architecture et réalisation front-end',
     skills: 'C# / .NET · React · Angular · TypeScript · Azure',
   },
 ];
 
 const aiPractices = [
   {
+    icon: 'fi-rs-lightbulb-on',
+    title: 'Philosophie',
+    text: 'Considérer l’IA comme un outil incontournable du développement aujourd’hui. L’intégrer à ma pratique selon le besoin et l’ampleur du projet.',
+  },
+  {
     icon: 'fi-rs-comment-alt-dots',
     title: 'Prompt engineering',
-    text: 'J’optimise mes requêtes en précisant le contexte, l’objectif et les contraintes, puis j’affine le prompt selon les réponses obtenues.',
+    text: 'Optimiser les prompts en précisant le contexte, l’objectif et les contraintes, puis les affiner selon les réponses obtenues.',
   },
   {
     icon: 'fi-rs-workflow',
-    title: 'Agents et skills',
-    text: 'Je mobilise des workflows agentiques et des skills pour structurer les tâches et adapter le contexte aux besoins du travail.',
+    title: 'Agentique et skills',
+    text: 'Mobiliser des workflows agentiques et des skills pour structurer les tâches et adapter le contexte aux besoins du travail.',
   },
   {
     icon: 'fi-rs-brain',
     title: 'Choix multi-modèle',
-    text: 'Je sélectionne le modèle en fonction de la tâche, du raisonnement attendu et du format de réponse recherché.',
+    text: 'Sélectionner le modèle en fonction de la tâche, du raisonnement attendu et du format de réponse recherché.',
   },
   {
     icon: 'fi-rs-code-branch',
-    title: 'Du prototype au SDD',
-    text: 'Le vibecoding me permet d’explorer rapidement une idée. Pour un développement de plus grande ampleur, je privilégie le Spec-Driven Development (SDD) : clarifier le besoin, les contraintes et les critères attendus avant de coder.',
+    title: 'Vibecoding ou SDD',
+    text: 'Explorer rapidement une idée avec le vibecoding. Pour un développement de plus grande ampleur, clarifier le besoin, les contraintes et les critères de réussite avant de coder avec le Spec-Driven Development (SDD).',
+  },
+  {
+    icon: 'fi-rs-binoculars',
+    title: 'Veille & exploration',
+    text: 'Suivre les modèles de langage alternatifs, notamment les d-LLM, et explorer leurs approches et leurs apports possibles au développement.',
   },
 ];
 
@@ -86,26 +92,28 @@ const englishExpertise: ExpertiseItem[] = [
     icon: 'fi-rs-blueprint',
     title: 'Architecture',
     text: 'I assess existing systems, frame technical decisions, and define a target architecture that fits business constraints.',
-    proof: 'CNR · WPF to web application redesign',
     skills: 'Scoping · software architecture · modernisation',
   },
   {
     icon: 'fi-rs-users',
     title: 'Technical leadership',
     text: 'I run workshops, coordinate technical decisions, review code, and support developers as part of day-to-day delivery.',
-    proof: 'Ayming · Three projects in parallel',
     skills: 'Teams · delivery · mentoring · agile methods',
   },
   {
     icon: 'fi-rs-code-simple',
     title: 'Software development',
     text: 'I work across user interfaces, APIs, and data, and stay involved in the code.',
-    proof: 'Private GPT · Front-end architecture and delivery',
     skills: 'C# / .NET · React · Angular · TypeScript · Azure',
   },
 ];
 
 const englishAiPractices = [
+  {
+    icon: 'fi-rs-lightbulb-on',
+    title: 'Philosophy',
+    text: 'I treat AI as an essential tool in software development and adapt how I use it to each project’s needs and scope.',
+  },
   {
     icon: 'fi-rs-comment-alt-dots',
     title: 'Prompt engineering',
@@ -113,18 +121,23 @@ const englishAiPractices = [
   },
   {
     icon: 'fi-rs-workflow',
-    title: 'Agents and skills',
+    title: 'Agentic workflows & skills',
     text: 'I use agentic workflows and skills to structure tasks and adapt context to the work at hand.',
   },
   {
     icon: 'fi-rs-brain',
     title: 'Choosing a model',
-    text: 'I select a model based on the task, the reasoning required, and the response format I need.',
+    text: 'I select a model based on the task, the reasoning required, and the response format.',
   },
   {
     icon: 'fi-rs-code-branch',
-    title: 'From prototype to SDD',
-    text: 'Vibe coding helps me explore an idea quickly. For larger developments, I prefer Spec-Driven Development (SDD): clarifying the need, constraints, and acceptance criteria before writing code.',
+    title: 'Vibe coding or SDD',
+    text: 'I use vibe coding to explore ideas quickly. For larger projects, I clarify the need, constraints, and success criteria before coding with Spec-Driven Development (SDD).',
+  },
+  {
+    icon: 'fi-rs-binoculars',
+    title: 'Research & exploration',
+    text: 'I follow alternative language models, including d-LLMs, and explore their approaches and potential contributions to software development.',
   },
 ];
 
@@ -404,7 +417,6 @@ type PageCopy = {
   heroTitle: string;
   heroIntro: string;
   availability: string;
-  availabilityMode: string;
   emailSubject: string;
   contactCta: string;
   cvCta: string;
@@ -414,35 +426,25 @@ type PageCopy = {
   proofLabels: string[];
   searchTitle: string;
   searchMapAlt: string;
-  searchRegionLabel: string;
-  searchRegion: string;
+  searchLocationLabel: string;
+  searchLocation: string;
   searchRoleLabel: string;
   searchRole: string;
+  searchContractLabel: string;
+  searchContract: string;
+  searchNoticePeriodLabel: string;
+  searchNoticePeriod: string;
   searchModeLabel: string;
   searchModeDescription: string;
   searchPrinciples: { title: string; description: string }[];
   expertiseTitle: string;
-  expertiseIntro: string;
   technologyStackTitle: string;
+  technologyStackIntro: string;
   aiTitle: string;
-  aiIntro: string;
-  aiInterestAria: string;
-  aiInterestLabel: string;
-  aiInterestStatement: string;
-  aiInterestText: string;
   experienceTitle: string;
-  experienceIntro: string;
   environment: string;
   credentialsTitle: string;
-  education: { date: string; title: string; institution: string }[];
-  certificationTitle: string;
-  certifications: string[];
-  languagesTitle: string;
-  languages: string[];
-  noteAria: string;
-  noteLabel: string;
-  noteStatement: string;
-  noteInterest: string;
+  credentialRows: { label: string; text: string }[];
   contactIndex: string;
   contactIntro: string;
   emailLabel: string;
@@ -459,9 +461,9 @@ type PageCopy = {
 const pageCopy: Record<Language, PageCopy> = {
   fr: {
     pageTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
-    pageDescription: 'Je suis Tech Lead et architecte logiciel à Lyon. Je conçois et fais évoluer des applications métier avec les équipes, de l’architecture au développement.',
+    pageDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Faire grandir les applications métier, du cadrage à la livraison et au maintien dans le temps.',
     openGraphTitle: 'Vincent Mangel - Tech Lead & Architecte logiciel',
-    openGraphDescription: 'Je conçois et fais évoluer des applications métier avec les équipes, de l’architecture au développement.',
+    openGraphDescription: 'Tech Lead et architecte logiciel en recherche active à Lyon. Faire grandir les applications métier, du cadrage à la livraison et au maintien dans le temps.',
     jobTitle: 'Tech Lead et Architecte logiciel',
     skipLink: 'Aller au contenu',
     brandAria: 'Vincent Mangel, accueil',
@@ -475,10 +477,9 @@ const pageCopy: Record<Language, PageCopy> = {
     navExperience: 'Expérience',
     navContact: 'Contact',
     heroRole: 'Tech Lead et architecte logiciel, à Lyon',
-    heroTitle: 'Je fais évoluer les applications métier, du cadrage à la livraison.',
-    heroIntro: 'Je pars du besoin et de l’existant, puis j’accompagne l’équipe jusqu’à la livraison.',
-    availability: 'Poste recherché : architecte',
-    availabilityMode: '· Lyon uniquement',
+    heroTitle: 'Faire grandir les applications, du cadrage à la livraison.',
+    heroIntro: 'Partir d’un besoin nouveau ou d’un existant, accompagner les équipes, déployer la solution et la maintenir dans le temps.',
+    availability: 'En recherche active de nouvelles opportunités à Lyon',
     emailSubject: 'Échange professionnel',
     contactCta: 'Me contacter',
     cvCta: 'Télécharger mon CV',
@@ -492,43 +493,39 @@ const pageCopy: Record<Language, PageCopy> = {
     proofLabels: ['Missions client', 'Clients', 'Années d’expérience', 'Rôles distincts', 'Maîtrises front-end', 'Maîtrises back-end et infra'],
     searchTitle: '01 / MA RECHERCHE',
     searchMapAlt: 'Carte illustrée de Lyon, avec un repère au centre-ville.',
-    searchRegionLabel: 'Zone de recherche',
-    searchRegion: 'Lyon uniquement',
+    searchLocationLabel: 'Localisation',
+    searchLocation: 'Lyon uniquement',
     searchRoleLabel: 'Poste',
     searchRole: 'Architecte logiciel',
+    searchContractLabel: 'Contrat',
+    searchContract: 'CDI',
+    searchNoticePeriodLabel: 'Préavis',
+    searchNoticePeriod: '3 mois',
     searchModeLabel: 'Mode d’intervention',
-    searchModeDescription: 'Je privilégie le forfait à la régie : un objectif partagé pour m’investir dans la durée, grandir avec l’entreprise et accompagner ses équipes.',
+    searchModeDescription: 'Je privilégie le forfait à la régie : m’investir dans la durée et grandir avec mon entreprise et ses équipes.',
     searchPrinciples: [
       { title: 'Apprendre & transmettre', description: 'Continuer à apprendre et partager mes connaissances pour aider l’équipe à progresser.' },
       { title: 'Technique & humain', description: 'Prendre en compte les enjeux techniques et les personnes qui conçoivent, développent et utilisent les solutions.' },
     ],
     expertiseTitle: '02 / EXPERTISES',
-    expertiseIntro: 'Je relie les choix techniques aux besoins métier, du cadrage à la réalisation.',
-    technologyStackTitle: 'Technologies mobilisées',
-    aiTitle: '03 / IA & DÉVELOPPEMENT',
-    aiIntro: 'Je considère l’IA comme un outil incontournable du développement aujourd’hui. Je l’intègre à ma pratique selon le besoin et l’ampleur du projet.',
-    aiInterestAria: 'Intérêt pour les modèles alternatifs',
-    aiInterestLabel: 'Veille & exploration',
-    aiInterestStatement: 'Je m’intéresse aux modèles de langage alternatifs, notamment aux d-LLM.',
-    aiInterestText: 'Je suis curieux de leurs approches et de ce qu’elles peuvent apporter au développement.',
+    technologyStackTitle: 'Technologies privilégiées',
+    technologyStackIntro: 'Développement full stack, avec une préférence pour le front-end.',
+    aiTitle: '03 / IA & VEILLE',
     experienceTitle: '04 / EXPÉRIENCE',
-    experienceIntro: 'Je présente mes missions de la plus récente à la plus ancienne. Cliquez sur une ligne pour voir le contexte et l’environnement technique.',
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
-    education: [
-      { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
-      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option développement' },
+    credentialRows: [
+      { label: '2015 - 2018', text: 'Expert en Systèmes d’Information (Master) · ISITECH Lyon' },
+      { label: '2013 - 2015', text: 'BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM) · ICOF Lyon' },
+      { label: '2013', text: 'Baccalauréat Sciences et Technologies de la Gestion (STG), option Mercatique · Lycée Jean-Paul Sartre, Bron' },
+      { label: 'Certifications', text: 'AZ-900 · Azure · GH-300 · GitHub Copilot · IA-901 · Intelligence artificielle' },
+      { label: 'Langues', text: 'Français · langue maternelle · Anglais · professionnel · Allemand · notions' },
+      { label: 'Transmission', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.' },
+      { label: 'Connaissances', text: 'Bonnes connaissances en marketing, jeux vidéo et communication.' },
+      { label: 'Centres d’intérêt', text: 'Cinéma, art, expositions et ateliers créatifs.' },
     ],
-    certificationTitle: 'Certifications',
-    certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Intelligence artificielle'],
-    languagesTitle: 'Langues',
-    languages: ['Français · langue maternelle', 'Anglais · professionnel', 'Allemand · notions'],
-    noteAria: 'Transmission et centres d’intérêt',
-    noteLabel: 'Transmission & curiosité',
-    noteStatement: 'Je suis membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.',
-    noteInterest: 'J’ai aussi de bonnes connaissances en marketing, en jeux vidéo et en communication. Je m’intéresse à l’art, aux expositions et aux ateliers créatifs.',
     contactIndex: '06 / CONTACT',
-    contactIntro: 'Je recherche un poste d’architecte à Lyon. Je privilégie le forfait, pour m’engager sur un objectif commun et accompagner les équipes dans la durée. Choisissez le moyen qui vous convient pour échanger.',
+    contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
     emailLabel: 'E-mail',
     phoneLabel: 'Téléphone',
     cvLabel: 'CV',
@@ -541,9 +538,9 @@ const pageCopy: Record<Language, PageCopy> = {
   },
   en: {
     pageTitle: 'Vincent Mangel - Tech Lead & Software Architect',
-    pageDescription: 'I am a Tech Lead and software architect in Lyon. I design and evolve business applications with teams, from architecture through implementation.',
+    pageDescription: 'I am a Tech Lead and software architect seeking opportunities in Lyon. I grow business applications from scoping through delivery and long-term maintenance.',
     openGraphTitle: 'Vincent Mangel - Tech Lead & Software Architect',
-    openGraphDescription: 'I design and evolve business applications with teams, from architecture through implementation.',
+    openGraphDescription: 'I am a Tech Lead and software architect seeking opportunities in Lyon. I grow business applications from scoping through delivery and long-term maintenance.',
     jobTitle: 'Tech Lead and Software Architect',
     skipLink: 'Skip to content',
     brandAria: 'Vincent Mangel, home',
@@ -557,10 +554,9 @@ const pageCopy: Record<Language, PageCopy> = {
     navExperience: 'Experience',
     navContact: 'Contact',
     heroRole: 'Tech Lead and software architect in Lyon',
-    heroTitle: 'I help evolve business applications, from scoping through delivery.',
-    heroIntro: 'I start with the need and the existing system, then work with the team through delivery.',
-    availability: 'Seeking a software architect role',
-    availabilityMode: '· Lyon only',
+    heroTitle: 'Growing applications, from scoping through delivery.',
+    heroIntro: 'I start from a new need or an existing system, support teams, deploy the solution, and maintain it over time.',
+    availability: 'Actively seeking new opportunities in Lyon',
     emailSubject: 'Professional enquiry',
     contactCta: 'Get in touch',
     cvCta: 'Download my CV (French PDF)',
@@ -574,43 +570,39 @@ const pageCopy: Record<Language, PageCopy> = {
     proofLabels: ['Client assignments', 'Clients', 'Years of experience', 'Role families', 'Front-end skills', 'Back-end and infrastructure skills'],
     searchTitle: '01 / ROLE SEARCH',
     searchMapAlt: 'Illustrated map of Lyon, with a marker in the city centre.',
-    searchRegionLabel: 'Search area',
-    searchRegion: 'Lyon only',
+    searchLocationLabel: 'Location',
+    searchLocation: 'Lyon only',
     searchRoleLabel: 'Role',
     searchRole: 'Software architect',
+    searchContractLabel: 'Contract',
+    searchContract: 'Permanent (CDI)',
+    searchNoticePeriodLabel: 'Notice period',
+    searchNoticePeriod: '3 months',
     searchModeLabel: 'Engagement model',
-    searchModeDescription: 'I prefer fixed price work to time and materials: a shared goal lets me commit for the long term, grow with the company, and support its teams.',
+    searchModeDescription: 'I prefer fixed-price work to time and materials: committing for the long term and growing with my company and its teams.',
     searchPrinciples: [
       { title: 'Learning & knowledge sharing', description: 'Keep learning and share what I know to help the team grow.' },
       { title: 'Technology & people', description: 'Consider both technical challenges and the people who design, build, and use the solutions.' },
     ],
     expertiseTitle: '02 / EXPERTISE',
-    expertiseIntro: 'I connect technical decisions to business needs, from scoping through implementation.',
-    technologyStackTitle: 'Technologies used across assignments',
-    aiTitle: '03 / AI & DEVELOPMENT',
-    aiIntro: 'I see AI as an essential tool in software development today. I use it in my practice according to each project’s needs and scope.',
-    aiInterestAria: 'Interest in alternative language models',
-    aiInterestLabel: 'Research & exploration',
-    aiInterestStatement: 'I am interested in alternative language models, including d-LLMs.',
-    aiInterestText: 'I am curious about their approaches and what they could bring to software development.',
+    technologyStackTitle: 'Preferred technologies',
+    technologyStackIntro: 'Full-stack development, with a preference for front-end work.',
+    aiTitle: '03 / AI & RESEARCH',
     experienceTitle: '04 / EXPERIENCE',
-    experienceIntro: 'My assignments are listed from most recent to oldest. Open a role to see the context and technology stack.',
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
-    education: [
-      { date: '2015 - 2018', title: 'Expert en Systèmes d’Information (Information Systems Expert)', institution: 'ISITECH Lyon · Master’s degree' },
-      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (IT Services for Organisations)', institution: 'ICOF Lyon · software development track' },
+    credentialRows: [
+      { label: '2015 - 2018', text: 'Information Systems Expert (Master’s degree) · ISITECH Lyon' },
+      { label: '2013 - 2015', text: 'BTS Services Informatiques aux Organisations (BTS SIO), software development track (SLAM) · ICOF Lyon' },
+      { label: '2013', text: 'French Baccalauréat in Management Science and Technology (STG), Mercatique option · Lycée Jean-Paul Sartre, Bron' },
+      { label: 'Certifications', text: 'AZ-900 · Azure · GH-300 · GitHub Copilot · IA-901 · Artificial intelligence' },
+      { label: 'Languages', text: 'French · native · English · professional · German · basic' },
+      { label: 'Knowledge sharing', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.' },
+      { label: 'Knowledge', text: 'Good knowledge of marketing, video games, and communications.' },
+      { label: 'Interests', text: 'Cinema, art, exhibitions, and creative workshops.' },
     ],
-    certificationTitle: 'Certifications',
-    certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Artificial intelligence'],
-    languagesTitle: 'Languages',
-    languages: ['French · native', 'English · professional', 'German · basic'],
-    noteAria: 'Knowledge sharing and interests',
-    noteLabel: 'Knowledge sharing & interests',
-    noteStatement: 'I have served on BTS SIO oral examination panels at ICOF since 2024.',
-    noteInterest: 'I also have a good knowledge of marketing, video games, and communications. My interests include art, exhibitions, and creative workshops.',
     contactIndex: '06 / CONTACT',
-    contactIntro: 'I am looking for a software architect role in Lyon. I prefer fixed price work, with a shared goal that lets me commit for the long term and support the team. Choose the way you prefer to get in touch.',
+    contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
     emailLabel: 'Email',
     phoneLabel: 'Phone',
     cvLabel: 'CV',
@@ -714,7 +706,7 @@ function App() {
             <p className="hero-role">{copy.heroRole}</p>
             <h1 id="hero-title">{copy.heroTitle}</h1>
             <p className="hero-intro">{copy.heroIntro}</p>
-            <p className="availability">{copy.availability} <span>{copy.availabilityMode}</span></p>
+            <p className="availability">{copy.availability}</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#contact">{copy.contactCta}</a>
               <a className="button button-text" href={links.cv} download="CV_Vincent_Mangel.pdf">{copy.cvCta}</a>
@@ -749,11 +741,13 @@ function App() {
               <div className="lyon-map-frame">
                 <img src="/lyon-recherche.png" alt={copy.searchMapAlt} loading="lazy" />
               </div>
-              <figcaption><span>{copy.searchRegionLabel}</span><strong>{copy.searchRegion}</strong></figcaption>
             </figure>
             <div className="search-details">
               <dl className="search-criteria">
                 <div><dt>{copy.searchRoleLabel}</dt><dd>{copy.searchRole}</dd></div>
+                <div><dt>{copy.searchContractLabel}</dt><dd>{copy.searchContract}</dd></div>
+                <div><dt>{copy.searchNoticePeriodLabel}</dt><dd>{copy.searchNoticePeriod}</dd></div>
+                <div><dt>{copy.searchLocationLabel}</dt><dd>{copy.searchLocation}</dd></div>
                 <div><dt>{copy.searchModeLabel}</dt><dd>{copy.searchModeDescription}</dd></div>
               </dl>
               <ul className="search-principles">
@@ -765,20 +759,20 @@ function App() {
 
         <section className="expertise-section page-wrap" id="expertises" aria-labelledby="expertise-title">
           <div className="section-heading">
-            <div><h2 id="expertise-title">{copy.expertiseTitle}</h2><p>{copy.expertiseIntro}</p></div>
+            <div><h2 id="expertise-title">{copy.expertiseTitle}</h2></div>
           </div>
           <div className="expertise-grid">
             {currentExpertise.map((area) => (
               <article className="expertise-item" key={area.title}>
                 <h3><i aria-hidden="true" className={`fi ${area.icon} expertise-icon`} />{area.title}</h3>
                 <p>{area.text}</p>
-                <p className="expertise-proof">{area.proof}</p>
                 <p className="expertise-skills">{area.skills}</p>
               </article>
             ))}
           </div>
           <div className="technology-stack" aria-labelledby="technology-stack-title">
             <h3 id="technology-stack-title">{copy.technologyStackTitle}</h3>
+            <p className="technology-stack-intro">{copy.technologyStackIntro}</p>
             <div className="technology-groups">
               {technologyGroups.map((group) => (
                 <div className="technology-group" key={group.title.en}>
@@ -799,7 +793,7 @@ function App() {
 
         <section className="ai-section page-wrap" id="ia" aria-labelledby="ai-title">
           <div className="section-heading ai-heading">
-            <div><h2 id="ai-title">{copy.aiTitle}</h2><p>{copy.aiIntro}</p></div>
+            <div><h2 id="ai-title">{copy.aiTitle}</h2></div>
           </div>
           <div className="ai-practice-grid">
             {(language === 'en' ? englishAiPractices : aiPractices).map((practice) => (
@@ -809,19 +803,12 @@ function App() {
               </article>
             ))}
           </div>
-          <aside className="personal-note ai-interest" aria-label={copy.aiInterestAria}>
-            <p className="personal-note-label">{copy.aiInterestLabel}</p>
-            <div>
-              <p className="personal-note-statement">{copy.aiInterestStatement}</p>
-              <p className="personal-note-interest">{copy.aiInterestText}</p>
-            </div>
-          </aside>
         </section>
 
         <section className="experience-section" id="experience" aria-labelledby="experience-title">
           <div className="page-wrap">
             <div className="section-heading experience-heading">
-              <div><h2 id="experience-title">{copy.experienceTitle}</h2><p>{copy.experienceIntro}</p></div>
+              <div><h2 id="experience-title">{copy.experienceTitle}</h2></div>
             </div>
             <div className="timeline">
               {currentExperienceGroups.map((group) => (
@@ -855,22 +842,9 @@ function App() {
           <div className="section-heading credentials-heading">
             <div><h2 id="credentials-title">{copy.credentialsTitle}</h2></div>
           </div>
-          <div className="credentials-body">
-            <div className="education-list">
-              {copy.education.map((item) => <article key={item.date}><span>{item.date}</span><div><h3>{item.title}</h3><p>{item.institution}</p></div></article>)}
-            </div>
-            <div className="credentials-meta">
-              <div><h3>{copy.certificationTitle}</h3><ul>{copy.certifications.map((item) => <li key={item}>{item}</li>)}</ul></div>
-              <div><h3>{copy.languagesTitle}</h3><ul>{copy.languages.map((item) => <li key={item}>{item}</li>)}</ul></div>
-            </div>
-          </div>
-          <aside className="personal-note" aria-label={copy.noteAria}>
-            <p className="personal-note-label">{copy.noteLabel}</p>
-            <div>
-              <p className="personal-note-statement"><strong>{copy.noteStatement}</strong></p>
-              <p className="personal-note-interest">{copy.noteInterest}</p>
-            </div>
-          </aside>
+          <dl className="credentials-list">
+            {copy.credentialRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.text}</dd></div>)}
+          </dl>
         </section>
 
         <section className="contact-section" aria-labelledby="contact">
