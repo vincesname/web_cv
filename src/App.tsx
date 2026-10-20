@@ -865,19 +865,21 @@ function App() {
                 {copy.education.map((item) => <article key={item.date}><span>{item.date}</span><div><h4>{item.title}</h4><p>{item.institution}</p></div></article>)}
               </div>
             </div>
-            <div className="credentials-meta">
-              <div>
-                <h3>{copy.certificationsTitle}</h3>
-                <ul>{copy.certifications.map((item) => <li key={item}>{item}</li>)}</ul>
+            <div className="credentials-profile">
+              <div className="credentials-meta">
+                <div>
+                  <h3>{copy.certificationsTitle}</h3>
+                  <ul>{copy.certifications.map((item) => <li key={item}>{item}</li>)}</ul>
+                </div>
+                <div>
+                  <h3>{copy.languagesTitle}</h3>
+                  <ul>{copy.languages.map((item) => <li key={item}>{item}</li>)}</ul>
+                </div>
               </div>
-              <div>
-                <h3>{copy.languagesTitle}</h3>
-                <ul>{copy.languages.map((item) => <li key={item}>{item}</li>)}</ul>
+              <div className="credentials-highlights">
+                {copy.profileHighlights.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
               </div>
             </div>
-          </div>
-          <div className="credentials-highlights">
-            {copy.profileHighlights.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
           </div>
         </section>
 
