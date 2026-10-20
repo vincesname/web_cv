@@ -4,13 +4,13 @@ The SVG files in this directory come from the Devicon project and are shown thro
 
 - React: `icons/react/react-original.svg`
 - Angular: `icons/angular/angular-original.svg`
-- TypeScript: `icons/typescript/typescript-original.svg`
+- TypeScript: `icons/typescript/typescript-plain.svg`
 - .NET: `icons/dotnetcore/dotnetcore-original.svg`
 - SQL Server: `icons/microsoftsqlserver/microsoftsqlserver-original.svg`
 - Python: `icons/python/python-original.svg`
 - Azure: `icons/azure/azure-original.svg`
 - Azure DevOps: `icons/azuredevops/azuredevops-original.svg`
-- PowerShell: `icons/powershell/powershell-original.svg`
+- PowerShell: `icons/powershell/powershell-plain.svg`
 
 Source repository: <https://github.com/devicons/devicon>
 

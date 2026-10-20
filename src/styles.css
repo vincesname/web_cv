@@ -147,7 +147,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .technology-mark--angular { --technology-logo: url("/technology-logos/angular.svg"); }
 .technology-mark--typescript { --technology-logo: url("/technology-logos/typescript.svg"); }
 .technology-mark--dotnet { --technology-logo: url("/technology-logos/dotnet.svg"); }
-.technology-mark--sql-server { --technology-logo: url("/technology-logos/sql-server.svg"); }
+.technology-mark--sql-server { --technology-logo: url("/technology-logos/sql-server.svg"); flex-basis: 24px; width: 24px; height: 24px; }
 .technology-mark--python { --technology-logo: url("/technology-logos/python.svg"); }
 .technology-mark--azure { --technology-logo: url("/technology-logos/azure.svg"); }
 .technology-mark--azure-devops { --technology-logo: url("/technology-logos/azure-devops.svg"); }
