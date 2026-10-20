@@ -183,10 +183,20 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 .credentials-section { padding-block: 96px 105px; }
 .credentials-section .section-heading { margin-bottom: 36px; }
-.credentials-list { margin: 0; border-top: 1px solid var(--line); }
-.credentials-list > div { display: grid; grid-template-columns: 180px minmax(0, 1fr); align-items: baseline; gap: 24px; padding: 13px 0; border-bottom: 1px solid var(--line); }
-.credentials-list dt { color: var(--forest); font-size: var(--text-label); font-weight: 650; }
-.credentials-list dd { margin: 0; color: var(--ink); font-size: var(--text-sm); line-height: 1.55; }
+.credentials-body { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(35px, 6vw, 78px); }
+.credentials-subtitle { margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; }
+.education-list { border-top: 1px solid var(--line); }
+.education-list article { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.education-list article > span { color: var(--forest); font-size: var(--text-label); font-weight: 620; font-variant-numeric: tabular-nums; }
+.education-list h4 { margin: 0 0 3px; color: var(--ink); font-size: var(--text-sm); font-weight: 620; line-height: 1.4; }
+.education-list p { margin: 0; color: var(--muted); font-size: var(--text-sm); line-height: 1.5; }
+.credentials-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 24px; }
+.credentials-meta > div { padding-top: 15px; border-top: 1px solid var(--line); }
+.credentials-meta h3, .credentials-highlights h3 { margin: 0 0 9px; color: var(--forest); font-size: var(--text-sm); font-weight: 650; }
+.credentials-meta ul { margin: 0; padding: 0; color: var(--muted); font-size: var(--text-sm); line-height: 1.5; list-style: none; }
+.credentials-meta li + li { margin-top: 5px; }
+.credentials-highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 4vw, 54px); margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.credentials-highlights p { max-width: 39ch; margin: 0; color: var(--muted); font-size: var(--text-sm); line-height: 1.55; }
 
 .contact-section { background: var(--forest-deep); color: var(--paper); }
 .contact-wrap { display: grid; grid-template-columns: minmax(0, .9fr) minmax(350px, 1.1fr); gap: clamp(48px, 9vw, 124px); padding-block: 88px 94px; }
@@ -278,7 +288,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .stack-line { grid-template-columns: 1fr; gap: 2px; }
 
   .credentials-section .section-heading { margin-bottom: 27px; }
-  .credentials-list > div { grid-template-columns: 1fr; gap: 4px; padding-block: 11px; }
+  .credentials-body { grid-template-columns: 1fr; gap: 28px; }
+  .credentials-highlights { grid-template-columns: 1fr; gap: 20px; margin-top: 28px; }
+  .credentials-highlights h3 { margin-bottom: 4px; }
 
   .contact-wrap { grid-template-columns: 1fr; gap: 34px; padding-block: 70px; }
   .contact-link { grid-template-columns: 22px minmax(0, 1fr); gap: 9px; }
@@ -292,6 +304,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .proof-item { min-height: 130px; padding-inline: 8px; }
   .search-criteria > div { grid-template-columns: 96px minmax(0, 1fr); gap: 9px; }
   .experience-period { max-width: 106px; }
+  .credentials-meta { grid-template-columns: 1fr; gap: 17px; }
+  .education-list article { grid-template-columns: 78px minmax(0, 1fr); gap: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

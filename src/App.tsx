@@ -444,7 +444,13 @@ type PageCopy = {
   experienceTitle: string;
   environment: string;
   credentialsTitle: string;
-  credentialRows: { label: string; text: string }[];
+  educationTitle: string;
+  education: { date: string; title: string; institution: string }[];
+  certificationsTitle: string;
+  certifications: string[];
+  languagesTitle: string;
+  languages: string[];
+  profileHighlights: { title: string; text: string }[];
   contactIndex: string;
   contactIntro: string;
   emailLabel: string;
@@ -514,15 +520,20 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '04 / EXPÉRIENCE',
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
-    credentialRows: [
-      { label: '2015 - 2018', text: 'Expert en Systèmes d’Information (Master) · ISITECH Lyon' },
-      { label: '2013 - 2015', text: 'BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM) · ICOF Lyon' },
-      { label: '2013', text: 'Baccalauréat Sciences et Technologies de la Gestion (STG), option Mercatique · Lycée Jean-Paul Sartre, Bron' },
-      { label: 'Certifications', text: 'AZ-900 · Azure · GH-300 · GitHub Copilot · IA-901 · Intelligence artificielle' },
-      { label: 'Langues', text: 'Français · langue maternelle · Anglais · professionnel · Allemand · notions' },
-      { label: 'Transmission', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.' },
-      { label: 'Connaissances', text: 'Bonnes connaissances en marketing, jeux vidéo et communication.' },
-      { label: 'Centres d’intérêt', text: 'Cinéma, art, expositions et ateliers créatifs.' },
+    educationTitle: 'Diplômes',
+    education: [
+      { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
+      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option SLAM (Solutions Logicielles et Applications Métiers)' },
+      { date: '2013', title: 'Baccalauréat Sciences et Technologies de la Gestion (STG)', institution: 'Lycée Jean-Paul Sartre · Bron · option Mercatique' },
+    ],
+    certificationsTitle: 'Certifications',
+    certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Intelligence artificielle'],
+    languagesTitle: 'Langues',
+    languages: ['Français · langue maternelle', 'Anglais · professionnel', 'Allemand · notions'],
+    profileHighlights: [
+      { title: 'Transmission', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.' },
+      { title: 'Connaissances', text: 'Bonnes connaissances en marketing, jeux vidéo et communication.' },
+      { title: 'Centres d’intérêt', text: 'Cinéma, art, expositions et ateliers créatifs.' },
     ],
     contactIndex: '06 / CONTACT',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
@@ -591,15 +602,20 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '04 / EXPERIENCE',
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
-    credentialRows: [
-      { label: '2015 - 2018', text: 'Information Systems Expert (Master’s degree) · ISITECH Lyon' },
-      { label: '2013 - 2015', text: 'BTS Services Informatiques aux Organisations (BTS SIO), software development track (SLAM) · ICOF Lyon' },
-      { label: '2013', text: 'French Baccalauréat in Management Science and Technology (STG), Mercatique option · Lycée Jean-Paul Sartre, Bron' },
-      { label: 'Certifications', text: 'AZ-900 · Azure · GH-300 · GitHub Copilot · IA-901 · Artificial intelligence' },
-      { label: 'Languages', text: 'French · native · English · professional · German · basic' },
-      { label: 'Knowledge sharing', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.' },
-      { label: 'Knowledge', text: 'Good knowledge of marketing, video games, and communications.' },
-      { label: 'Interests', text: 'Cinema, art, exhibitions, and creative workshops.' },
+    educationTitle: 'Education',
+    education: [
+      { date: '2015 - 2018', title: 'Information Systems Expert', institution: 'ISITECH Lyon · Master’s degree' },
+      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (BTS SIO)', institution: 'ICOF Lyon · software development track (SLAM)' },
+      { date: '2013', title: 'French Baccalauréat in Management Science and Technology (STG)', institution: 'Lycée Jean-Paul Sartre · Bron · Marketing option' },
+    ],
+    certificationsTitle: 'Certifications',
+    certifications: ['AZ-900 · Azure', 'GH-300 · GitHub Copilot', 'IA-901 · Artificial intelligence'],
+    languagesTitle: 'Languages',
+    languages: ['French · native', 'English · professional', 'German · basic'],
+    profileHighlights: [
+      { title: 'Knowledge sharing', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.' },
+      { title: 'Knowledge', text: 'Good knowledge of marketing, video games, and communications.' },
+      { title: 'Interests', text: 'Cinema, art, exhibitions, and creative workshops.' },
     ],
     contactIndex: '06 / CONTACT',
     contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
@@ -842,9 +858,27 @@ function App() {
           <div className="section-heading credentials-heading">
             <div><h2 id="credentials-title">{copy.credentialsTitle}</h2></div>
           </div>
-          <dl className="credentials-list">
-            {copy.credentialRows.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.text}</dd></div>)}
-          </dl>
+          <div className="credentials-body">
+            <div className="education-block">
+              <h3 className="credentials-subtitle">{copy.educationTitle}</h3>
+              <div className="education-list">
+                {copy.education.map((item) => <article key={item.date}><span>{item.date}</span><div><h4>{item.title}</h4><p>{item.institution}</p></div></article>)}
+              </div>
+            </div>
+            <div className="credentials-meta">
+              <div>
+                <h3>{copy.certificationsTitle}</h3>
+                <ul>{copy.certifications.map((item) => <li key={item}>{item}</li>)}</ul>
+              </div>
+              <div>
+                <h3>{copy.languagesTitle}</h3>
+                <ul>{copy.languages.map((item) => <li key={item}>{item}</li>)}</ul>
+              </div>
+            </div>
+          </div>
+          <div className="credentials-highlights">
+            {copy.profileHighlights.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
+          </div>
         </section>
 
         <section className="contact-section" aria-labelledby="contact">

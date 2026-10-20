@@ -206,10 +206,10 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Type and color:** Existing numbered Georgia section heading, IBM Plex Sans details, forest green labels, warm paper canvas, and a quiet green map treatment.
 - **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction.
 
-### Credentials List
-- **Character:** Education, certifications, languages, knowledge sharing, and interests appear as eight concise editorial rows.
-- **Type and spacing:** A stable label column aligns with the value column; fine horizontal rules separate rows without cards.
-- **Responsive behavior:** Labels move above their values on narrow screens.
+### Education and Profile
+- **Character:** Three dated degrees lead the section, with certifications and languages grouped alongside them.
+- **Type and spacing:** A ruled degree list shares the first row with compact certification and language groups. A second ruled row gives equal weight to knowledge sharing, professional knowledge, and interests.
+- **Responsive behavior:** The degree and credential groups stack on phones; the three profile notes reflow into a single reading column.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
