@@ -36,21 +36,21 @@ const links = {
 
 const expertise: ExpertiseItem[] = [
   {
-    icon: 'fi-rs-blueprint',
+    icon: 'fi-ts-blueprint',
     title: 'Architecture',
     text: 'J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.',
     proof: 'CNR · Refonte WPF vers une application web',
     skills: 'Cadrage · architecture logicielle · modernisation',
   },
   {
-    icon: 'fi-rs-users',
+    icon: 'fi-ts-users',
     title: 'Leadership technique',
     text: 'Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs : j’interviens au quotidien auprès des équipes.',
     proof: 'Ayming · Trois projets menés en parallèle',
     skills: 'Équipe · delivery · mentorat · agilité',
   },
   {
-    icon: 'fi-rs-code-simple',
+    icon: 'fi-ts-code-simple',
     title: 'Développement',
     text: 'Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.',
     proof: 'Private GPT · Architecture et réalisation front-end',
@@ -60,18 +60,22 @@ const expertise: ExpertiseItem[] = [
 
 const aiPractices = [
   {
+    icon: 'fi-ts-comment-alt-dots',
     title: 'Prompt engineering',
     text: 'J’optimise mes requêtes en précisant le contexte, l’objectif et les contraintes, puis j’affine le prompt selon les réponses obtenues.',
   },
   {
+    icon: 'fi-ts-workflow',
     title: 'Agents et skills',
     text: 'Je mobilise des workflows agentiques et des skills pour structurer les tâches et adapter le contexte aux besoins du travail.',
   },
   {
+    icon: 'fi-ts-brain',
     title: 'Choix multi-modèle',
     text: 'Je sélectionne le modèle en fonction de la tâche, du raisonnement attendu et du format de réponse recherché.',
   },
   {
+    icon: 'fi-ts-code-branch',
     title: 'Du prototype au SDD',
     text: 'Le vibecoding me permet d’explorer rapidement une idée. Pour un développement de plus grande ampleur, je privilégie le Spec-Driven Development (SDD) : clarifier le besoin, les contraintes et les critères attendus avant de coder.',
   },
@@ -79,21 +83,21 @@ const aiPractices = [
 
 const englishExpertise: ExpertiseItem[] = [
   {
-    icon: 'fi-rs-blueprint',
+    icon: 'fi-ts-blueprint',
     title: 'Architecture',
     text: 'I assess existing systems, frame technical decisions, and define a target architecture that fits business constraints.',
     proof: 'CNR · WPF to web application redesign',
     skills: 'Scoping · software architecture · modernisation',
   },
   {
-    icon: 'fi-rs-users',
+    icon: 'fi-ts-users',
     title: 'Technical leadership',
     text: 'I run workshops, coordinate technical decisions, review code, and support developers as part of day-to-day delivery.',
     proof: 'Ayming · Three projects in parallel',
     skills: 'Teams · delivery · mentoring · agile methods',
   },
   {
-    icon: 'fi-rs-code-simple',
+    icon: 'fi-ts-code-simple',
     title: 'Software development',
     text: 'I work across user interfaces, APIs, and data, and stay involved in the code.',
     proof: 'Private GPT · Front-end architecture and delivery',
@@ -103,18 +107,22 @@ const englishExpertise: ExpertiseItem[] = [
 
 const englishAiPractices = [
   {
+    icon: 'fi-ts-comment-alt-dots',
     title: 'Prompt engineering',
     text: 'I improve prompts by clarifying context, goals, and constraints, then refine them based on the responses.',
   },
   {
+    icon: 'fi-ts-workflow',
     title: 'Agents and skills',
     text: 'I use agentic workflows and skills to structure tasks and adapt context to the work at hand.',
   },
   {
+    icon: 'fi-ts-brain',
     title: 'Choosing a model',
     text: 'I select a model based on the task, the reasoning required, and the response format I need.',
   },
   {
+    icon: 'fi-ts-code-branch',
     title: 'From prototype to SDD',
     text: 'Vibe coding helps me explore an idea quickly. For larger developments, I prefer Spec-Driven Development (SDD): clarifying the need, constraints, and acceptance criteria before writing code.',
   },
@@ -417,6 +425,7 @@ type PageCopy = {
   meetingLinkLabel: string;
   profileLabel: string;
   footerRole: string;
+  flaticonAttribution: string;
 };
 
 const pageCopy: Record<Language, PageCopy> = {
@@ -499,6 +508,7 @@ const pageCopy: Record<Language, PageCopy> = {
     meetingLinkLabel: 'Choisir un créneau (Google Agenda)',
     profileLabel: 'Profil',
     footerRole: 'Tech Lead et architecte logiciel, Lyon',
+    flaticonAttribution: 'Icônes UIcons par Flaticon',
   },
   en: {
     pageTitle: 'Vincent Mangel - Tech Lead & Software Architect',
@@ -579,6 +589,7 @@ const pageCopy: Record<Language, PageCopy> = {
     meetingLinkLabel: 'Choose a time (Google Calendar)',
     profileLabel: 'Profile',
     footerRole: 'Tech Lead and software architect, Lyon',
+    flaticonAttribution: 'UIcons by Flaticon',
   },
 };
 
@@ -745,7 +756,7 @@ function App() {
           <div className="ai-practice-grid">
             {(language === 'en' ? englishAiPractices : aiPractices).map((practice) => (
               <article className="ai-practice" key={practice.title}>
-                <h3>{practice.title}</h3>
+                <h3><i aria-hidden="true" className={`fi ${practice.icon} ai-practice-icon`} />{practice.title}</h3>
                 <p>{practice.text}</p>
               </article>
             ))}
@@ -821,18 +832,18 @@ function App() {
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
-              <a className="contact-link" aria-label={`${copy.emailLabel}: ${links.email}`} href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><i aria-hidden="true" className="fi fi-rs-envelope contact-icon" /><strong>{links.email}</strong></a>
-              <a className="contact-link" aria-label={`${copy.phoneLabel}: ${displayPhone}`} href={`tel:${links.phone}`}><i aria-hidden="true" className="fi fi-rs-phone-call contact-icon" /><strong>{displayPhone}</strong></a>
-              <a className="contact-link" aria-label={`${copy.meetingLabel}: ${copy.meetingLinkLabel}`} href={links.calendar} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-rs-calendar contact-icon" /><strong>{copy.meetingLinkLabel}</strong></a>
-              <a className="contact-link" aria-label={`${copy.profileLabel}: LinkedIn`} href={links.linkedin} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-brands-linkedin contact-icon" /><strong>LinkedIn</strong></a>
-              <a className="contact-link" aria-label={`${copy.cvLabel}: ${copy.cvDownloadLabel}`} href={links.cv} download="CV_Vincent_Mangel.pdf"><i aria-hidden="true" className="fi fi-rs-file-pdf contact-icon" /><strong>{copy.cvDownloadLabel}</strong></a>
+              <a className="contact-link" aria-label={`${copy.emailLabel}: ${links.email}`} href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><i aria-hidden="true" className="fi fi-ts-envelope-open contact-icon" /><strong>{links.email}</strong></a>
+              <a className="contact-link" aria-label={`${copy.phoneLabel}: ${displayPhone}`} href={`tel:${links.phone}`}><i aria-hidden="true" className="fi fi-ts-phone-call contact-icon" /><strong>{displayPhone}</strong></a>
+              <a className="contact-link" aria-label={`${copy.meetingLabel}: ${copy.meetingLinkLabel}`} href={links.calendar} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-ts-calendar-days contact-icon" /><strong>{copy.meetingLinkLabel}</strong></a>
+              <a className="contact-link" aria-label={`${copy.profileLabel}: LinkedIn`} href={links.linkedin} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-ts-link-alt contact-icon" /><strong>LinkedIn</strong></a>
+              <a className="contact-link" aria-label={`${copy.cvLabel}: ${copy.cvDownloadLabel}`} href={links.cv} download="CV_Vincent_Mangel.pdf"><i aria-hidden="true" className="fi fi-ts-file-pdf contact-icon" /><strong>{copy.cvDownloadLabel}</strong></a>
             </div>
           </div>
         </section>
       </main>
 
       <footer className="site-footer">
-        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>{copy.footerRole}</p><a href="https://www.flaticon.com/uicons" target="_blank" rel="noreferrer">UIcons by Flaticon</a></div>
+        <div className="page-wrap footer-inner"><a href="#top">Vincent Mangel</a><p>{copy.footerRole}</p><a href="https://www.flaticon.com/uicons" target="_blank" rel="noreferrer">{copy.flaticonAttribution}</a></div>
       </footer>
     </>
   );

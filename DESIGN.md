@@ -125,6 +125,7 @@ Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and
 - IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.
 - Warm paper, ink, and fine rules keep the canvas quiet and legible.
 - Open grids and flat section bands provide structure without shadows.
+- Thin Straight UIcons mark expertise, AI practices, and contact actions.
 
 ## Colors
 
@@ -237,8 +238,13 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Expertise Columns
 - **Character:** Three open columns with one short rule across each top edge.
-- **Spacing and type:** A Georgia heading leads the description, evidence line, and supporting skills; the columns have no individual numbers because they are parallel areas, not a sequence.
+- **Spacing and type:** A small Thin Straight icon and Georgia heading lead the description, evidence line, and supporting skills; the columns have no individual numbers because they are parallel areas, not a sequence.
 - **Responsive behavior:** The columns stack at 700px and below; there is no tab or hidden state.
+
+### AI Practice Grid
+- **Character:** Four AI development practices use open editorial rows rather than cards, with one small Thin Straight icon beside each heading.
+- **Structure:** Prompt engineering, agents and skills, model selection, and the move from prototype to Spec-Driven Development remain readable as text at every breakpoint.
+- **Responsive behavior:** Two columns on wide screens; one column on phones.
 
 ### Native Disclosure
 - **Character:** Each experience item uses the browser's native `details` and `summary` structure.
@@ -246,9 +252,10 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
 
 ### Contact Links
-- **Character:** Full-width links in the dark contact section, each led by a Flaticon UI icon with its destination visible, including a CV download. The icons are decorative to screen readers; each link has a localized accessible name.
+- **Character:** Full-width links in the dark contact section, each led by a Thin Straight icon with its destination visible, including a CV download. The LinkedIn destination uses a generic link icon because UIcons has no Thin Straight LinkedIn brand glyph. Icons are decorative to screen readers; each link has a localized accessible name.
 - **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
 - **Behavior:** Hover underlines the destination; keyboard focus uses a light outline for contrast on the dark background.
+- **Attribution:** The footer links to Flaticon, with the credit shown in the active page language.
 
 ## Do's and Don'ts
 
@@ -257,6 +264,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Do** let warm paper, ink, whitespace, and fine rules organize reading surfaces.
 - **Do** keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.
 - **Do** keep keyboard focus visible and respect reduced-motion settings.
+- **Do** use small Thin Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs.
 
 ### Don't:
 - **Don't** add rounded corners to the primary action or the current row patterns.
