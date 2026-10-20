@@ -208,8 +208,8 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Education and Profile
 - **Character:** Three dated degrees lead the section, with certifications and languages grouped alongside them.
-- **Type and spacing:** A ruled degree list sits beside compact certification and language groups. Knowledge sharing, professional knowledge, and interests continue directly beneath those groups, avoiding a full-width row that would leave unused space under the shorter list.
-- **Responsive behavior:** The degree and profile columns stack on phones; each profile note keeps its label beside its text where space allows.
+- **Type and spacing:** A ruled degree list sits beside compact certification and language groups. Two concise notes continue beneath those groups: knowledge sharing, then interests combined with professional knowledge.
+- **Responsive behavior:** The degree and profile columns stack on phones; each note keeps its label beside its text where space allows.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.

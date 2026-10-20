@@ -532,8 +532,7 @@ const pageCopy: Record<Language, PageCopy> = {
     languages: ['Français · langue maternelle', 'Anglais · professionnel', 'Allemand · notions'],
     profileHighlights: [
       { title: 'Transmission', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.' },
-      { title: 'Connaissances', text: 'Bonnes connaissances en marketing, jeux vidéo et communication.' },
-      { title: 'Centres d’intérêt', text: 'Cinéma, art, expositions et ateliers créatifs.' },
+      { title: 'Intérêts & connaissances', text: 'Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.' },
     ],
     contactIndex: '06 / CONTACT',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
@@ -614,8 +613,7 @@ const pageCopy: Record<Language, PageCopy> = {
     languages: ['French · native', 'English · professional', 'German · basic'],
     profileHighlights: [
       { title: 'Knowledge sharing', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.' },
-      { title: 'Knowledge', text: 'Good knowledge of marketing, video games, and communications.' },
-      { title: 'Interests', text: 'Cinema, art, exhibitions, and creative workshops.' },
+      { title: 'Interests & knowledge', text: 'My interests include cinema, art, exhibitions, and creative workshops. I also have a good knowledge of marketing, video games, and communications.' },
     ],
     contactIndex: '06 / CONTACT',
     contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
