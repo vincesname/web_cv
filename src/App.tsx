@@ -452,7 +452,6 @@ type PageCopy = {
   languages: string[];
   profileHighlights: { title: string; text: string }[];
   contactIndex: string;
-  contactTitle: string;
   contactIntro: string;
   emailLabel: string;
   phoneLabel: string;
@@ -536,7 +535,6 @@ const pageCopy: Record<Language, PageCopy> = {
       { title: 'Intérêts & connaissances', text: 'Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.' },
     ],
     contactIndex: '06 / CONTACT',
-    contactTitle: 'Échangeons',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
     emailLabel: 'E-mail',
     phoneLabel: 'Téléphone',
@@ -618,7 +616,6 @@ const pageCopy: Record<Language, PageCopy> = {
       { title: 'Interests & knowledge', text: 'My interests include cinema, art, exhibitions, and creative workshops. I also have a good knowledge of marketing, video games, and communications.' },
     ],
     contactIndex: '06 / CONTACT',
-    contactTitle: 'Let’s talk',
     contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
     emailLabel: 'Email',
     phoneLabel: 'Phone',
@@ -887,8 +884,7 @@ function App() {
         <section className="contact-section" aria-labelledby="contact">
           <div className="page-wrap contact-wrap">
             <div className="contact-copy">
-              <p className="contact-index">{copy.contactIndex}</p>
-              <h2 id="contact" tabIndex={-1}>{copy.contactTitle}</h2>
+              <h2 id="contact" tabIndex={-1}>{copy.contactIndex}</h2>
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
