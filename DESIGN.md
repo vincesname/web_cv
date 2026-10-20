@@ -246,9 +246,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
 
 ### Contact Links
-- **Character:** Full-width text links in the dark contact section, arranged as label and destination, including a CV download.
+- **Character:** Full-width links in the dark contact section, each led by a Flaticon UI icon with its destination visible, including a CV download. The icons are decorative to screen readers; each link has a localized accessible name.
 - **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
-- **Behavior:** Hover underlines the destination; keyboard focus uses the rust outline.
+- **Behavior:** Hover underlines the destination; keyboard focus uses a light outline for contrast on the dark background.
 
 ## Do's and Don'ts
 

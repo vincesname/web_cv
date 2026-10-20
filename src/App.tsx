@@ -821,11 +821,11 @@ function App() {
               <p>{copy.contactIntro}</p>
             </div>
             <div className="contact-actions">
-              <a className="contact-link" href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><i aria-hidden="true" className="fi fi-rs-envelope contact-icon" /><span className="contact-label">{copy.emailLabel}</span><strong>{links.email}</strong></a>
-              <a className="contact-link" href={`tel:${links.phone}`}><i aria-hidden="true" className="fi fi-rs-phone-call contact-icon" /><span className="contact-label">{copy.phoneLabel}</span><strong>{displayPhone}</strong></a>
-              <a className="contact-link" href={links.calendar} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-rs-calendar contact-icon" /><span className="contact-label">{copy.meetingLabel}</span><strong>{copy.meetingLinkLabel}</strong></a>
-              <a className="contact-link" href={links.linkedin} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-brands-linkedin contact-icon" /><span className="contact-label">{copy.profileLabel}</span><strong>LinkedIn</strong></a>
-              <a className="contact-link" href={links.cv} download="CV_Vincent_Mangel.pdf"><i aria-hidden="true" className="fi fi-rs-file-pdf contact-icon" /><span className="contact-label">{copy.cvLabel}</span><strong>{copy.cvDownloadLabel}</strong></a>
+              <a className="contact-link" aria-label={`${copy.emailLabel}: ${links.email}`} href={`mailto:${links.email}?subject=${encodeURIComponent(copy.emailSubject)}`}><i aria-hidden="true" className="fi fi-rs-envelope contact-icon" /><strong>{links.email}</strong></a>
+              <a className="contact-link" aria-label={`${copy.phoneLabel}: ${displayPhone}`} href={`tel:${links.phone}`}><i aria-hidden="true" className="fi fi-rs-phone-call contact-icon" /><strong>{displayPhone}</strong></a>
+              <a className="contact-link" aria-label={`${copy.meetingLabel}: ${copy.meetingLinkLabel}`} href={links.calendar} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-rs-calendar contact-icon" /><strong>{copy.meetingLinkLabel}</strong></a>
+              <a className="contact-link" aria-label={`${copy.profileLabel}: LinkedIn`} href={links.linkedin} target="_blank" rel="noreferrer"><i aria-hidden="true" className="fi fi-brands-linkedin contact-icon" /><strong>LinkedIn</strong></a>
+              <a className="contact-link" aria-label={`${copy.cvLabel}: ${copy.cvDownloadLabel}`} href={links.cv} download="CV_Vincent_Mangel.pdf"><i aria-hidden="true" className="fi fi-rs-file-pdf contact-icon" /><strong>{copy.cvDownloadLabel}</strong></a>
             </div>
           </div>
         </section>
