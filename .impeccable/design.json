@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T09:17:17.020Z",
+  "generatedAt": "2026-10-20T09:24:38.000Z",
   "title": "Design System: Vincent Mangel",
   "extensions": {
     "colorMeta": {
@@ -275,7 +275,7 @@
       "name": "Expertise Columns",
       "kind": "custom",
       "refersTo": "expertise-column",
-      "description": "Three open expertise areas with evidence and supporting skills, set off by fine rules. The live headings use small Flaticon Thin Straight icons; the panel preview keeps the vendor font out of the self-contained snippet.",
+      "description": "Three open expertise areas with evidence and supporting skills, set off by fine rules. The live headings use small Flaticon Regular Straight icons; the panel preview keeps the vendor font out of the self-contained snippet.",
       "html": "<div class=\"ds-expertise-grid\"><article><h3>Architecture</h3><p>J’analyse l’existant, cadre les choix techniques et définis une architecture cible adaptée aux contraintes métier.</p><strong>CNR · Refonte WPF vers une application web</strong><small>Cadrage · architecture logicielle · modernisation</small></article><article><h3>Leadership technique</h3><p>Ateliers, coordination des choix techniques, revues de code et accompagnement des développeurs.</p><strong>Ayming · Trois projets menés en parallèle</strong><small>Équipe · delivery · mentorat · agilité</small></article><article><h3>Développement</h3><p>Je travaille sur l’interface, les API et les données, en restant impliqué dans le code.</p><strong>Private GPT · Architecture et réalisation front-end</strong><small>C# / .NET · React · Angular · TypeScript · Azure</small></article></div>",
       "css": ".ds-expertise-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px; } .ds-expertise-grid article { display:flex; min-height:245px; flex-direction:column; padding-top:16px; border-top:1px solid #9aac98; } .ds-expertise-grid h3 { margin:0 0 10px; color:var(--forest-deep); font:500 24px/1.3 Georgia,\"Times New Roman\",serif; letter-spacing:-.025em; } .ds-expertise-grid p { max-width:38ch; margin:0; color:#4d5b52; font:16px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-expertise-grid strong { margin-top:auto; padding-top:22px; color:var(--forest); font:620 14px/1.45 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } .ds-expertise-grid small { margin-top:5px; color:var(--muted); font:12px/1.5 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-expertise-grid { grid-template-columns:1fr; gap:25px; } .ds-expertise-grid article { min-height:0; padding-top:12px; } .ds-expertise-grid strong { margin-top:12px; padding-top:0; } }"
     },
@@ -298,14 +298,14 @@
       "name": "Contact Links",
       "kind": "custom",
       "refersTo": "contact-link",
-      "description": "Five icon-led links in ruled rows on the deep-forest contact section, with destinations visible and categories retained in localized accessible names. The live page uses Flaticon Thin Straight UIcons; LinkedIn uses a generic link glyph because no Thin Straight brand glyph exists. The footer credit is localized to the active page language.",
+      "description": "Five icon-led links in ruled rows on the deep-forest contact section, with destinations visible and categories retained in localized accessible names. The live page uses Flaticon Regular Straight UIcons, including the LinkedIn brand icon. The footer credit is localized to the active page language.",
       "html": "<div class=\"ds-contact-links\"><a aria-label=\"E-mail: vincent.mangel.pro@gmail.com\" href=\"mailto:vincent.mangel.pro@gmail.com\"><span class=\"ds-icon-space\" aria-hidden=\"true\"></span><strong>vincent.mangel.pro@gmail.com</strong></a><a aria-label=\"Téléphone: 06 37 36 98 36\" href=\"tel:+33637369836\"><span class=\"ds-icon-space\" aria-hidden=\"true\"></span><strong>06 37 36 98 36</strong></a><a aria-label=\"Rendez-vous: Choisir un créneau (Google Agenda)\" href=\"#calendar\"><span class=\"ds-icon-space\" aria-hidden=\"true\"></span><strong>Choisir un créneau (Google Agenda)</strong></a><a aria-label=\"Profil: LinkedIn\" href=\"#linkedin\"><span class=\"ds-icon-space\" aria-hidden=\"true\"></span><strong>LinkedIn</strong></a><a aria-label=\"CV: Télécharger le CV (PDF)\" href=\"/CV_Vincent_Mangel.pdf\"><span class=\"ds-icon-space\" aria-hidden=\"true\"></span><strong>Télécharger le CV (PDF)</strong></a></div>",
       "css": ".ds-contact-links { border-top:1px solid #577263; background:var(--forest-deep); } .ds-contact-links a { display:grid; grid-template-columns:22px minmax(0,1fr); align-items:center; gap:15px; min-height:61px; padding:9px 0; border-bottom:1px solid #577263; color:#f1f3eb; text-decoration:none; } .ds-icon-space { width:22px; } .ds-contact-links a strong { font:550 14px \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; overflow-wrap:anywhere; } .ds-contact-links a:hover strong { text-decoration:underline; text-underline-offset:4px; } .ds-contact-links a:focus-visible { outline:3px solid #f2f1e9; outline-offset:4px; } @media (max-width:700px) { .ds-contact-links a { grid-template-columns:22px minmax(0,1fr); gap:9px; } .ds-contact-links a strong { font-size:13px; } }"
     },
     {
       "name": "AI Practice Grid",
       "kind": "custom",
-      "description": "Four open text rows distinguish prompt engineering, agents and skills, model selection, and Spec-Driven Development. The live page adds one small Flaticon Thin Straight icon beside each heading; icons stay out of this standalone panel sample.",
+      "description": "Four open text rows distinguish prompt engineering, agents and skills, model selection, and Spec-Driven Development. The live page adds one small Flaticon Regular Straight icon beside each heading; icons stay out of this standalone panel sample.",
       "html": "<div class=\"ds-ai-grid\"><article><h3>Prompt engineering</h3><p>I clarify context, goals, and constraints, then refine prompts based on the responses.</p></article><article><h3>Agents and skills</h3><p>I use agentic workflows and skills to structure tasks and adapt context to the work at hand.</p></article><article><h3>Choosing a model</h3><p>I select a model based on the task, the reasoning required, and the response format I need.</p></article><article><h3>From prototype to SDD</h3><p>I explore quickly, then clarify requirements and acceptance criteria before larger developments.</p></article></div>",
       "css": ".ds-ai-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(30px,5vw,68px); } .ds-ai-grid article { display:grid; grid-template-columns:minmax(135px,.8fr) minmax(0,1.2fr); gap:20px; align-content:start; padding:17px 0; border-top:1px solid #9aac98; } .ds-ai-grid h3 { margin:0; color:var(--forest-deep); font:500 20px/1.3 Georgia,\"Times New Roman\",serif; letter-spacing:-.02em; } .ds-ai-grid p { max-width:46ch; margin:0; color:#4d5b52; font:16px/1.6 \"IBM Plex Sans Variable\",\"IBM Plex Sans\",sans-serif; } @media (max-width:700px) { .ds-ai-grid { grid-template-columns:1fr; } .ds-ai-grid article { grid-template-columns:1fr; gap:5px; } }"
     }
@@ -318,7 +318,7 @@
       "IBM Plex Sans handles reading and controls; Georgia marks display hierarchy.",
       "Warm paper, ink, and fine rules keep the canvas quiet and legible.",
       "Open grids and flat section bands provide structure without shadows.",
-      "Thin Straight UIcons mark expertise, AI practices, and contact actions."
+      "Regular Straight UIcons mark expertise, AI practices, and contact actions."
     ],
     "rules": [
       {
@@ -342,7 +342,7 @@
       "Do let warm paper, ink, whitespace, and fine rules organize reading surfaces.",
       "Do keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.",
       "Do keep keyboard focus visible and respect reduced-motion settings.",
-      "Do use small Thin Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs."
+      "Do use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs."
     ],
     "donts": [
       "Don't add rounded corners to the primary action or the current row patterns.",

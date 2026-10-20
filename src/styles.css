@@ -1,4 +1,5 @@
-@import "@flaticon/flaticon-uicons/css/thin/straight.css";
+@import "@flaticon/flaticon-uicons/css/regular/straight.css";
+@import "@flaticon/flaticon-uicons/css/brands/all.css";
 
 :root {
   font-family: "IBM Plex Sans Variable", "IBM Plex Sans", sans-serif;
@@ -142,7 +143,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .ai-practice-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(30px, 5vw, 68px); }
 .ai-practice { display: grid; grid-template-columns: minmax(135px, .8fr) minmax(0, 1.2fr); gap: 20px; align-content: start; padding: 17px 0; border-top: 1px solid #9aac98; }
 .ai-practice h3 { display: flex; align-items: center; gap: 9px; margin: 0; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; letter-spacing: -.02em; line-height: 1.3; }
-.ai-practice-icon { flex: 0 0 auto; color: var(--forest); font-size: var(--text-xl); line-height: 1; }
+.ai-practice-icon { flex: 0 0 auto; color: var(--forest); font-size: var(--text-lg); line-height: 1; }
 .ai-practice p { max-width: 46ch; margin: 0; color: #4d5b52; font-size: var(--text-base); line-height: 1.6; }
 .ai-interest { margin-top: 25px; }
 
@@ -196,7 +197,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .contact-copy > p:last-child { max-width: 46ch; margin: 20px 0 0; color: #d0dacf; font-size: var(--text-base); line-height: 1.6; }
 .contact-actions { border-top: 1px solid #577263; }
 .contact-link { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; gap: 15px; min-height: 61px; padding: 9px 0; border-bottom: 1px solid #577263; color: #f1f3eb; text-decoration: none; }
-.contact-icon { color: var(--forest-light); font-size: var(--text-xl); line-height: 1; }
+.contact-icon { color: var(--forest-light); font-size: var(--text-lg); line-height: 1; }
 .contact-link strong { font-size: var(--text-sm); font-weight: 550; overflow-wrap: anywhere; }
 .contact-link:hover strong { text-decoration: underline; text-underline-offset: 4px; }
 .contact-link:focus-visible, .site-footer a:focus-visible, .button-primary:focus-visible { outline-color: #f2f1e9; }
