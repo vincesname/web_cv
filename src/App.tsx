@@ -882,7 +882,7 @@ function App() {
                   <h4>{copy.languagesTitle}</h4>
                   <ul>{copy.languages.map((item) => <li key={item.name}><strong>{item.name}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.level}</span></li>)}</ul>
                 </article>
-                <article><h4>{copy.otherTitle}</h4><ul>{copy.otherItems.map((item) => <li key={item.title}><strong>{item.title}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.text}</span></li>)}</ul></article>
+                <article className="credentials-other-group"><h4>{copy.otherTitle}</h4><ul>{copy.otherItems.map((item) => <li key={item.title}><strong>{item.title}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.text}</span></li>)}</ul></article>
               </div>
             </div>
           </div>
