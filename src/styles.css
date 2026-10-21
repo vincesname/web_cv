@@ -197,7 +197,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .credentials-list article > strong { font-variant-numeric: tabular-nums; }
 .credentials-list p { margin: 3px 0 0; color: var(--muted); font-size: var(--text-sm); line-height: 1.5; }
 .credentials-list ul { margin: 0; padding: 0; list-style: none; }
-.credentials-list li + li { margin-top: 5px; }
+.credentials-list li + li { margin-top: 3px; }
+.credentials-list li { display: flex; flex-wrap: wrap; gap: 0 5px; line-height: 1.45; }
+.credentials-detail-row { display: grid; grid-template-columns: minmax(88px, .42fr) minmax(0, 1fr); gap: 12px; }
+.credentials-detail-row p { margin: 0; }
 
 
 .contact-section { background: var(--forest-deep); color: var(--paper); }
@@ -310,6 +313,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .search-criteria > div { grid-template-columns: 96px minmax(0, 1fr); gap: 9px; }
   .experience-period { max-width: 106px; }
   .credentials-list article { grid-template-columns: 92px minmax(0, 1fr); gap: 10px; }
+  .credentials-detail-row { grid-template-columns: minmax(66px, .38fr) minmax(0, 1fr); gap: 8px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
