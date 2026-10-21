@@ -521,8 +521,8 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '01 / EXPÉRIENCE',
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
-    educationTitle: '01 / Diplômes',
-    profileTitle: '02 / Certifications & repères',
+    educationTitle: 'Diplômes',
+    profileTitle: 'Certifications & repères',
     education: [
       { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
       { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option SLAM (Solutions Logicielles et Applications Métiers)' },
@@ -602,8 +602,8 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '01 / EXPERIENCE',
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
-    educationTitle: '01 / Education',
-    profileTitle: '02 / Certifications & profile',
+    educationTitle: 'Education',
+    profileTitle: 'Certifications & profile',
     education: [
       { date: '2015 - 2018', title: 'Information Systems Expert', institution: 'ISITECH Lyon · Master’s degree' },
       { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (BTS SIO)', institution: 'ICOF Lyon · software development track (SLAM)' },

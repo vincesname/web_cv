@@ -190,8 +190,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .credentials-section .section-heading { margin-bottom: 36px; }
 .credentials-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(35px, 6vw, 78px); }
 .credentials-subtitle { margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; }
-.credentials-list { border-top: 1px solid var(--line); }
-.credentials-list article { display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: start; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.credentials-list article { display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: start; gap: 16px; padding: 14px 0; }
+.credentials-list article + article { border-top: 1px solid var(--line); }
 .credentials-list h4, .credentials-list strong { margin: 0; font-size: var(--text-sm); font-weight: 600; line-height: 1.5; }
 .credentials-list article > h4, .credentials-list article > strong { color: var(--forest); }
 .credentials-list article > strong { font-variant-numeric: tabular-nums; }
@@ -295,6 +295,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
   .credentials-section .section-heading { margin-bottom: 27px; }
   .credentials-body { grid-template-columns: 1fr; gap: 28px; }
+  .credentials-profile { padding-top: 28px; border-top: 1px solid var(--line); }
 
   .contact-wrap { grid-template-columns: 1fr; gap: 34px; padding-block: 70px; }
   .contact-link { grid-template-columns: 22px minmax(0, 1fr); gap: 9px; }
