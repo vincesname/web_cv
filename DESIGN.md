@@ -211,7 +211,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Education and Profile
 - **Character:** Two equal columns use unnumbered headings: diplomas on the left; certifications, languages, and other profile details on the right.
-- **Type and spacing:** Each diploma’s type or option precedes its institution in the supporting line. Certification codes and language names are bold; their themes and proficiency levels use regular text. Keep certification and language rows slightly compact. Under the global label “Autres,” show one row each for Mentoring, Notions, and Intérêts, with bold row titles and regular descriptions.
+- **Type and spacing:** Each diploma’s type or option precedes its institution in the supporting line. Certification codes and language names are bold; their themes and proficiency levels use regular text in the same compact size and muted style as diploma supporting lines. Under the global label “Autres,” show one row each for Mentoring, Notions, and Intérêts, with bold row titles and regular descriptions; keep these three rows together without dividers between them.
 - **Dividers:** Use a fine divider only between adjacent rows. Leave the first row without a top divider and the final row without a bottom divider. On phones, separate the two stacked columns with a single divider where needed.
 - **Responsive behavior:** The columns stack on phones; all diploma, certification, language, and profile details stay visible.
 

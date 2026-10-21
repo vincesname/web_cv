@@ -520,13 +520,13 @@ const pageCopy: Record<Language, PageCopy> = {
     aiTitle: '04 / IA & VEILLE',
     experienceTitle: '01 / EXPÉRIENCE',
     environment: 'Environnement',
-    credentialsTitle: '05 / FORMATION & REPÈRES',
+    credentialsTitle: '05 / FORMATIONS & COMPÉTENCES',
     educationTitle: 'Diplômes',
-    profileTitle: 'Certifications & repères',
+    profileTitle: 'Certifications & Connaissances',
     education: [
       { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'Master · ISITECH Lyon' },
-      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'option SLAM (Solutions Logicielles et Applications Métiers) · ICOF Lyon' },
-      { date: '2013', title: 'Baccalauréat Sciences et Technologies de la Gestion (STG)', institution: 'option Mercatique · Lycée Jean-Paul Sartre · Bron' },
+      { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'Option SLAM (Solutions Logicielles et Applications Métiers) · ICOF Lyon' },
+      { date: '2013', title: 'Baccalauréat Sciences et Technologies de la Gestion (STG)', institution: 'Option Mercatique · Lycée Jean-Paul Sartre · Bron' },
     ],
     certificationsTitle: 'Certifications',
     certifications: [{ code: 'AZ-900', theme: 'Azure' }, { code: 'GH-300', theme: 'GitHub Copilot' }, { code: 'IA-901', theme: 'Intelligence artificielle' }],
@@ -534,8 +534,8 @@ const pageCopy: Record<Language, PageCopy> = {
     languages: [{ name: 'Français', level: 'langue maternelle' }, { name: 'Anglais', level: 'professionnel' }, { name: 'Allemand', level: 'notions' }],
     otherItems: [
       { group: 'Autres', title: 'Mentoring', text: 'Membre régulier du jury de soutenance BTS SIO à l’ICOF' },
-      { group: '', title: 'Notions', text: 'marketing, communication et game development' },
-      { group: '', title: 'Intérêts', text: 'au cinéma, aux milieux artistiques et aux ateliers créatifs.' },
+      { group: '', title: 'Notions', text: 'Marketing, communication et game development' },
+      { group: '', title: 'Intérêts', text: 'Cinéma, milieux artistiques et aux ateliers créatifs.' },
     ],
     contactTitle: '06 / ÉCHANGEONS',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
@@ -603,9 +603,9 @@ const pageCopy: Record<Language, PageCopy> = {
     aiTitle: '04 / AI & RESEARCH',
     experienceTitle: '01 / EXPERIENCE',
     environment: 'Technology stack',
-    credentialsTitle: '05 / EDUCATION & PROFILE',
+    credentialsTitle: '05 / EDUCATION & SKILLS',
     educationTitle: 'Education',
-    profileTitle: 'Certifications & profile',
+    profileTitle: 'Certifications & Knowledge',
     education: [
       { date: '2015 - 2018', title: 'Information Systems Expert', institution: 'Master’s degree · ISITECH Lyon' },
       { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (BTS SIO)', institution: 'Software development option (SLAM) · ICOF Lyon' },
@@ -879,7 +879,7 @@ function App() {
                   <h4>{copy.languagesTitle}</h4>
                   <ul>{copy.languages.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.level}</span></li>)}</ul>
                 </article>
-                {copy.otherItems.map((item) => <article key={item.title}><h4>{item.group || null}</h4><div className="credentials-detail-row"><strong>{item.title}</strong><p>{item.text}</p></div></article>)}
+                {copy.otherItems.map((item) => <article className="credentials-other-row" key={item.title}><h4>{item.group || null}</h4><div className="credentials-detail-row"><strong>{item.title}</strong><p>{item.text}</p></div></article>)}
               </div>
             </div>
           </div>
