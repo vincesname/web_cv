@@ -450,7 +450,8 @@ type PageCopy = {
   certifications: string[];
   languagesTitle: string;
   languages: string[];
-  profileHighlights: { title: string; text: string }[];
+  profileTitle: string;
+  profileHighlights: { title: string; text: string; description: string }[];
   contactTitle: string;
   contactIntro: string;
   emailLabel: string;
@@ -520,7 +521,8 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '01 / EXPÉRIENCE',
     environment: 'Environnement',
     credentialsTitle: '05 / FORMATION & REPÈRES',
-    educationTitle: 'Diplômes',
+    educationTitle: '01 / Diplômes',
+    profileTitle: '02 / Certifications & repères',
     education: [
       { date: '2015 - 2018', title: 'Expert en Systèmes d’Information', institution: 'ISITECH Lyon · Master' },
       { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations', institution: 'ICOF Lyon · option SLAM (Solutions Logicielles et Applications Métiers)' },
@@ -531,8 +533,7 @@ const pageCopy: Record<Language, PageCopy> = {
     languagesTitle: 'Langues',
     languages: ['Français · langue maternelle', 'Anglais · professionnel', 'Allemand · notions'],
     profileHighlights: [
-      { title: 'Transmission', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.' },
-      { title: 'Intérêts & connaissances', text: 'Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.' },
+      { title: 'Transmission & intérêts', text: 'Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.', description: 'Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.' },
     ],
     contactTitle: '06 / ÉCHANGEONS',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
@@ -601,7 +602,8 @@ const pageCopy: Record<Language, PageCopy> = {
     experienceTitle: '01 / EXPERIENCE',
     environment: 'Technology stack',
     credentialsTitle: '05 / EDUCATION & PROFILE',
-    educationTitle: 'Education',
+    educationTitle: '01 / Education',
+    profileTitle: '02 / Certifications & profile',
     education: [
       { date: '2015 - 2018', title: 'Information Systems Expert', institution: 'ISITECH Lyon · Master’s degree' },
       { date: '2013 - 2015', title: 'BTS Services Informatiques aux Organisations (BTS SIO)', institution: 'ICOF Lyon · software development track (SLAM)' },
@@ -612,8 +614,7 @@ const pageCopy: Record<Language, PageCopy> = {
     languagesTitle: 'Languages',
     languages: ['French · native', 'English · professional', 'German · basic'],
     profileHighlights: [
-      { title: 'Knowledge sharing', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.' },
-      { title: 'Interests & knowledge', text: 'My interests include cinema, art, exhibitions, and creative workshops. I also have a good knowledge of marketing, video games, and communications.' },
+      { title: 'Sharing & interests', text: 'Member of BTS SIO oral examination panels at ICOF since 2024.', description: 'My interests include cinema, art, exhibitions, and creative workshops. I also have a good knowledge of marketing, video games, and communications.' },
     ],
     contactTitle: '06 / LET’S TALK',
     contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
@@ -859,23 +860,22 @@ function App() {
           <div className="credentials-body">
             <div className="education-block">
               <h3 className="credentials-subtitle">{copy.educationTitle}</h3>
-              <div className="education-list">
-                {copy.education.map((item) => <article key={item.date}><span>{item.date}</span><div><h4>{item.title}</h4><p>{item.institution}</p></div></article>)}
+              <div className="credentials-list">
+                {copy.education.map((item) => <article key={item.date}><strong>{item.date}</strong><div><h4>{item.title}</h4><p>{item.institution}</p></div></article>)}
               </div>
             </div>
             <div className="credentials-profile">
-              <div className="credentials-meta">
-                <div>
-                  <h3>{copy.certificationsTitle}</h3>
-                  <ul>{copy.certifications.map((item) => <li key={item}>{item}</li>)}</ul>
-                </div>
-                <div>
-                  <h3>{copy.languagesTitle}</h3>
-                  <ul>{copy.languages.map((item) => <li key={item}>{item}</li>)}</ul>
-                </div>
-              </div>
-              <div className="credentials-highlights">
-                {copy.profileHighlights.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
+              <h3 className="credentials-subtitle">{copy.profileTitle}</h3>
+              <div className="credentials-list">
+                <article>
+                  <h4>{copy.certificationsTitle}</h4>
+                  <ul>{copy.certifications.map((item) => <li key={item}><strong>{item}</strong></li>)}</ul>
+                </article>
+                <article>
+                  <h4>{copy.languagesTitle}</h4>
+                  <ul>{copy.languages.map((item) => <li key={item}><strong>{item}</strong></li>)}</ul>
+                </article>
+                {copy.profileHighlights.map((item) => <article key={item.title}><h4>{item.title}</h4><div><strong>{item.text}</strong><p>{item.description}</p></div></article>)}
               </div>
             </div>
           </div>
