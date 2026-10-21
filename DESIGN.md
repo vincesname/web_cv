@@ -96,7 +96,7 @@ components:
   hero-portrait:
     backgroundColor: "{colors.paper-alt}"
     rounded: "{rounded.none}"
-    maxWidth: "210px"
+    maxWidth: "294px"
     aspectRatio: "5 / 6"
   expertise-column:
     textColor: "{colors.ink}"
@@ -238,9 +238,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Hero Portrait
 - **Character:** Vincent's supplied black-and-white photograph gives the introduction a personal presence, with his gaze naturally directed toward the copy. No caption or additional slogan accompanies it.
-- **Shape and spacing:** An unframed rectangle with a 5:6 aspect ratio, up to 210px wide, is centered horizontally in the hero's right-hand column and vertically beside the copy. Its dimensions are half the initial presentation, including at fluid tablet widths. The crop keeps the head and shoulders visible, without filters, rounded corners, shadows, or decorative overlays.
+- **Shape and spacing:** An unframed rectangle with a 5:6 aspect ratio, up to 294px wide, is centered horizontally in the hero's right-hand column and vertically beside the copy. Its dimensions are 70% of the initial presentation, including at fluid tablet widths. The crop keeps the head and shoulders visible, without filters, rounded corners, shadows, or decorative overlays.
 - **Loading and semantics:** The original 1280px JPEG is bundled as a fingerprinted asset, with explicit dimensions, high fetch priority, and French/English alternative text.
-- **Responsive behavior:** At 700px and below, the portrait becomes 60-80px wide beside the role, aligned to the right of its existing 120-160px grid column, before the full-width headline. It remains part of the first impression without pushing the complete introduction below a large image.
+- **Responsive behavior:** At 700px and below, the portrait becomes 84-112px wide beside the role, aligned to the right of its existing 120-160px grid column, before the full-width headline. It remains part of the first impression without pushing the complete introduction below a large image.
 
 ### Expertise Columns
 - **Character:** Three open, unnumbered columns present parallel areas of expertise without enclosing rules.
