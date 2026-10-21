@@ -194,7 +194,7 @@ The system is flat. It uses no box shadows; changes between warm paper and alter
 
 ## Shapes
 
-Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules create edges around sections and rows; the approach summary uses a single vertical rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
+Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules separate adjacent items within repeated groups; the first item has no top rule and the final item has no bottom rule. Distinct page sections keep their structural boundary rules, and a mobile layout may add one rule between groups when stacking them. The approach summary uses a single vertical timeline rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
 
 ## Components
 
@@ -205,9 +205,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### Search Section
 - **Character:** The search facts list role, contract, notice period, location, and preferred project engagement beside a closer crop of the Lyon map.
-- **Shape and spacing:** Open editorial columns with fine rules; the map is a flat illustration without a shadow or rounded frame.
+- **Shape and spacing:** Open editorial columns. Criteria rows have fine rules only between adjacent rows, with no rule before the first or after the last; the map is a flat illustration without a shadow or rounded frame.
 - **Type and color:** Existing numbered Georgia section heading, IBM Plex Sans details, forest green labels, warm paper canvas, and a quiet green map treatment.
-- **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction.
+- **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction. Principle rows gain separators only between adjacent items when they stack.
 
 ### Education and Profile
 - **Character:** Two equal columns use unnumbered headings: diplomas on the left, then certifications, languages, and combined knowledge-sharing and interests on the right.
@@ -242,9 +242,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Responsive behavior:** The timeline follows the hero copy on narrow screens and keeps a readable measure.
 
 ### Expertise Columns
-- **Character:** Three open columns with one short rule across each top edge.
-- **Spacing and type:** A small Regular Straight icon and Georgia heading lead the description and a supporting skills line; the columns have no individual numbers because they are parallel areas, not a sequence.
-- **Responsive behavior:** The columns stack at 700px and below; there is no tab or hidden state.
+- **Character:** Three open, unnumbered columns present parallel areas of expertise without enclosing rules.
+- **Spacing and type:** A small Regular Straight icon and Georgia heading lead the description and a supporting skills line.
+- **Responsive behavior:** The columns stack at 700px and below, with fine separators between adjacent items only; the first and last items have no outer rule.
 
 ### Core Technology Grid
 - **Character:** A compact, static technology index follows the expertise columns, grouping nine representative technologies under front-end, back-end and data, and cloud and DevOps.
@@ -253,17 +253,17 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 
 ### AI Practice Grid
 - **Character:** Six AI and research practices use open editorial rows rather than cards, with one small Regular Straight icon beside each heading.
-- **Structure:** Philosophy, prompt engineering, agentic workflows and skills, model selection, vibecoding or SDD, and research into alternative language models remain readable as text at every breakpoint. French copy uses infinitive verbs; English copy uses natural first-person statements.
+- **Structure:** Philosophy, prompt engineering, agentic workflows and skills, model selection, vibecoding or SDD, and research into alternative language models remain readable as text at every breakpoint. Fine rules separate adjacent rows only; there is no rule before the first or after the final row. French copy uses infinitive verbs; English copy uses natural first-person statements.
 - **Responsive behavior:** Two columns on wide screens; one column on phones.
 
 ### Native Disclosure
 - **Character:** Each experience item uses the browser's native `details` and `summary` structure.
-- **Type, shape, and color:** A top and bottom hairline frame the row. The role and mission summary use 14px sans-serif type; dates and stack metadata use 12px. The title uses ink and dates use muted ink, with a forest plus indicator.
-- **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline.
+- **Type, shape, and color:** A fine rule separates each assignment from the previous row; there is no outer rule before the first or after the final assignment. The role and mission summary use 14px sans-serif type; dates and stack metadata use 12px. The title uses ink and dates use muted ink, with a forest plus indicator.
+- **Behavior:** Opening the row reveals detail and environment text; the plus rotates 45 degrees. Summary remains keyboard operable with the shared focus outline. Assignment dividers separate adjacent rows only; the first and last rows have no outer divider.
 
 ### Contact Links
 - **Character:** The numbered “Échangeons” heading and its supporting paragraph lead into full-width links in the dark section, each led by a Regular Straight icon with the destination visible, including a CV download. The LinkedIn destination uses the Flaticon brand icon. Icons are decorative to screen readers; each link has a localized accessible name.
-- **Shape and spacing:** Rows use top and bottom green-tinted hairlines and a 61px minimum height.
+- **Shape and spacing:** Rows use green-tinted hairlines only between adjacent links, with no outer top or bottom rule, and have a 61px minimum height.
 - **Behavior:** Hover underlines the destination; keyboard focus uses a light outline for contrast on the dark background.
 - **Attribution:** The footer links to Flaticon, with the credit shown in the active page language.
 
@@ -272,6 +272,7 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 ### Do:
 - **Do** use forest green for primary emphasis and actions, with rust reserved for small directional and focus cues.
 - **Do** let warm paper, ink, whitespace, and fine rules organize reading surfaces.
+- **Do** place repeated-item dividers between adjacent items only; leave each group open at the first item’s top and the last item’s bottom. Keep distinct section boundaries and add a separator between groups when mobile stacking needs one.
 - **Do** keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.
 - **Do** keep keyboard focus visible and respect reduced-motion settings.
 - **Do** use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs.
