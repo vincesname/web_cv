@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T07:36:57.852Z",
+  "generatedAt": "2026-10-21T07:38:48.309578Z",
   "title": "Design System: Vincent Mangel",
   "extensions": {
     "colorMeta": {
@@ -327,7 +327,7 @@
     {
       "name": "Education and Profile",
       "kind": "custom",
-      "description": "Two equal columns with unnumbered headings: education on the left; certifications, languages and merged knowledge-sharing and interests on the right. Dividers appear only between rows. On mobile, columns stack with a separator between the two groups; no outer top or bottom divider.",
+      "description": "Two equal columns with unnumbered headings: diplomas on the left; certifications, languages and merged knowledge-sharing and interests on the right. Within each group, dividers appear only between rows: no divider above the first row or after the last. On mobile, a divider separates the stacked groups; the first row of the first group and last row of the second group have no outer divider.",
       "html": "<div class=\"ds-credentials-body\"><div class=\"ds-education-block\"><h3 class=\"ds-credentials-subtitle\">Diplômes</h3><div class=\"ds-credentials-list\"><article><strong>2015 - 2018</strong><div><h4>Expert en Systèmes d’Information</h4><p>ISITECH Lyon · Master</p></div></article><article><strong>2013 - 2015</strong><div><h4>BTS Services Informatiques aux Organisations</h4><p>ICOF Lyon · option SLAM (Solutions Logicielles et Applications Métiers)</p></div></article><article><strong>2013</strong><div><h4>Baccalauréat Sciences et Technologies de la Gestion (STG)</h4><p>Lycée Jean-Paul Sartre · Bron · option Mercatique</p></div></article></div></div><div class=\"ds-credentials-profile\"><h3 class=\"ds-credentials-subtitle\">Certifications &amp; repères</h3><div class=\"ds-credentials-list\"><article><h4>Certifications</h4><ul><li><strong>AZ-900 · Azure</strong></li><li><strong>GH-300 · GitHub Copilot</strong></li><li><strong>IA-901 · Intelligence artificielle</strong></li></ul></article><article><h4>Langues</h4><ul><li><strong>Français · langue maternelle</strong></li><li><strong>Anglais · professionnel</strong></li><li><strong>Allemand · notions</strong></li></ul></article><article><h4>Transmission &amp; intérêts</h4><div><strong>Membre du jury de soutenance BTS SIO à l’ICOF depuis 2024.</strong><p>Je m’intéresse au cinéma, à l’art, aux expositions et aux ateliers créatifs. J’ai aussi de bonnes connaissances en marketing, jeux vidéo et communication.</p></div></article></div></div></div>",
       "css": ".ds-credentials-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(35px, 6vw, 78px); } .ds-credentials-subtitle { margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; } .ds-credentials-list article { display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: start; gap: 16px; padding: 14px 0; } .ds-credentials-list article + article { border-top: 1px solid var(--line); } .ds-credentials-list h4, .ds-credentials-list strong { margin: 0; font-size: var(--text-sm); font-weight: 600; line-height: 1.5; } .ds-credentials-list article > h4, .ds-credentials-list article > strong { color: var(--forest); } .ds-credentials-list article > strong { font-variant-numeric: tabular-nums; } .ds-credentials-list p { margin: 3px 0 0; color: var(--muted); font-size: var(--text-sm); line-height: 1.5; } .ds-credentials-list ul { margin: 0; padding: 0; list-style: none; } .ds-credentials-list li + li { margin-top: 5px; } @media (max-width:700px) { .ds-credentials-body { grid-template-columns:1fr; gap:28px; } .ds-credentials-profile { padding-top:28px; border-top:1px solid var(--line); } } @media (max-width:400px) { .ds-credentials-list article { grid-template-columns:92px minmax(0,1fr); gap:10px; } }",
       "refersTo": "credentials-section"
@@ -398,7 +398,8 @@
       "Do keep IBM Plex Sans on reading and interface text, with Georgia for display hierarchy.",
       "Do keep keyboard focus visible and respect reduced-motion settings.",
       "Do use small Regular Straight UIcons for expertise, AI practices, and contact actions; keep destinations understandable without the decorative glyphs.",
-      "Do pair monochrome technology marks with visible text labels, and keep the full assignment-specific stacks in the experience details."
+      "Do pair monochrome technology marks with visible text labels, and keep the full assignment-specific stacks in the experience details.",
+      "Do place dividers only between consecutive credential rows; omit the outer top and bottom dividers, adding one separator between the stacked groups on mobile."
     ],
     "donts": [
       "Don't add rounded corners to the primary action or the current row patterns.",

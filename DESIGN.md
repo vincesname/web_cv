@@ -210,9 +210,9 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Responsive behavior:** The map and criteria stack on phones; all search details remain visible without interaction.
 
 ### Education and Profile
-- **Character:** Three dated degrees lead the section, with certifications and languages grouped alongside them.
-- **Type and spacing:** A ruled degree list sits beside compact certification and language groups. Two concise notes continue beneath those groups: knowledge sharing, then interests combined with professional knowledge.
-- **Responsive behavior:** The degree and profile columns stack on phones; each note keeps its label beside its text where space allows.
+- **Character:** Two equal columns use unnumbered headings: diplomas on the left, then certifications, languages, and combined knowledge-sharing and interests on the right.
+- **Type and spacing:** Use a thin divider only between consecutive rows within each column. Leave the first row without a top divider and the last row without a bottom divider; headings sit directly above their first row.
+- **Responsive behavior:** The columns stack on phones. Add a divider between the two stacked groups where needed, while keeping the first row of the first group and the final row of the last group free of outer dividers.
 
 ### Buttons
 - **Character:** Direct, compact text actions with a clear primary choice.
