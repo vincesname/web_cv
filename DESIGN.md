@@ -93,11 +93,11 @@ components:
     backgroundColor: "{colors.forest-deep}"
     textColor: "{colors.paper}"
     padding: "16px 0"
-  approach-summary:
-    textColor: "{colors.ink}"
-    padding: "15px 0"
-    borderLeft: "1px solid #a7b7a6"
-    rowBorderTop: "1px solid {colors.line}"
+  hero-portrait:
+    backgroundColor: "{colors.paper-alt}"
+    rounded: "{rounded.none}"
+    maxWidth: "420px"
+    aspectRatio: "5 / 6"
   expertise-column:
     textColor: "{colors.ink}"
     padding: "16px 0 0"
@@ -119,7 +119,7 @@ components:
 
 **Creative North Star: "The Editorial Evidence Record"**
 
-The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers. The header stays on the paper background, and the hero uses an unboxed three-step timeline to explain work from scoping through delivery.
+The system treats a personal technical portfolio as a clearly edited professional record: hierarchy makes the information easy to scan, typography carries the voice, and fine rules separate entries. Its mood is calm, direct, and evidence-led for recruiters and technical managers. The header stays on the paper background, and the hero pairs the introduction with Vincent's supplied black-and-white portrait.
 
 Warm paper and forest green anchor the canvas; IBM Plex Sans handles reading and interface text, while Georgia marks display headings. Responsive grids align related content on wide screens and reflow into readable columns on phones. Rust supplies a restrained pointer for arrows, indexes, hover, and keyboard focus.
 
@@ -181,7 +181,7 @@ Visible copy uses a plain hyphen for sentence breaks and date ranges.
 
 ## Layout
 
-The page container caps at 1200px and keeps fluid side gutters. The hero pairs a measured direct headline with a simple vertical three-step timeline and green markers. The career timeline follows the six-indicator proof band so client work stays high in the reading order; role preferences, expertise, and AI practice follow. Each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the career timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero, expertise, timeline groups, credentials, and contact area become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
+The page container caps at 1200px and keeps fluid side gutters. The hero pairs a measured direct headline with a rectangular portrait on the right, with Vincent's gaze directed toward the introduction. The career timeline follows the six-indicator proof band so client work stays high in the reading order; role preferences, expertise, and AI practice follow. Each content section uses one prominent numbered heading followed by supporting copy where needed. The six proof measures use three columns by two rows and expertise uses three columns, while the career timeline pairs company context with mission details. Below 900px, the proof measures use two columns. At 700px, the hero places a compact portrait beside the role, followed by the full-width headline, introduction, availability, and actions. Expertise, timeline groups, credentials, and contact become single-column layouts; navigation wraps into a horizontally scrollable row. The layout further reduces outer gutters at 400px.
 
 The recurring spacing increments are 8px, 16px, and 24px. Large section spacing is responsive and section-specific: long-form sections use roughly 96–108px vertically on wide screens and 72px on mobile, while the hero and contact area use their own spacing. The page stays open and content-led, with section labels, white space, and thin separators doing the grouping.
 
@@ -194,7 +194,7 @@ The system is flat. It uses no box shadows; changes between warm paper and alter
 
 ## Shapes
 
-Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules separate adjacent items within repeated groups; the first item has no top rule and the final item has no bottom rule. Distinct page sections keep their structural boundary rules, and a mobile layout may add one rule between groups when stacking them. The approach summary uses a single vertical timeline rule. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
+Components have square corners, with no radius scale beyond the observed zero-radius form. One-pixel rules separate adjacent items within repeated groups; the first item has no top rule and the final item has no bottom rule. Distinct page sections keep their structural boundary rules, and a mobile layout may add one rule between groups when stacking them. The hero portrait keeps a simple rectangular crop without a border or shadow. Links use underline treatments for emphasis. Keyboard focus uses a visible rust outline with a 3px stroke and 4px offset. There are no form fields, chips, or card surfaces in the current implementation.
 
 ## Components
 
@@ -236,11 +236,11 @@ Components have square corners, with no radius scale beyond the observed zero-ra
 - **Type and color:** Large Georgia figures sit above their short labels; paper tones provide contrast against deep forest.
 - **Responsive behavior:** Two columns remain at tablet and phone widths. The band contains only figures and labels, without supporting notes or a methodology footnote.
 
-### Approach Summary
-- **Character:** A short three-step summary of how I work, from scoping through design and implementation to delivery. Specific client missions stay in the experience timeline.
-- **Shape and spacing:** Three open rows sit on the paper background beside a thin vertical rule. Each row has one small forest-green circular marker, with no card surface, shadow, or ornament.
-- **Type and color:** A compact forest heading introduces sans-serif step titles and concise muted descriptions.
-- **Responsive behavior:** The timeline follows the hero copy on narrow screens and keeps a readable measure.
+### Hero Portrait
+- **Character:** Vincent's supplied black-and-white photograph gives the introduction a personal presence, with his gaze naturally directed toward the copy. No caption or additional slogan accompanies it.
+- **Shape and spacing:** An unframed rectangle with a 5:6 aspect ratio, up to 420px wide, sits at the right of the hero and is centered vertically beside the copy. The crop keeps the head and shoulders visible, without filters, rounded corners, shadows, or decorative overlays.
+- **Loading and semantics:** The original 1280px JPEG is bundled as a fingerprinted asset, with explicit dimensions, high fetch priority, and French/English alternative text.
+- **Responsive behavior:** At 700px and below, the portrait becomes 120-160px wide beside the role, before the full-width headline. It remains part of the first impression without pushing the complete introduction below a large image.
 
 ### Expertise Columns
 - **Character:** Three open, unnumbered columns present parallel areas of expertise without enclosing rules.

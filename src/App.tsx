@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import portrait from './assets/vincent-mangel.jpg';
 
 type Language = 'fr' | 'en';
 
@@ -420,8 +421,7 @@ type PageCopy = {
   emailSubject: string;
   contactCta: string;
   cvCta: string;
-  approachTitle: string;
-  approachSteps: { title: string; description: string }[];
+  heroPortraitAlt: string;
   proofAria: string;
   proofLabels: string[];
   searchTitle: string;
@@ -491,12 +491,7 @@ const pageCopy: Record<Language, PageCopy> = {
     emailSubject: 'Échange professionnel',
     contactCta: 'Me contacter',
     cvCta: 'Télécharger mon CV',
-    approachTitle: 'Ma façon d’intervenir',
-    approachSteps: [
-      { title: 'Cadrer', description: 'Je clarifie le besoin, l’existant et les contraintes métier.' },
-      { title: 'Concevoir et réaliser', description: 'Je définis l’architecture et reste impliqué dans le développement avec l’équipe.' },
-      { title: 'Livrer', description: 'Je participe aux tests et aux derniers ajustements jusqu’à la livraison.' },
-    ],
+    heroPortraitAlt: 'Portrait de Vincent Mangel',
     proofAria: 'Repères du parcours',
     proofLabels: ['Missions client', 'Clients', 'Années d’expérience', 'Rôles distincts', 'Maîtrises front-end', 'Maîtrises back-end et infra'],
     searchTitle: '02 / MA RECHERCHE',
@@ -575,12 +570,7 @@ const pageCopy: Record<Language, PageCopy> = {
     emailSubject: 'Professional enquiry',
     contactCta: 'Get in touch',
     cvCta: 'Download my CV (French PDF)',
-    approachTitle: 'How I work',
-    approachSteps: [
-      { title: 'Scope', description: 'I clarify the need, the existing system, and business constraints.' },
-      { title: 'Design and build', description: 'I define the architecture and stay involved in development with the team.' },
-      { title: 'Deliver', description: 'I take part in testing and final adjustments through delivery.' },
-    ],
+    heroPortraitAlt: 'Portrait of Vincent Mangel',
     proofAria: 'Career at a glance',
     proofLabels: ['Client assignments', 'Clients', 'Years of experience', 'Role families', 'Front-end skills', 'Back-end and infrastructure skills'],
     searchTitle: '02 / ROLE SEARCH',
@@ -735,12 +725,9 @@ function App() {
             </div>
           </div>
 
-          <div className="approach-summary" aria-labelledby="approach-title">
-            <h2 id="approach-title">{copy.approachTitle}</h2>
-            <ol className="approach-list">
-              {copy.approachSteps.map((step) => <li key={step.title}><h3>{step.title}</h3><p>{step.description}</p></li>)}
-            </ol>
-          </div>
+          <figure className="hero-portrait">
+            <img src={portrait} alt={copy.heroPortraitAlt} width={1280} height={1280} fetchPriority="high" decoding="async" />
+          </figure>
         </section>
 
         <section className="proof-band" aria-label={copy.proofAria}>
