@@ -192,10 +192,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .credentials-subtitle { display: flex; align-items: center; gap: 9px; margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; }
 .credentials-subtitle-icon { flex: 0 0 auto; color: var(--forest); font-size: var(--text-lg); line-height: 1; }
 .credentials-list article { display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: start; gap: 16px; padding: 14px 0; }
-.credentials-list .credentials-other-group { grid-template-columns: max-content minmax(0, 1fr); }
-.credentials-list .credentials-other-group li { flex-wrap: nowrap; }
-.credentials-list .credentials-other-group li > strong, .credentials-list .credentials-other-group li > .credentials-dash { flex: 0 0 auto; }
-.credentials-list .credentials-other-group li > span:last-child { min-width: 0; }
+.credentials-list .credentials-other-group li { display: block; }
+.credentials-list .credentials-other-group li > .credentials-dash { margin-inline: 5px; }
 .credentials-list article + article { border-top: 1px solid var(--line); }
 .credentials-list h4, .credentials-list strong { margin: 0; font-size: var(--text-sm); font-weight: 600; line-height: 1.5; }
 .credentials-list article > h4, .credentials-list article > strong { color: var(--forest); }
