@@ -451,7 +451,8 @@ type PageCopy = {
   languagesTitle: string;
   languages: { name: string; level: string }[];
   profileTitle: string;
-  otherItems: { group: string; title: string; text: string }[];
+  otherTitle: string;
+  otherItems: { title: string; text: string }[];
   contactTitle: string;
   contactIntro: string;
   emailLabel: string;
@@ -531,11 +532,12 @@ const pageCopy: Record<Language, PageCopy> = {
     certificationsTitle: 'Certifications',
     certifications: [{ code: 'AZ-900', theme: 'Azure' }, { code: 'GH-300', theme: 'GitHub Copilot' }, { code: 'IA-901', theme: 'Intelligence artificielle' }],
     languagesTitle: 'Langues',
-    languages: [{ name: 'Français', level: 'langue maternelle' }, { name: 'Anglais', level: 'professionnel' }, { name: 'Allemand', level: 'notions' }],
+    languages: [{ name: 'Français', level: 'Langue maternelle' }, { name: 'Anglais', level: 'Professionnel' }, { name: 'Allemand', level: 'Notions' }],
+    otherTitle: 'Autres',
     otherItems: [
-      { group: 'Autres', title: 'Mentoring', text: 'Membre régulier du jury de soutenance BTS SIO à l’ICOF' },
-      { group: '', title: 'Notions', text: 'Marketing, communication et game development' },
-      { group: '', title: 'Intérêts', text: 'Cinéma, milieux artistiques et aux ateliers créatifs.' },
+      { title: 'Mentoring', text: 'Membre régulier du jury de soutenance BTS SIO à l’ICOF' },
+      { title: 'Notions', text: 'Marketing, communication et game development' },
+      { title: 'Intérêts', text: 'Cinéma, milieux artistiques et aux ateliers créatifs.' },
     ],
     contactTitle: '06 / ÉCHANGEONS',
     contactIntro: 'Je recherche un poste d’architecte à Lyon et je peux vous aider à faire grandir vos projets et vos équipes. Choisissez le moyen qui vous convient pour échanger.',
@@ -614,11 +616,12 @@ const pageCopy: Record<Language, PageCopy> = {
     certificationsTitle: 'Certifications',
     certifications: [{ code: 'AZ-900', theme: 'Azure' }, { code: 'GH-300', theme: 'GitHub Copilot' }, { code: 'IA-901', theme: 'Artificial intelligence' }],
     languagesTitle: 'Languages',
-    languages: [{ name: 'French', level: 'native' }, { name: 'English', level: 'professional' }, { name: 'German', level: 'basic' }],
+    languages: [{ name: 'French', level: 'Native' }, { name: 'English', level: 'Professional' }, { name: 'German', level: 'Basic' }],
+    otherTitle: 'Other',
     otherItems: [
-      { group: 'Other', title: 'Mentoring', text: 'Regular member of the BTS SIO examination board at ICOF' },
-      { group: '', title: 'Familiar with', text: 'marketing, communications, and game development' },
-      { group: '', title: 'Interests', text: 'cinema, the arts, and creative workshops.' },
+      { title: 'Mentoring', text: 'Regular member of the BTS SIO examination board at ICOF' },
+      { title: 'Familiar with', text: 'Marketing, communications, and game development' },
+      { title: 'Interests', text: 'Cinema, the arts, and creative workshops.' },
     ],
     contactTitle: '06 / LET’S TALK',
     contactIntro: 'I am looking for a software architect role in Lyon, and I can help grow your projects and teams. Choose the way you prefer to get in touch.',
@@ -879,7 +882,7 @@ function App() {
                   <h4>{copy.languagesTitle}</h4>
                   <ul>{copy.languages.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.level}</span></li>)}</ul>
                 </article>
-                {copy.otherItems.map((item) => <article className="credentials-other-row" key={item.title}><h4>{item.group || null}</h4><div className="credentials-detail-row"><strong>{item.title}</strong><p>{item.text}</p></div></article>)}
+                <article><h4>{copy.otherTitle}</h4><ul>{copy.otherItems.map((item) => <li key={item.title}><strong>{item.title}</strong><span>{item.text}</span></li>)}</ul></article>
               </div>
             </div>
           </div>
