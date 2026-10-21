@@ -53,7 +53,7 @@ The mission figure is a lower bound: eight client organizations are named in the
 - List experience newest first.
 - Do not number the three expertise columns; those categories are parallel areas, not a sequence.
 - Keep forest green as the primary color. Keep the header on the paper background; the hero should not use a large solid-color card.
-- Pair the introduction with the supplied portrait, replacing the former three-step approach summary. Keep the hero headline moderate in size and the portrait compact (up to 210px wide on desktop, 60-80px on mobile), retaining its placement beside the introduction or role.
+- Pair the introduction with the supplied portrait, replacing the former three-step approach summary. Keep the hero headline moderate in size and the portrait compact (up to 210px wide on desktop, 60-80px on mobile). Center it horizontally in the right-hand column on desktop; keep it beside the role and aligned to the right on mobile.
 - Keep the jury role readable without making it the largest copy in its section; make the interests and knowledge in art, exhibitions, creative workshops, marketing, video games, and communication equally legible.
 - Label the header download button `CV`; keep a clearly named PDF download in the contact links and omit it from the footer.
 - Use a simple white `VM` monogram on a forest-green favicon background.
