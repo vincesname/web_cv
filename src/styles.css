@@ -189,7 +189,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .credentials-section { padding-block: 96px 105px; }
 .credentials-section .section-heading { margin-bottom: 36px; }
 .credentials-body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(35px, 6vw, 78px); }
-.credentials-subtitle { margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; }
+.credentials-subtitle { display: flex; align-items: center; gap: 9px; margin: 0 0 12px; color: var(--forest-deep); font-family: var(--serif); font-size: var(--text-xl); font-weight: 500; }
+.credentials-subtitle-icon { flex: 0 0 auto; color: var(--forest); font-size: var(--text-lg); line-height: 1; }
 .credentials-list article { display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: start; gap: 16px; padding: 14px 0; }
 .credentials-list article + article { border-top: 1px solid var(--line); }
 .credentials-list h4, .credentials-list strong { margin: 0; font-size: var(--text-sm); font-weight: 600; line-height: 1.5; }

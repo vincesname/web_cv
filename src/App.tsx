@@ -866,23 +866,23 @@ function App() {
           </div>
           <div className="credentials-body">
             <div className="education-block">
-              <h3 className="credentials-subtitle">{copy.educationTitle}</h3>
+              <h3 className="credentials-subtitle"><i className="fi fi-rs-diploma credentials-subtitle-icon" aria-hidden="true" />{copy.educationTitle}</h3>
               <div className="credentials-list">
                 {copy.education.map((item) => <article key={item.date}><strong>{item.date}</strong><div><h4>{item.title}</h4><p>{item.institution}</p></div></article>)}
               </div>
             </div>
             <div className="credentials-profile">
-              <h3 className="credentials-subtitle">{copy.profileTitle}</h3>
+              <h3 className="credentials-subtitle"><i className="fi fi-rs-award credentials-subtitle-icon" aria-hidden="true" />{copy.profileTitle}</h3>
               <div className="credentials-list">
                 <article>
                   <h4>{copy.certificationsTitle}</h4>
-                  <ul>{copy.certifications.map((item) => <li key={item.code}><strong>{item.code}</strong><span>{item.theme}</span></li>)}</ul>
+                  <ul>{copy.certifications.map((item) => <li key={item.code}><strong>{item.code}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.theme}</span></li>)}</ul>
                 </article>
                 <article>
                   <h4>{copy.languagesTitle}</h4>
-                  <ul>{copy.languages.map((item) => <li key={item.name}><strong>{item.name}</strong><span>{item.level}</span></li>)}</ul>
+                  <ul>{copy.languages.map((item) => <li key={item.name}><strong>{item.name}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.level}</span></li>)}</ul>
                 </article>
-                <article><h4>{copy.otherTitle}</h4><ul>{copy.otherItems.map((item) => <li key={item.title}><strong>{item.title}</strong><span>{item.text}</span></li>)}</ul></article>
+                <article><h4>{copy.otherTitle}</h4><ul>{copy.otherItems.map((item) => <li key={item.title}><strong>{item.title}</strong><span className="credentials-dash" aria-hidden="true">-</span><span>{item.text}</span></li>)}</ul></article>
               </div>
             </div>
           </div>
